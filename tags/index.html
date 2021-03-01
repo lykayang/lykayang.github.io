@@ -1,0 +1,188 @@
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>azwlib</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://lykayang.github.io/favicon.ico?v=1614583454080">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://lykayang.github.io/styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://lykayang.github.io">
+        <img class="avatar" src="https://lykayang.github.io/images/avatar.png?v=1614583454080" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://lykayang.github.io">
+        <h1 class="site-title">azwlib</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+        <div class="content-container">
+          
+          <div class="tags-container">
+            
+              <a class="tag" href="https://lykayang.github.io/tag/NVPI5Y8-v/">正午之魔</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/xmmFUXfbh/">历史的原声</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/ehTedoreQ/">美丽新世界</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/AQSb3JdM1h/">1984</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/IUyUZdPUF5/">我们</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/NwaBz_PRg3/">反乌托邦</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/Xv72aAqfE/">柏拉图与技术呆子</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/6I8tIzpGNF/">大脑修复术</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/uYvKb0tGIK/">动物眼中的人类</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/0b7F6tck_3/">狼的智慧</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/QGpP9inMio/">燃烧的大洋</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/es9Xcowohr/">人类大瘟疫</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/nuDXVeilIP/">人类简史</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/d0CjMb3Atf/">丝绸之路上的帝国</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/pEVStXc-DR/">西方的困局</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/lAj7IyyV0a/">护照</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/iG8WfnSz-/">爱的饥渴</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/6o6y3nQGob/">潮骚</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/gDqGy1sEfg/">金阁寺</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/Rjx8MgelkG/">丰饶之海</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/0ErC3_5Dun/">春雪</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/EcBYvcO2PN/">奔马</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/l5wYP397A6/">晓寺</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/TgFSeCI2s9/">天人五衰</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/tDTsnqZeKg/">假面的告白</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/EUzceKkv7o/">阿波罗之杯</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/_UDx5UZd2_/">三岛由纪夫</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/aFuO4ytXF/">马克斯·韦伯</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/11KwDBfErc/">韦伯</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/__8JLNJ2y/">新教伦理与资本主义精神</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/yIJuqfNX9P/">学术与政治</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/UBSSxrT41p/">社会学的基本概念</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/QnzU_Xptld/">经济行动与社会团体</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/gH-RnCYVfH/">支配社会学</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/fKndYMU2qv/">印度的宗教</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/MedlU7KBgR/">印度教与佛教</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/GnLE7Khu8M/">中国的宗教</a>
+            
+              <a class="tag" href="https://lykayang.github.io/tag/6gJ2qBdMJG/">儒教与道教</a>
+            
+          </div>
+
+        </div>
+
+        <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://lykayang.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
+      </div>
+      <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+    </div>
+  </body>
+</html>
