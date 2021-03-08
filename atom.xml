@@ -2,13 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lykayang.github.io</id>
     <title>azwlib</title>
-    <updated>2021-03-04T05:29:51.536Z</updated>
+    <updated>2021-03-08T01:49:20.333Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lykayang.github.io"/>
     <link rel="self" href="https://lykayang.github.io/atom.xml"/>
     <logo>https://lykayang.github.io/images/avatar.png</logo>
     <icon>https://lykayang.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, azwlib</rights>
+    <entry>
+        <title type="html"><![CDATA[中国政治思想史(全两册)]]></title>
+        <id>https://lykayang.github.io/post/zhong-guo-zheng-zhi-si-xiang-shi-quan-liang-ce/</id>
+        <link href="https://lykayang.github.io/post/zhong-guo-zheng-zhi-si-xiang-shi-quan-liang-ce/">
+        </link>
+        <updated>2021-03-05T08:06:50.000Z</updated>
+        <content type="html"><![CDATA[<p>中国政治思想史(全两册).B08RJ5XT6G</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[狄仁杰：大唐狄公案（全6册）]]></title>
         <id>https://lykayang.github.io/post/di-ren-jie-da-tang-di-gong-an-quan-6-ce/</id>
