@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>admin &#8211; tiantian</title>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description>又一个WordPress站点</description>
+	<lastBuildDate>Mon, 15 Mar 2021 03:43:32 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7</generator>
+	<item>
+		<title>我来</title>
+		<link>./../../wolai.html</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 15 Mar 2021 03:43:32 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[我来]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=19</guid>
+
+					<description><![CDATA[我来]]></description>
+										<content:encoded><![CDATA[
+<p>我来</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
