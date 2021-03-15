@@ -11,8 +11,8 @@
 	<title>admin &#8211; tiantian</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../index.html</link>
-	<description>又一个WordPress站点</description>
-	<lastBuildDate>Mon, 15 Mar 2021 03:43:32 +0000</lastBuildDate>
+	<description></description>
+	<lastBuildDate>Mon, 15 Mar 2021 05:48:35 +0000</lastBuildDate>
 	<language>zh-CN</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,18 +20,76 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.7</generator>
 	<item>
-		<title>我来</title>
-		<link>./../../wolai.html</link>
+		<title>中信出版2020年度好书-人文社科</title>
+		<link>./../../zhongxinchuban2020nianduhaoshurenwensheke.html</link>
 		
 		<dc:creator><![CDATA[admin]]></dc:creator>
-		<pubDate>Mon, 15 Mar 2021 03:43:32 +0000</pubDate>
+		<pubDate>Mon, 15 Mar 2021 05:45:38 +0000</pubDate>
 				<category><![CDATA[未分类]]></category>
-		<category><![CDATA[我来]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=19</guid>
+		<category><![CDATA[2020]]></category>
+		<category><![CDATA[丝绸之路上的帝国]]></category>
+		<category><![CDATA[中信]]></category>
+		<category><![CDATA[人类大瘟疫]]></category>
+		<category><![CDATA[人类简史]]></category>
+		<category><![CDATA[动物眼中的人类]]></category>
+		<category><![CDATA[大脑修复术]]></category>
+		<category><![CDATA[柏拉图与技术呆子]]></category>
+		<category><![CDATA[照护]]></category>
+		<category><![CDATA[燃烧的大洋]]></category>
+		<category><![CDATA[狼的智慧]]></category>
+		<category><![CDATA[西方的困局]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=47</guid>
 
-					<description><![CDATA[我来]]></description>
+					<description><![CDATA[中信出版2020年度好书-人文社科（套装共10册）.B08VRR426F 柏拉图与技术呆子：人类与技术的创造性 [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<p>我来</p>
+<p>中信出版2020年度好书-人文社科（套装共10册）.B08VRR426F</p>
+
+
+
+<p>柏拉图与技术呆子：人类与技术的创造性伙伴关系<br>大脑修复术<br>动物眼中的人类<br>狼的智慧：我的25年荒野观狼之旅<br>燃烧的大洋：1941—1942，从突袭珍珠港到中途岛战役<br>人类大瘟疫：一个世纪以来的全球性流行病<br>人类简史：人类的诞生<br>丝绸之路上的帝国：青铜时代至今的中央欧亚史<br>西方的困局：欧洲与美国的当下危机<br>照护：哈佛医师和阿尔茨海默病妻子的十年</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>安徒生童话全集</title>
+		<link>./../../antushengtonghuaquanji.html</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 15 Mar 2021 05:42:19 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[叶圣陶]]></category>
+		<category><![CDATA[天津]]></category>
+		<category><![CDATA[安徒生]]></category>
+		<category><![CDATA[安徒生童话]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=44</guid>
+
+					<description><![CDATA[叶君健权威译本：安徒生童话全集(经典插图版)(套装共4册).B01LXXM1CL.azw3]]></description>
+										<content:encoded><![CDATA[
+<p>叶君健权威译本：安徒生童话全集(经典插图版)(套装共4册).B01LXXM1CL.azw3</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>傲慢与偏见</title>
+		<link>./../../aomanyupianjian.html</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 15 Mar 2021 05:38:03 +0000</pubDate>
+				<category><![CDATA[未分类]]></category>
+		<category><![CDATA[上海译文]]></category>
+		<category><![CDATA[傲慢与偏见]]></category>
+		<category><![CDATA[王科一]]></category>
+		<category><![CDATA[简·奥斯丁]]></category>
+		<category><![CDATA[译文经典]]></category>
+		<guid isPermaLink="false">./../../../index.html?p=40</guid>
+
+					<description><![CDATA[傲慢与偏见 (译文经典).B0099MSPRA]]></description>
+										<content:encoded><![CDATA[
+<p>傲慢与偏见 (译文经典).B0099MSPRA</p>
 ]]></content:encoded>
 					
 		
