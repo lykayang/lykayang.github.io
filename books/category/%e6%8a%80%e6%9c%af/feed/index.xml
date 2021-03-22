@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>技术 &#8211; tiantian</title>
+	<atom:link href="./../%E6%8A%80%E6%9C%AF/feed/index.html" rel="self" type="application/rss+xml" />
+	<link>./../../../index.html</link>
+	<description></description>
+	<lastBuildDate>Thu, 24 Jan 2019 22:43:27 +0000</lastBuildDate>
+	<language>zh-CN</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.7</generator>
+	<item>
+		<title>Microsoft Office 2019 Volume 下载和安装指导</title>
+		<link>./../../microsoftoffice2019volumexiazaiheanzhuangzhidao.html</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Thu, 24 Jan 2019 22:43:27 +0000</pubDate>
+				<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">http://tiantian.cn/?p=547</guid>
+
+					<description><![CDATA[一、概述 Office 的系统要求 Overview of Office 2019 （面向 IT 专业人员）  [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>一、概述</p>
+
+
+
+<p><a href="https://products.office.com/zh-cn/office-system-requirements">Office 的系统要求</a><br> <a href="https://docs.microsoft.com/zh-cn/DeployOffice/office2019/overview">Overview of Office 2019 （面向 IT 专业人员）</a> <br> <a href="https://docs.microsoft.com/zh-cn/DeployOffice/office2019/deploy">部署 Office 2019 （针对 IT 专业人员）</a> <br> <a href="https://docs.microsoft.com/zh-cn/DeployOffice/vlactivation/plan-volume-activation-of-office">Office 的批量激活概述</a> <br> <a href="https://docs.microsoft.com/zh-cn/DeployOffice/office2019/update">更新 Office 2019 （面向 IT 专业人员）</a> <br> <a href="https://www.microsoft.com/en-us/download/details.aspx?id=49117">Office Deployment Tool</a> <br></p>
+
+
+
+<p>如果你想完整安装全部组件，简体中文，可以用下面的xml文件。下面的xml不含拼写检查工具，这里边zh-cn就是简体中文，en-us就是美式英语，不管你安装office中的什么软件，都会下载整个安装包，文件名是stream.x64.x-none.dat，中文的还会下载stream.x64.zh-cn.dat，英文的stream.x64.en-us.dat，如果下载时没指定中文，只是指定匹配操作系统的语言版本，那么中文、英文这两个文件应该都有。</p>
+
+
+
+<blockquote class="wp-block-quote"><p> &lt;Configuration&gt;&nbsp;<br><br>&nbsp;&nbsp;&lt;Add&nbsp;OfficeClientEdition=&#8221;64&#8243;&nbsp;Channel=&#8221;PerpetualVL2019&#8243;&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;Product&nbsp;ID=&#8221;ProPlus2019Volume&#8221;&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Language&nbsp;ID=&#8221;zh-cn&#8221;&nbsp;/&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Product&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;Product&nbsp;ID=&#8221;ProjectPro2019Volume&#8221;&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Language&nbsp;ID=&#8221;zh-cn&#8221;&nbsp;/&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Product&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;Product&nbsp;ID=&#8221;VisioPro2019Volume&#8221;&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Language&nbsp;ID=&#8221;zh-cn&#8221;&nbsp;/&gt;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Product&gt;&nbsp;<br>&nbsp;&nbsp;&lt;/Add&gt;&nbsp;<br><br>&lt;/Configuration&gt;&nbsp;&nbsp; </p></blockquote>
+
+
+
+<p>上边代码每一行左边加不加空格都一样，加空格只是美观和编程规范。</p>
+
+
+
+<p>上面xml配置文件他可以做到<br>
+1、从微软网站下载最新版本的office 2019，比如此时，北京时间2018年10月12日0点整，下载的是16.0.10337.20021，而不是16.0.10336.20044，微软现在的策略就是，如果你不指定版本，那么每次下载的是包括各种补丁在内的最新版本，这一点很好很方便，而所谓RTM版本是16.0.10336.20044，尽管2019了，但微软说，版本号还是按2016来的<br>
+2、下载了office专业增强版、下载了project专业版、下载了visio专业版，这是最高级别的volume版本，没有更高更完整<br>
+3、安装后的更新是自动的，从2019开始，office更新不再是在windows 10的windows update里面了，也可以手动，比如打开word，然后右上角菜单，进入账户，然后右边有个更新，大概就是这样的</p>
+
+
+
+<p>然后再做个bat或cmd文件，也是写一个文本文档，然后改名，做完后直接点击运行就行了，见附件，附件内容适合全新安装，64位的简体中文，所谓全新安装就是之前没装过其他版本office，安装完激活就行。</p>
+
+
+
+<p>你把附件内容下载，然后解压，随便解压在哪里，但保证所在硬盘还有4G空间，然后运行download.cmd就直接下载最新版本的到当前文件夹，网络快的就三分钟，下载完窗口消失，消失后再运行setup.cmd就开始安装了，当然你也可以不提前下载，直接运行setup.cmd，会自动下载并且安装，只是安装包不保存在当前目录，应该是事后删除。</p>
+
+
+
+<p>需要注意的是，每次下载时如果不指定版本号，都会下载最新的版本，但过一段时间之后，这个最新的版本也会变旧，所以几个月后再安装，如果xml还是没有指定版本号，可能因为时间太久，会强制你去联网检测，不联网没法运行，一旦联网就会导致再次下载最新的版本，所以，如果你只是想安装已经下载的版本，下载后需要修改xml文件，xml指定版本为当前下载的版本，<br> 具体办法是：</p>
+
+
+
+<blockquote class="wp-block-quote"><p> &lt;Add OfficeClientEdition=&#8221;64&#8243; Channel=&#8221;PerpetualVL2019&#8243;&gt;<br>改成<br>&lt;Add OfficeClientEdition=&#8221;64&#8243; Channel=&#8221;PerpetualVL2019&#8243; Version=&#8221;版本号&#8221;&gt; </p></blockquote>
+
+
+
+<p>版本号在哪里获取？就是下载目录中，有一个目录的名字是一串数字，比如16.0.10336.20044，这个就是版本号，英文双引号不要去掉<br>
+比如<br>
+ </p>
+
+
+
+<blockquote class="wp-block-quote"><p> &lt;Add OfficeClientEdition=&#8221;64&#8243; Channel=&#8221;PerpetualVL2019&#8243; Version=&#8221;16.0.10336.20044&#8243;&gt;&nbsp; </p></blockquote>
+
+
+
+<p>
+
+我具体解释一下啊，
+
+</p>
+
+
+
+<blockquote class="wp-block-quote"><p> &lt;Configuration&gt;<br><br>&lt;Add OfficeClientEdition=&#8221;64&#8243; Channel=&#8221;PerpetualVL2019&#8243;&gt;64的意思就是64位版本，现在都64了，除非你安装32位win10，否则不要改了，后面的2019，那个是固定值，没有别的可选，所以也没法改成别的，这参数给office365用的，因为365有多个渠道<br><br>&lt;Product ID=&#8221;ProPlus2019Volume&#8221;&gt;安装专业增强<br>&lt;Language ID=&#8221;MatchOS&#8221; /&gt;这里是语言，matchos的意思是与win10匹配，你的win10英文就英文office，中文就是中文，也可以指定语言，中文改成zh-cn，英文改成en-us<br>&lt;/Product&gt;<br><br>&lt;Product ID=&#8221;ProjectPro2019Volume&#8221;&gt;安装project专业版，不用的删除本行还有下面2行<br>&lt;Language ID=&#8221;MatchOS&#8221; /&gt;<br>&lt;/Product&gt;<br><br>&lt;Product ID=&#8221;VisioPro2019Volume&#8221;&gt;安装visio专业版，不用的删除本行还有下面2行<br>&lt;Language ID=&#8221;MatchOS&#8221; /&gt;<br>&lt;/Product&gt;<br><br>&lt;Product ID=&#8221;ProofingTools&#8221;&gt;这是什么？安装拼写语法检查工具<br>&lt;Language ID=&#8221;zh-cn&#8221; /&gt;中文简体<br>&lt;Language ID=&#8221;en-us&#8221; /&gt;美国英文<br>&lt;/Product&gt;<br><br>&lt;/Add&gt;<br><br>&lt;/Configuration&gt; </p></blockquote>
+
+
+
+<p>Office Professional Plus 2019 包括 Access、 Excel、 Outlook、 PowerPoint、 Publisher、 Word 和 Skype 的业务。</p>
+
+
+
+<p>没有 2019年版本的 OneNote，但 OneNote 2016 了可供 Office 2019。 </p>
+
+
+
+<p>没有 SharePoint Designer 或 InfoPath 的 2019年版本。 两个产品的上一版本是 2013年。</p>
+
+
+
+<p>Office 2019 的主要版本保持在 16.0，以便其他事情原地为那些从 Office 2016，其中包括以下升级：<br>
+现有组策略设置将继续工作，因为这些设置的注册表位置将仍位于<br>
+HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 和 HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0。<br>
+其他注册表位置和引用 16.0 的设置信息仍适用。<br>
+加载项和其他与 Office 2016 兼容的可扩展性解决方案最可能会与 Office 2019 兼容，或需要仅最少测试。</p>
+
+
+
+<p>原文是<br>
+What&#8217;s stayed the same in Office 2019?<br>
+Even though there is a different installation technology, you can still use the same software distribution tools, such as System Center Configuration Manager, that you currently use to deploy Office. Also, how you activate volume licensed versions of Office – for example, by using Key Management Service (KMS) – remains the same.</p>
+
+
+
+<p>The major version of Office 2019 is staying at 16.0, so some additional things are staying the same for those upgrading from Office 2016, including the following:<br>
+Existing Group Policy settings will continue to work, because the registry location for those settings will still be located in HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Office\16.0 and<br>
+HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0.<br>
+Other registry locations and settings information that reference 16.0 will still apply.<br>
+Add-ins and other extensibility solutions that are compatible with Office 2016 will most likely be compatible with Office 2019 or will require only minimal testing.</p>
+
+
+
+<p>高级课程</p>
+
+
+
+<p>如果你只是安装word和outlook，你需要把其他的软件去掉，默认是完全安装，所以，你只有把不用的去掉，而不能是只选择用的，除非下载单个软件，去掉安装用 参数，具体是把<br></p>
+
+
+
+<blockquote class="wp-block-quote"><p> &lt;Product ID=&#8221;ProPlus2019Volume&#8221;><br>&lt;Language ID=&#8221;zh-cn&#8221; /><br>&lt;/Product><br>改成<br>&lt;Product ID=&#8221;ProPlus2019Volume&#8221;><br>&lt;Language ID=&#8221;zh-cn&#8221; /><br>&lt;ExcludeApp ID=&#8221;AppName&#8221; /><br>&lt;ExcludeApp ID=&#8221;AppName&#8221; /><br>&lt;ExcludeApp ID=&#8221;AppName&#8221; /><br>&lt;ExcludeApp ID=&#8221;AppName&#8221; /><br>&lt;/Product> </p></blockquote>
+
+
+
+<p>  每一个 AppName 都改成你不用的东西，有哪些呢？包括<br> Access<br> Excel<br> Groove<br> Lync<br> OneDrive<br> OneNote<br> Outlook<br> PowerPoint<br> Publisher<br> Word </p>
+
+
+
+<p>需要说明的是Lync是Skype for Business， Groove是OneDrive for Business</p>
+
+
+
+<p>你也许会问，除了专业增强版，都有啥啊？<br>
+包括 <br>
+-ProPlus2019Volume，office专业增强 <br>
+-Standard2019Volume ，office标准版<br>
+-ProjectPro2019Volume，project专业<br>
+-ProjectStd2019Volume，project标准<br>
+-VisioPro2019Volume，visio专业<br>
+-VisioStd2019Volume，visio标准</p>
+
+
+
+<p>都有什么语言啊？看这里</p>
+
+
+
+<p>https://docs.microsoft.com/zh-cn/DeployOffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016</p>
+
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>5日均线波动操作思路和做法(扯淡)</title>
+		<link>./../../5rijunxianbodongcaozuosiluhezuofachedan.html</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sat, 14 Apr 2018 10:55:08 +0000</pubDate>
+				<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">http://tiantian.cn/?p=311</guid>
+
+					<description><![CDATA[​ 1、资金纪律：一万为底仓，一万为机动筹码，两万为机动资金，按一万每次操作； 2、建仓操作： a、无脑买入建 [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><a data-topotext="[{&quot;attributes&quot;:{&quot;tombstoned&quot;:false,&quot;uniqueId&quot;:0},&quot;codePoints&quot;:[53,26085,22343,32447,27874,21160,25805,20316,24605,36335,21644,20570,27861,65306,13,49,12289,36164,37329,32426,24459,65306,19968,19975,20026,24213,20179,65292,19968,19975,20026,26426,21160,31609,30721,65292,20004,19975,20026,26426,21160,36164,37329,65292,25353,19968,19975,27599,27425,25805,20316,65307,13,50,12289,24314,20179,25805,20316,65306,13,32,32,32,32,32,32,97,12289,26080,33041,20080,20837,24314,24213,20179,65292,13,32,32,32,32,32,32,98,12289,20302,20110,53,26085,22343,32447,52,37,20010,28857,24314,28014,21160,20179,65307,13,51,12289,25805,20316,32426,24459,13,32,32,32,32,32,97,12289,21333,26102,38388,28857,20215,20301,39640,20110,53,26085,22343,32447,53,45,55,37,65292,21334,20986,28014,21160,20179,13,32,32,32,32,32,98,12289,21333,26102,38388,28857,20215,20301,39640,20110,21069,27425,25805,20316,50,45,51,37,65292,21334,20986,13,32,32,32,32,32,99,12289,21333,26102,38388,28857,20215,20301,20302,20110,21069,27425,25805,20316,51,45,52,37,65292,26426,21160,36164,37329,20877,20080,20837,13,32,32,32,32,32,100,12289,21333,26102,38388,28857,20215,20301,20302,20110,53,26085,22343,32447,53,45,55,37,65292,20840,20080,20837]}]">​</a> 1、资金纪律：一万为底仓，一万为机动筹码，两万为机动资金，按一万每次操作；</p>
+<p>2、建仓操作：</p>
+<p style="padding-left: 30px;">a、无脑买入建底仓，</p>
+<p style="padding-left: 30px;">b、低于5日均线4%个点建浮动仓；</p>
+<p>3、操作纪律</p>
+<p style="padding-left: 30px;">a、单时间点价位高于5日均线5-7%，卖出浮动仓</p>
+<p style="padding-left: 30px;">b、单时间点价位高于前次操作2-3%，卖出</p>
+<p style="padding-left: 30px;">c、单时间点价位低于前次操作3-4%，机动资金再买入</p>
+<p style="padding-left: 30px;">d、单时间点价位低于5日均线5-7%，全买入</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>iPhone手机安全指南</title>
+		<link>./../../iphoneshoujianquanzhinan.html</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Mon, 27 Mar 2017 05:35:37 +0000</pubDate>
+				<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">http://tiantian.cn/?p=117</guid>
+
+					<description><![CDATA[摘要：iPhone手机安全指南 &#8211; 1、iPhone解锁使用指纹；2、启用“查找我的iPhone” [&#8230;]]]></description>
+										<content:encoded><![CDATA[<blockquote><p>摘要：iPhone手机安全指南 &#8211; 1、iPhone解锁使用指纹；2、启用“查找我的iPhone”功能；3、Apple ID启用两步验证；4、修改SIM卡PIN码。5、iPhone被盗或丢失后，登录iCloud启用“丢失模式”，挂失SIM卡，将该手机从Apple ID两步验证受信列表中移除。</p></blockquote>
+<p>iPhone是市场上价格较高的一款手机，因此也成为很多小偷眼中的首选目标，那么iPhone在丢失或被盗后该怎么办？作为iPhone用户，我们在日常生活中要注意防止手机被盗的同时，也要学会一些技巧，在iPhone丢失后要最大限制地防止个人信息的泄露。</p>
+<p>目前智能手机上的应用越来越多，有很多和财务业务相关的关键性应用，例如支付宝、网银、动态令牌、电子邮箱等，一旦iPhone被盗，用户的网银、电子邮箱和支付宝等都会面临巨大的风险，用户有可能会因此丢失更多的财产，因此，即使无法找回手机，最低的限度也应该是阻止他人查看手机里的内容，防止他人使用手机通讯服务。以下就列出一些iPhone手机最重要的安全指南。</p>
+<h3>iPhone手机安全指南</h3>
+<p>1、iPhone解锁使用指纹</p>
+<p>通过锁屏密码，每次打开手机屏幕都要输入密码，如果没有密码，就无法获取手机上的信息，从而保证了手机信息的安全性。</p>
+<p>在指纹解锁功能出现之前，手机通常都是使用数字密码或者是图形密码进行解锁，经常使用的话显得非常麻烦，据统计，绝大多数用户为了方便性而放弃了安全性，不设置密码锁屏功能。</p>
+<p>随着iPhone指纹解锁的出现，只要把手指放在HOME键上面，简单一步屏幕立刻就解锁了，解锁屏幕变得非常轻松简单，这就实现了即方便又安全，两全其美的手机保护方案。</p>
+<p>指纹天生就是一种个人认证工具，虽然人人都有指纹，但各不相同，据说，现在还没有发现两个指纹完全相同的人。随着年龄的增长，指纹的纹样不会发生变化。因此，使用指纹做为身份验证是非常理想的。</p>
+<p>iPhone设置指纹密码的具体方法是：依次进入iPhone的“设置”，然后再找到，并点击进入“Touch ID与密码”设置，点击下方的“添加指纹”开始添加。iPhone最多支持设置5个指纹，可以同时录入自己的和自己亲人的，指纹信息录入成功后，在iTunes Stor与App Store安装应用开启指纹识别即可。</p>
+<p>2、启用查找我的iPhone功能</p>
+<p>“查找我的iPhone”功能是专门针对iPhone丢失的情况，非常实用，该功能可以在卫星地图上定位你iPhone的位置，还能远程发送消息、远程锁定或者远程擦除iPhone里面的资料信息，还能够远程发送声音到iPhone上面，即使找不回丢失的iPhone，也能删除iPhone 里的隐私信息，将损失降到最低。</p>
+<p>“查找我的iPhone”具体的使用方法是，在“设置-隐私-定位服务”里，打开定位服务，然后选择“查找我的iPhone”，将其打开。在“设置-iCloud”里，打开“查找我的iPhone”。</p>
+<p>设置完成后，如果用户的手机丢失了，就可以用电脑登陆iCloud网站或在另一台移动设备上打开“查找我的iPhone”应用，点击“查找我的iPhone”，就可以找到iPhone手机位置，并将这个位置在地图上显示出来，因为中国地图政策问题，目前只有卫星地图没有偏移，这时候点击“丢失模式”，如果你的手机此前未设置锁屏密码，点击丢失模式后，会提示你设置密码，之后输入用于联系备用电话号码，再输入给丢失的iPhone发的信息，然后点击完成即可。</p>
+<p>这时候，丢失的iPhone手机会被远程锁住，并显示失主设置的信息，除了能拔打设置的号码，其他什么也做不了，需要输入Apple帐号、锁屏密码才能解锁。如果别人进DFU刷机，重新安装系统，安装结束重启iPhone后，设备必须连接到Apple服务器进行激活，如果刷机之前你的iPhone启用了“查找我的iPhone”功能，Apple服务器要求必须使用之前的Apple ID才能够激活该设备，使用的帐号只能是首次激活该设备的Apple ID帐号，其他帐号不能使用。</p>
+<p>3、Apple ID启用两步验证</p>
+<p>苹果账号（Apple ID）和密码是非常重要的东西，登录 App Store 购买应用软件靠它，进入 iCloud(苹果设备云备份)管理照片、视频以及联系人等资料也离不开它。一旦他人知道了用户的 Apple ID 和密码，除了账户资金被盗、iCloud 备份资料泄露之外，用户的 Apple ID 所绑定的苹果设备也将面临恶意锁定的风险，因此，对于Apple ID启用两步验证可以避免出现这样的糟糕情况。</p>
+<p>Apple ID两步验证是一种更加有利于账号安全性的服务，开启该服务后，从第三方设备或浏览器登录Apple ID、或者进行修改密码等操作，都需要进行此项验证，它会给你设置的受信认设备发送验证码，相当于一个动态口令，以达到保障账号安全性的目的。</p>
+<p>“两步验证”服务大大增加了 Apple ID 的安全性，但用户需要额外保存好恢复密钥，苹果将设置帐号密码、受信任设备以及恢复密钥三个关键项，必须具备其中两项才能进行正常验证。也就是说，当你忘记了帐号密码，你必须同时拥有受信任设备与恢复密钥才能登录并重置密码，如果你没有受信任设备或者忘记恢复密钥，那么是没有任何办法登录该账号，这也从另一方面杜绝了盗号者直接利用密码登录盗号的可能。鉴于此，所有开启两步验证的用户一定要妥善保管三个安全要素，特别是恢复密钥。</p>
+<p>4、修改SIM卡PIN码</p>
+<p>SIM卡是（Subscriber Identity Module 客户识别模块）即用户身份识别卡，是手机的一张个人资料卡。SIM卡通常用来存储用户的电话号码、安全数据、通讯费用以及能让运营商判定用户是否是其公司客户的数据。当用户更换新的手机，可以直接插入旧手机原有的SIM卡，即可继续享受之前的各项手机服务。</p>
+<p>SIM卡的PIN码（Personal Identification Number 个人识别码）主要用于保护SIM卡的安全性和隐私性，当手机重启、或者插拔SIM卡后，需要输入最正确的SIM卡PIN码才能使用SIM卡的通讯功能（拨打电话、收发短信等操作），当输入三次失败后，SIM卡则会被锁定，而需要输入PUK码（Personal Unlock Key 个人解锁码）进行解锁，PUK码共有10次输入机会，输错10次后，SIM卡会自动启动自毁程序，使SIM卡失效。</p>
+<p>修改设置SIM卡PIN码的步骤是：设置 &#8211; 电话 &#8211; SIM卡PIN码，将其启用。修改PIN码要先输入原有PIN码，SIM卡的默认PIN码为0000或1234，如果都不对的话，可以输错3次，使用PUK码强制修改PIN码。</p>
+<p>PUK码由8位数字组成，这是用户无法更改的。一些SIM卡的PUK码是用户在购卡时随卡附带的，通常在卡套背后附有PUK码，也可以登录运营商的网上营业厅，在自助服务里通常会提供查询PUK码的功能。实在找不到的话，也可以致电SIM卡所属运营商的服务热线，客服人员也可以提供查询PUK码的服务。</p>
+<p>SIM卡的PIN码有效地防止了盗用SIM卡的情况发生，使用户的正常通信得到了可靠保障。设置了PIN码之后，当用户手机丢失后，别人无法通过取出SIM卡插入另一部手机，来进行原SIM卡的通讯功能（拨打电话、收发短信等）。如果没有设置PIN码的话，前面设置的Apple ID两步验证就可以通过短信的方式获取，导致用户Apple ID的两步验证失效。</p>
+<p>5、iPhone被盗或丢失后的操作</p>
+<p>登录iCloud启用“丢失模式”，丢失的iPhone手机会被远程锁住，进DFU刷机的话，也需要使用之前的Apple ID才能够激活该设备。</p>
+<p>在Apple ID两步验证设置里，将该手机从受信任列表中移除，防止第三方通过该手机获取两步验证码。</p>
+<p>打电话给移动运营商挂失或停机SIM卡，防止SIM卡克隆等攻击方式。</p>
+<p>忽略之后收到的所有钓鱼短信和邮件。</p>
+<p>总而言之，经过这些操作步骤后，你的iPhone手机安全性将大幅提高，即使手机被盗丢失，个人隐私或财产被盗的可能性也会大幅降低。</p>
+<p><em>作者：月光博客</em></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Windows 系统必备软件</title>
+		<link>./../../windowsxitongjijihuo.html</link>
+		
+		<dc:creator><![CDATA[admin]]></dc:creator>
+		<pubDate>Sun, 01 Jan 2017 15:00:45 +0000</pubDate>
+				<category><![CDATA[技术]]></category>
+		<guid isPermaLink="false">http://tiantian.cn/?p=83</guid>
+
+					<description><![CDATA[Windows Windows 7 Windows 10 Office 2016 Activation too [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p><strong>Windows</strong></p>
+<p style="padding-left: 30px;"><em>Windows 7<br />
+</em><em>Windows 10<br />
+</em><em>Office 2016<br />
+</em></p>
+<p style="padding-left: 30px;"><em><strong>Activation tools for Windows and Office</strong></em></p>
+<p style="padding-left: 60px;"><a href="https://www.solidfiles.com/folder/bd7165a0d4/">KMSAuto Net Portable</a> by Ratiborus<br />
+<a href="https://forums.mydigitallife.info/threads/50234-Emulated-KMS-Servers-on-non-Windows-platforms">vlmcsd</a>  by Hotbird64<br />
+<a href="https://forums.mydigitallife.info/threads/72455-KissKMS-Android-KMS-Server-APK">KissKMS</a> by pantagruel <a href="http://tiantian.cn/wp-content/uploads/2017/01/Automatic-activation.rar">Automatic activation</a></p>
+<p><strong>Chrome</strong></p>
+<p style="padding-left: 30px;"><a href="https://enterprise.google.com/chrome/chrome-browser/">Chrome browser</a></p>
+<p style="padding-left: 30px;"><em>Chrome Extensions<br />
+</em><a href="https://chrome.google.com/webstore/detail/%E4%B8%80%E9%94%AE%E7%AE%A1%E7%90%86%E6%89%80%E6%9C%89%E6%89%A9%E5%B1%95/niemebbfnfbjfojajlmnbiikmcpjkkja">One-Click Extensions Manager：一键禁用所有扩展</a><br />
+<a href="https://chrome.google.com/webstore/detail/remove-google-redirection/dnhjklgpiifbofihffldllbcopkinlod">Proxy SwitchyOmega<br />
+Adblock Plus<br />
+删除谷歌重定向</a></p>
+<p style="padding-left: 30px;"><a href="https://greasyfork.org/zh-CN/scripts/24508-userscript-show-site-all-userjs">Tampermonkey<br />
+Userscript+ : 显示当前网站所有可用的UserJS脚本 Jaeger<br />
+</a></p>
+<p><strong>Total Commander</strong></p>
+<p style="padding-left: 30px;"><a href="http://www.ghisler.com/">Total Commander</a></p>
+<p style="padding-left: 30px;"><em>Total Commander  Addons</em><br />
+<a href="http://totalcmd.net/">TotalCMD<br />
+</a><a href="http://xbeta.info/studytc/wincmd.ini">xBeta&#8217;s TotalCMD wincmd.ini<br />
+</a></p>
+<div>
+<div>1、Total Resizer&#8212;&#8212;批量压缩图片（可以直接在目录下压缩，压缩率很高，可以自定义）<br />
+2、Visual Dir Size&#8212;&#8212;显示文件夹及文件大小并排序、可以显示饼图、条形图，按文件类型统计、按目录名称排序、显示百分比(还可以生产Html报告)<br />
+3、Ulister_Redist&#8212;&#8212;功能强大的文档查看插件，目前支持查看超过500多种文件格式，且库文件仍在持续更新维护中<br />
+4、QuickSearchExtended&#8212;&#8212;利用拼音首字母进行文件的过滤<br />
+5、Imagine&#8212;&#8212;小巧、强大、快速的图片查看插件<br />
+6、NewFiles&#8212;&#8212;批量新建文件、文件夹<br />
+7、DirSizeCalc&#8212;&#8212;-显示目录信息的，比如大小，包含文件数等</div>
+</div>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
