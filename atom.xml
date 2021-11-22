@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lykayang.github.io</id>
     <title>tiantian.cn</title>
-    <updated>2021-11-21T05:16:01.443Z</updated>
+    <updated>2021-11-22T02:33:20.667Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lykayang.github.io"/>
     <link rel="self" href="https://lykayang.github.io/atom.xml"/>
@@ -17,6 +17,17 @@
         </link>
         <updated>2021-11-21T04:34:58.000Z</updated>
         <content type="html"><![CDATA[<p>admin@tiantian.cn</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有关父亲的记忆]]></title>
+        <id>https://lykayang.github.io/post/you-guan-fu-qin-de-ji-yi/</id>
+        <link href="https://lykayang.github.io/post/you-guan-fu-qin-de-ji-yi/">
+        </link>
+        <updated>2020-01-16T02:30:40.000Z</updated>
+        <content type="html"><![CDATA[<p>和父亲最早的记忆，应该是5岁左右，和外婆从河源的姨妈家回汕头。好象是在车站或是旅馆的楼上，父亲从楼下走上来，外婆说，叫爸爸。。。</p>
+<p>和父亲最后的记忆，应该是我弟回美国后，有一次，他在家里又失忆。我妈打电话把我从单位叫回去。他意识又稍微回来，我拉着他，走到路口的一家茶饮店喝茶。天气还不太热，应该是5月中吧。我不断开解他，不要把小事放心上。得过且过。后来想想，也不知道他能听懂不。</p>
+<p>潮汕人在家喝工夫茶，这种茶饮店，我这种年纪的人，是从来不会去的。之前没去过，之后也没去过。</p>
 ]]></content>
     </entry>
 </feed>
