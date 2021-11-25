@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lykayang.github.io</id>
     <title>tiantian.cn</title>
-    <updated>2021-11-25T00:40:28.303Z</updated>
+    <updated>2021-11-25T05:37:04.016Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lykayang.github.io"/>
     <link rel="self" href="https://lykayang.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://lykayang.github.io/images/avatar.png</logo>
     <icon>https://lykayang.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, tiantian.cn</rights>
+    <entry>
+        <title type="html"><![CDATA[伤心的8年]]></title>
+        <id>https://lykayang.github.io/post/shang-xin-de-8-nian/</id>
+        <link href="https://lykayang.github.io/post/shang-xin-de-8-nian/">
+        </link>
+        <updated>2021-11-25T05:21:26.000Z</updated>
+        <content type="html"><![CDATA[<p>12345快8周年了，想做个海报。<br>
+海报做完了心情也不好。这个怎么看起来都是心在流血。<br>
+2013年12月热线开线。<br>
+2014年中，父亲老年痴呆越发严重，认不出家人，不能行动，失禁。2015年初，跌倒/脑出血，植物人状态。2016年2月17日父亲过世。<br>
+2015年9月，同事初生宝宝先天性的病过世。<br>
+2017年11月，小姨丈脑出血，植物人状态。2019年6月17日过世。<br>
+2018年2月，老历28，老詹因肺炎去世，17年的5月，他老婆过世。<br>
+2018年7月14日，母亲车祸过世。对方醉驾逃逸。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[记念老詹]]></title>
         <id>https://lykayang.github.io/post/ji-nian-lao-zhan/</id>
