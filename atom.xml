@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lykayang.github.io</id>
-    <title>tiantian.cn</title>
-    <updated>2022-02-24T07:17:27.812Z</updated>
+    <title>tiantian 网址导航</title>
+    <updated>2022-02-25T01:43:36.402Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lykayang.github.io"/>
     <link rel="self" href="https://lykayang.github.io/atom.xml"/>
     <subtitle>人来人又往，终于失去影踪</subtitle>
     <logo>https://lykayang.github.io/images/avatar.png</logo>
     <icon>https://lykayang.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2022, tiantian.cn</rights>
+    <rights>All rights reserved 2022, tiantian 网址导航</rights>
 </feed>
