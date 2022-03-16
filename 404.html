@@ -1,89 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Page Not Found</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
+    <meta charset="utf-8">
+    <title>webstack - 404</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77253689-1"></script>
+    
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?c05bb16ea908292af9f6c513087a1cc3";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
     }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-77253689-1');
+    </script>
+    <style>
+    html,
     body {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      text-align: center;
+        width: 100%;
+        height: 100%
     }
-    .box {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+    
+    a,
+    a img,
+    a:before,
+    a:after {
+        text-decoration: none;
+        transition-duration: .25s
     }
-    .number {
-      font-size: 80px;
-      color: #666;
-      font-weight: bold;
+    
+    section {
+        display: block
     }
-    .text {
-      font-size: 14px;
-      margin: 24px;
-      color: #333;
+    
+    body {
+        line-height: 1
     }
-    .btn-container {
-      display: flex;
-      justify-content: center;
+    
+    #about {
+        width: 40%;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        z-index: 20;
+        transform: translate(0, -50%);
     }
-    .btn {
-      padding: 8px 24px;
-      display: inline-block;
-      text-decoration: none;
-      background: #fff;
-      border: 2px solid #efefef;
-      color: #333;
-      margin: 24px;
-      border-radius: 20px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
+    
+    #about h1 {
+        margin: 30px;
     }
-    .footer {
-      padding: 16px;
-      border-top: 1px solid #efefef;
-      color: #777;
-      font-weight: lighter;
+    
+    #about p {
+        margin: 30px;
     }
-    .footer a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #000;
+    
+    #about img {
+        margin-left: 30px;
     }
-  </style>
+    
+    #about .social {
+        float: left;
+        margin: 30px;
+    }
+    
+    #about .copyright {
+        width: 100%;
+        float: left;
+        margin-bottom: 0px;
+    }
+    
+    @media (max-width: 768px) {
+        #about {
+            width: 100%;
+            left: 0px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        #about h1 {
+            margin: 30px;
+        }
+        #about p {
+            margin: 30px;
+        }
+        #about .social {
+            margin: 30px;
+        }
+        #about .copyright {
+            width: 100%;
+            float: left;
+            margin-bottom: 0px;
+        }
+    }
+    
+    @media (max-width: 580px) {
+        #about {
+            width: 100%;
+            left: 0px;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.85);
+        }
+        #about h1 {
+            margin: 30px;
+        }
+        #about p {
+            margin: 30px;
+            margin-bottom: 0px
+        }
+        #about .social {
+            margin: 30px;
+            margin-bottom: 0px
+        }
+        #about .copyright {
+            width: 100%;
+            float: left;
+            margin-bottom: 0px;
+        }
+    }
+    
+    .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both
+    }
+    
+    .bounce-in {
+        animation-name: bounce-in
+    }
+    
+    @keyframes bounce-in {
+        from,
+        60%,
+        75%,
+        90%,
+        to {
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
+        }
+        0% {
+            opacity: 0;
+            transform: translate3d(-3000px, -50%, 0)
+        }
+        60% {
+            opacity: 1;
+            transform: translate3d(25px, -50%, 0)
+        }
+        75% {
+            transform: translate3d(-10px, -50%, 0)
+        }
+        90% {
+            transform: translate3d(5px, -50%, 0)
+        }
+        to {
+            transform: translate3d(0, -50%)
+        }
+    }
+    
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.75;
+        color: rgba(0, 0, 0, 0.65)
+    }
+    
+    h1 {
+        font-family: "Merriweather", sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.25;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 25px
+    }
+    
+    a {
+        color: rgba(3, 3, 3, 0.85);
+        font-weight: 600;
+    }
+    
+    @media (max-width: 580px) {
+        body {
+            font-size: 14px
+        }
+        h1 {
+            font-size: 42px;
+            line-height: 1.45
+        }
+    }
+    
+    .bg-align {
+        margin-top: 50%;
+    }
+    </style>
 </head>
+
 <body>
-  <div class="box">
-    <div class="number">4 0 4</div>
-    <div class="text">
-      Page not found
-    </div>
-    <div class="btn-container">
-      <a class="btn" id="back">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 8px;">
-          <path fill="none" d="M0 0h24v24H0z"/>
-          <path d="M5.828 7l2.536 2.536L6.95 10.95 2 6l4.95-4.95 1.414 1.414L5.828 5H13a8 8 0 1 1 0 16H4v-2h9a6 6 0 1 0 0-12H5.828z"/>
-        </svg>
-        Back
-      </a>
-    </div>
-  </div>
-  <footer class="footer">
-    Powered by <a href="https://gridea.dev" target="_blank">Gridea</a>
-  </footer>
-  <script>
-    var back = document.getElementById('back')
-    back.onclick = function() { console.log('run...'); history.back() }
-  </script>
+    <section id="about" class="animated bounce-in">
+        <div class="bg-align">
+            <h1>404</h1>
+            <p>Oops! It looks like you're lost...</p>
+            <p>The Page you're looking for doesn't exist or another error occurred.</p>
+            <p><a href="http://webstack.cc">👉  webstack.cc</a></p>
+        </div>
+    </section>
 </body>
+
 </html>
