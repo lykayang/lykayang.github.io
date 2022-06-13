@@ -8,7 +8,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/s/360.json"
+            "ext": "http://tiantian.cn/cat/s/360.json"
         },
         {
             "key": "2345_spider",
@@ -18,7 +18,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/s/2345.json"
+            "ext": "http://tiantian.cn/cat/s/2345.json"
         },
         {
             "key": "sogou_spider",
@@ -28,7 +28,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/s/sogou.json"
+            "ext": "http://tiantian.cn/cat/s/sogou.json"
         },
         {
             "key": "搜狐视频会员〔官源〕",
@@ -128,7 +128,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/s/Auete.bmp"
+            "ext": "http://tiantian.cn/cat/Auete.bmp"
         },
         {
             "key": "ftys_spider",
@@ -138,7 +138,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/s/fantuan.bmp"
+            "ext": "http://tiantian.cn/cat/fantuan.bmp"
         },
         {
             "key": "csp_appysv2_钟特影视",
@@ -178,7 +178,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/lezhutv.json"
+            "ext": "http://tiantian.cn/cat/lezhutv.json"
         },
         {
             "key": "csp_xpath_在线之家",
@@ -188,7 +188,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/zxzj.json"
+            "ext": "http://tiantian.cn/cat/zxzj.json"
         },
         {
             "key": "csp_xpath_达龟影视",
@@ -198,7 +198,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/dadagui.json"
+            "ext": "http://tiantian.cn/cat/dadagui.json"
         },
         {
             "key": "csp_xpath_九四神马",
@@ -208,7 +208,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 0,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/94sm.json"
+            "ext": "http://tiantian.cn/cat/94sm.json"
         },
         {
             "key": "csp_xpath_利奥影视",
@@ -218,7 +218,7 @@
             "searchable": 1,
             "quickSearch": 1,
             "filterable": 1,
-            "ext": "https://gitea.com/samhorse/c/raw/branch/main/xpath/libv.json"
+            "ext": "http://tiantian.cn/cat/libv.json"
         },
         {
             "key": "push_agent",
@@ -237,7 +237,7 @@
                 {
                     "name": "redirect",
                     "urls": [
-                        "proxy://do=live&type=txt&ext=aHR0cDovL3R2Lmp0aG4uY24vbGl2ZXMvbGl2ZV9wbHVzLmpzb24="
+                        "proxy://do=live&type=txt&ext=aHR0cDovL3RpYW50aWFuLmNuL2NhdC9saXZlLmpzb24="
                     ]
                 }
             ]
