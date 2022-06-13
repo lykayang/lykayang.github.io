@@ -83,6 +83,15 @@
 {"name":"解析47","type":0,"url":"https://jx.zui.cm/?url=","ext":{"flag":["ltnb"]}},
 {"name":"解析48","type":0,"url":"https://ys.ling00.cn/CL4K/?url=","ext":{"flag":["CL4K","qq","腾讯"]}},
 {"name":"解析49","type":0,"url":"https://app.okmedcos.com/4k/?url=","ext":{"flag":["CL4K","qq","腾讯","pptv","PPTV"]}}],
+{"name":"解析50","type":1,"url":"http://103.40.240.46/jh/?url="},
+{"name":"解析51","type":1,"url":"https://za.kuanjv.com/?url="},
+{"name":"解析52","type":1,"url":"http://api.vip123kan.vip/?url="},
+{"name":"解析53","type":1,"url":"https://json.pangujiexi.com:12345/json.php?url="},
+{"name":"解析54","type":1,"url":"https://jx.hfyrw.com/mao.go?url="},
+{"name":"解释55","type":0,"url":"https://okjx.cc/?url="},
+{"name":"GGTV","type":0,"url":"https://play.fuqizhishi.com/mao/?url="},
+{"name":"parwix","type":0,"url":"https://jx.parwix.com:4433/player/analysis.php?v="},
+{"name":"nxflv","type":0,"url":"https://www.nxflv.com/?url="}
 
 "flags": ["youku","qq","iqiyi","qiyi","letv","sohu","tudou","pptv","mgtv","wasu","bilibili","renrenmi","优酷","芒果","腾讯","爱奇艺","奇艺","ltnb","rx","CL4K","xfyun","wuduzy"],
 "ijk":[{
