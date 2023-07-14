@@ -1,1 +1,0 @@
-{"4954817373aca0a0b5b167b987cc8f38":"s:57:\".\/qiaoji\/pm_data.txt;md5;95566ff667dfc50036c34c20a5daaa8a\";","63f24426cf9c01da441531d4ae4854c3":"s:57:\".\/qiaoji\/pm_data.txt;md5;4cf4efad16e59924758aa97d2a1a7961\";","b7c42ff2bf671f73c4530b4bdeebee55":"s:72:\"http:\/\/cdn.qiaoji8.com\/qj231121.jar;md5;4cf4efad16e59924758aa97d2a1a7961\";"}
