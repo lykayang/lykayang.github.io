@@ -10,13 +10,13 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="Blog description">
-<meta property="og:title" content="Blog Title">
-<meta property="og:description" content="Blog description">
+<meta name="description" content="tiantian.cn">
+<meta property="og:title" content="TIANTIAN">
+<meta property="og:description" content="tiantian.cn">
 <meta property="og:type" content="blog">
-<meta property="og:url" content="https://lykayang.github.io">
+<meta property="og:url" content="https://tiantian.cn">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
-<title>Blog Title</title>
+<title>TIANTIAN</title>
 
 </head>
 <style>
@@ -56,16 +56,16 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <body>
     <div id="header">
 <h1>
-    <img src="https://github.githubassets.com/favicons/favicon.svg" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">Blog Title</a></h1>
+    <img src="https://github.githubassets.com/favicons/favicon.svg" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">TIANTIAN</a></h1>
 <div class="title-right">
-    <a href="https://lykayang.github.io/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="搜索">
+    <a href="https://tiantian.cn/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="搜索">
         <svg class="octicon" width="16" height="16" >
             <path id="pathSearch" fill-rule="evenodd"></path>
         </svg>
     </a>
     
     
-    <a href="https://lykayang.github.io/rss.xml" target="_blank" id="buttonRSS" class="btn btn-invisible circle" title="RSS">
+    <a href="https://tiantian.cn/rss.xml" target="_blank" id="buttonRSS" class="btn btn-invisible circle" title="RSS">
         <svg class="octicon" width="16" height="16" >
             <path id="pathRSS" fill-rule="evenodd"></path>
         </svg>
@@ -78,7 +78,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div style="margin-bottom: 16px;">Blog description</div>
+<div style="margin-bottom: 16px;">tiantian.cn</div>
 <nav class="SideNav border">
 <a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/mLook.html">
     <div class="d-flex flex-items-center">
@@ -105,7 +105,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </a>
 </nav>
 </div>
-    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://lykayang.github.io">Blog Title</a></div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://tiantian.cn">TIANTIAN</a></div>
 <div id="footer2">
     <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
 </div>
@@ -114,8 +114,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 var now=new Date();
 document.getElementById("copyrightYear").innerHTML=now.getFullYear();
 
-if(""!=""){
-    var startSite=new Date("");
+if("11/05/2004"!=""){
+    var startSite=new Date("11/05/2004");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
