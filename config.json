@@ -1,7 +1,8 @@
 {
     "title":"TIANTIAN",
     "subTitle":"电子书是人类进步的电梯",
-    "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
+    "avatarUrl":"https://tiantian.cn/favicon.svg",
     "homeUrl":"https://tiantian.cn",
+    "onePageListNum":15,
     "GMEEK_VERSION":"last"
 }
