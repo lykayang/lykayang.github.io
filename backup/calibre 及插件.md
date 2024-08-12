@@ -8,7 +8,7 @@
 
 作　者 | 革新我思想的十二本书 | 从 Z-Library 下载
 -- | -- | --
-Peter Watson | 《20世纪思想史》 |  [Z-Library](https://zh.singlelogin.re/book/5261238/329c95/)
+Peter Watson | 《20世纪思想史》 |  [连接](https://zh.singlelogin.re/book/5261238/329c95/)
 Keith Stanovich | 《这才是心理学》
 张靓蓓/李安 | 《十年一觉电影梦》
 Alan Chalmers | 《科学究竟是什么？》
