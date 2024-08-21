@@ -5,5 +5,6 @@
     "homeUrl":"https://tiantian.cn",
     "onePageListNum":15,
     "showPostSource":0,
+    "indexScript":"<script src='https://tiantian.cn/tiantian.js'></script>",
     "GMEEK_VERSION":"last"
 }
