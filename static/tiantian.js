@@ -10,10 +10,10 @@ style.innerHTML = `
     transform: scale(1) rotate(0deg);
 }
 
-.SideNav-item .Label {
+.SideNav {
+    min-width: 360px;
     border-color: transparent;
     color: transparent;
-    margin-left:4px;
 }
 
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus, .pagination em:hover, .pagination em:focus {
