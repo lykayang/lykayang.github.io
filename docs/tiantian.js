@@ -10,12 +10,14 @@ body {
     font-size: 16px;
     font-family: sans-serif;
     line-height: 1.25;
+    color:transparent;
 }
 
 #header {
     display:flex;
     padding-bottom:8px;
-    border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;
+    border-bottom: 2px solid transparent;
+    margin-bottom: 16px;
 }
 
 #footer {
@@ -58,10 +60,12 @@ body {
     padding: 16px 16px;}
 
 .SideNav {
+    border-bottom: 2px solid transparent;
     min-width: 360px;
 }
 
 .SideNav-icon {
+    border-bottom: 2px solid transparent;
     margin-right: 16px
 }
 
@@ -115,5 +119,6 @@ body {
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus, .pagination em:hover, .pagination em:focus {
     border-color: rebeccapurple;
 }
+
 `;
 document.head.appendChild(style);
