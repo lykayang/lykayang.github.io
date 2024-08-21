@@ -1,43 +1,5 @@
 const style = document.createElement("style");
 style.innerHTML = `
-.blogTitle {
-    display: unset;
-}
-
-#header {
-    display:flex;padding-bottom:8px;
-    border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;
-}
-
-#footer {
-    margin-top:64px;
-    text-align: center;font-size: small;
-}
-
-#header h1 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.avatar {
-    transition: 0.8s;
-    width:64px;
-    height:64px;
-    object-fit: cover;
-}
-
-#header h1 a {
-    color:inherit;
-    text-decoration:none;
-    vertical-align: bottom;
-    font-size:40px;
-    font-family:Monaco;
-    margin-left:8px;
-}
 
 body {
     box-sizing: border-box;
@@ -50,14 +12,62 @@ body {
     line-height: 1.25;
 }
 
+#header {
+    display:flex;
+    padding-bottom:8px;
+    border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;
+}
+
+#footer {
+    margin-top:64px;
+    text-align: center;
+    font-size: small;
+}
+
+.avatar {
+    transition: 0.8s;
+    width:64px;
+    height:64px;
+    object-fit: cover;
+}
+
+.avatar:hover {
+    transform: scale(1) rotate(0deg);
+}
+
+#header h1 a{ 
+    color:inherit;
+    text-decoration:none;
+    vertical-align: bottom;
+    font-size:40px;
+    font-family:Monaco;
+    margin-left:8px;
+}
+
+.title-right {
+    display:flex;
+    margin:auto 0 0 auto;
+}
+
+.title-right button {
+    margin-right:8px;
+    padding:16px;
+}
+
+.title-right .circle {
+    padding: 16px 16px;}
+
 .SideNav {
     min-width: 360px;
 }
 
-.SideNav-icon{margin-right: 16px}
+.SideNav-icon {
+    margin-right: 16px
+}
 
 .SideNav-item .Label {
-    color: #fff;margin-left:4px;
+    color: #fff;
+    margin-left:4px;
 }
 
 .d-flex {
@@ -81,12 +91,25 @@ body {
     max-width:24px;
 }
 
-.SideNav-item:hover {
-    background-color: #c3e4e3;
+@media (max-width: 600px) {
+    body {padding: 8px;
 }
 
-.SideNav-item {
-    transition: 0.5s;
+.avatar {
+    width:40px;
+    height:40px;
+}
+
+.blogTitle {
+    display:none;
+}
+
+#buttonRSS {
+    display:none;
+}
+
+.LabelTime {
+    display:none;
 }
 
 .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus, .pagination em:hover, .pagination em:focus {
