@@ -12,7 +12,7 @@ style.innerHTML = `
 
 .SideNav-item .Label {
     border-color: transparent;
-    color: #fff;
+    color: transparent;
     margin-left:4px;
 }
 
