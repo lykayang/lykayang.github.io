@@ -1,6 +1,12 @@
 const style = document.createElement("style");
 style.innerHTML = `
 
+#avatarImg {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 .avatar:hover {
     transform: scale(1) rotate(0deg);
 }
