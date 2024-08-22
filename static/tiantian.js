@@ -5,6 +5,7 @@ style.innerHTML = `
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
+    background-color: transparent !important;
 }
 
 .avatar:hover {
