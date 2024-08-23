@@ -31,3 +31,6 @@ nav.SideNav {
     display: none;
 }
 
+div[style*="margin-bottom: 16px;"] {
+    font-family: "KaiTi", "SimHei", sans-serif;
+}
