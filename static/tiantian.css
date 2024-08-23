@@ -24,3 +24,10 @@ nav.SideNav {
     background-color: transparent !important;
 }
 
+/* .Label.LabelTime[style*="background-color:#bc4c00"] {
+    background-color: red !important; */
+
+.Label.LabelTime[style*="background-color:#bc4c00"] {
+    display: none;
+}
+
