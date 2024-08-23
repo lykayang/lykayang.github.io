@@ -5,6 +5,6 @@
     "homeUrl":"https://tiantian.cn",
     "onePageListNum":15,
     "showPostSource":0,
-    "style": "<link href='https://tiantian.cn/tiantian.css' rel='stylesheet' />",
+    "indexStyle":"<link href='https://tiantian.cn/tiantian.css' rel='stylesheet' />",
     "GMEEK_VERSION":"last"
 }
