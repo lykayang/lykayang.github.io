@@ -34,3 +34,13 @@ nav.SideNav {
 div[style*="margin-bottom: 16px;"] {
     font-family: "KaiTi", "SimHei", sans-serif;
 }
+
+a.next_page {
+    all: unset !important;
+    cursor: pointer; /* 保持鼠标指针样式 */
+}
+
+a.previous_page {
+    all: unset !important;
+    cursor: pointer; /* 保持鼠标指针样式 */
+}
