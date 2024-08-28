@@ -13,9 +13,6 @@
     border-color: transparent; /* 去掉分隔线 */
 }
 
-.Label:LabelTime {
-    background-color:#bc4c00";
-}
 
 nav.SideNav {
     border: 0 !important; /* 去掉边框 */
@@ -24,23 +21,10 @@ nav.SideNav {
     background-color: transparent !important;
 }
 
-/* .Label.LabelTime[style*="background-color:#bc4c00"] {
-    background-color: red !important; */
-
 .Label.LabelTime[style*="background-color:#bc4c00"] {
-    display: none;
+    display: none;/* 去掉日期 */
 }
 
 div[style*="margin-bottom: 16px;"] {
     font-family: "KaiTi", "SimHei", sans-serif;
-}
-
-a.next_page {
-    all: unset !important;
-    cursor: pointer; /* 保持鼠标指针样式 */
-}
-
-a.previous_page {
-    all: unset !important;
-    cursor: pointer; /* 保持鼠标指针样式 */
 }
