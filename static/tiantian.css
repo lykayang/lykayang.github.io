@@ -35,12 +35,30 @@ div[style*="margin-bottom: 16px;"] {
     font-family: "KaiTi", "SimHei", sans-serif;
 }
 
-a.next_page {
+/* a.next_page {
     all: unset !important;
-    cursor: pointer; /* 保持鼠标指针样式 */
 }
 
 a.previous_page {
     all: unset !important;
-    cursor: pointer; /* 保持鼠标指针样式 */
+} */
+
+a.next_page:hover, 
+a.next_page:focus, 
+a.next_page:active, 
+a.next_page:visited {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+a.previous_page:hover, 
+a.previous_page:focus, 
+a.previous_page:active, 
+a.previous_page:visited {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
 }
