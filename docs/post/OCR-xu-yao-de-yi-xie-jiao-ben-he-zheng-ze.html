@@ -49,22 +49,60 @@ print('脚注重新排序完成并已保存为 about_reordered.md')
 
 ```
 
+---
+
+原文
 ```python
+<a id='footnote1'></a><a href='#bookmark0'>1</a>
+```
 
-原<a id='footnote1'></a><a href='#bookmark0'>1</a>
-找<a id='footnote(\d+)'></a><a href='#bookmark\d+'>\d+</a>
+查找
+```python
+<a id='footnote(\d+)'></a><a href='#bookmark\d+'>\d+</a>
+```
+替换为
+```python
 换[^$1]
+```
 
-原<a href='#footnote13'>13</a><a id='bookmark12'></a>
-找<a href='#footnote(\d+)'>\d+</a><a id='bookmark\d+'></a>
-替换为 [^$1]
+---
+
+原文
+```python
+<a href='#footnote13'>13</a><a id='bookmark12'></a>
+```
+
+查找
+
+```python
+<a href='#footnote(\d+)'>\d+</a><a id='bookmark\d+'></a>
+```
+
+替换为
+```python
+ [^$1]
+```
+
+---
 
 批量替换脚注编号
-原[^1]
-找 \[\^(\d+)\]
-替换为 [\^100\1] (将所有脚注编号加 100)
+原文
+```python
+[^1]
+```
 
-```。">
+查找
+```python
+ \[\^(\d+)\]
+```
+
+替换为
+```python
+ [\^100\1]
+```
+ (将所有脚注编号加 100)
+
+。">
 <meta property="og:title" content="OCR需要的一些脚本和正则">
 <meta property="og:description" content="这是一个排序脚注的python脚本
 
@@ -105,22 +143,60 @@ print('脚注重新排序完成并已保存为 about_reordered.md')
 
 ```
 
+---
+
+原文
 ```python
+<a id='footnote1'></a><a href='#bookmark0'>1</a>
+```
 
-原<a id='footnote1'></a><a href='#bookmark0'>1</a>
-找<a id='footnote(\d+)'></a><a href='#bookmark\d+'>\d+</a>
+查找
+```python
+<a id='footnote(\d+)'></a><a href='#bookmark\d+'>\d+</a>
+```
+替换为
+```python
 换[^$1]
+```
 
-原<a href='#footnote13'>13</a><a id='bookmark12'></a>
-找<a href='#footnote(\d+)'>\d+</a><a id='bookmark\d+'></a>
-替换为 [^$1]
+---
+
+原文
+```python
+<a href='#footnote13'>13</a><a id='bookmark12'></a>
+```
+
+查找
+
+```python
+<a href='#footnote(\d+)'>\d+</a><a id='bookmark\d+'></a>
+```
+
+替换为
+```python
+ [^$1]
+```
+
+---
 
 批量替换脚注编号
-原[^1]
-找 \[\^(\d+)\]
-替换为 [\^100\1] (将所有脚注编号加 100)
+原文
+```python
+[^1]
+```
 
-```。">
+查找
+```python
+ \[\^(\d+)\]
+```
+
+替换为
+```python
+ [\^100\1]
+```
+ (将所有脚注编号加 100)
+
+。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://tiantian.cn/post/OCR-xu-yao-de-yi-xie-jiao-ben-he-zheng-ze.html">
 <meta property="og:image" content="https://tiantian.cn/favicon.svg">
@@ -218,18 +294,29 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <span class="pl-s1">file</span>.<span class="pl-en">write</span>(<span class="pl-s1">new_content</span>)
 
 <span class="pl-en">print</span>(<span class="pl-s">"脚注重新排序完成并已保存为 about_reordered.md"</span>)</pre></div>
-<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">原</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"footnote1"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#bookmark0"</span><span class="pl-c1">&gt;</span><span class="pl-c1">1</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span>
-<span class="pl-s1">找</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"footnote(\d+)"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#bookmark\d+"</span><span class="pl-c1">&gt;</span>\d<span class="pl-c1">+</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span>
-<span class="pl-s1">换</span>[<span class="pl-c1">^</span>$<span class="pl-c1">1</span>]
-
-<span class="pl-s1">原</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#footnote13"</span><span class="pl-c1">&gt;</span><span class="pl-c1">13</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"bookmark12"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span>
-<span class="pl-s1">找</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#footnote(\d+)"</span><span class="pl-c1">&gt;</span>\d<span class="pl-c1">+</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"bookmark\d+"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span>
-<span class="pl-s1">替换为</span> [<span class="pl-c1">^</span>$<span class="pl-c1">1</span>]
-
-<span class="pl-s1">批量替换脚注编号</span>
-<span class="pl-s1">原</span>[<span class="pl-c1">^</span><span class="pl-c1">1</span>]
-<span class="pl-s1">找</span> \[\<span class="pl-c1">^</span>(\d<span class="pl-c1">+</span>)\]
-<span class="pl-s1">替换为</span> [\^<span class="pl-c1">100</span>\1] (<span class="pl-s1">将所有脚注编号加</span> <span class="pl-c1">100</span>)</pre></div></div>
+<hr>
+<p>原文</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"footnote1"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#bookmark0"</span><span class="pl-c1">&gt;</span><span class="pl-c1">1</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
+<p>查找</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"footnote(\d+)"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#bookmark\d+"</span><span class="pl-c1">&gt;</span>\d<span class="pl-c1">+</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
+<p>替换为</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">换</span>[<span class="pl-c1">^</span>$<span class="pl-c1">1</span>]</pre></div>
+<hr>
+<p>原文</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#footnote13"</span><span class="pl-c1">&gt;</span><span class="pl-c1">13</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"bookmark12"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
+<p>查找</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#footnote(\d+)"</span><span class="pl-c1">&gt;</span>\d<span class="pl-c1">+</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"bookmark\d+"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
+<p>替换为</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"> [<span class="pl-c1">^</span>$<span class="pl-c1">1</span>]</pre></div>
+<hr>
+<p>批量替换脚注编号<br>
+原文</p>
+<div class="highlight highlight-source-python"><pre class="notranslate">[<span class="pl-c1">^</span><span class="pl-c1">1</span>]</pre></div>
+<p>查找</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"> \[\<span class="pl-c1">^</span>(\d<span class="pl-c1">+</span>)\]</pre></div>
+<p>替换为</p>
+<div class="highlight highlight-source-python"><pre class="notranslate"> [\^<span class="pl-c1">100</span>\1]</pre></div>
+<p>(将所有脚注编号加 100)</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>

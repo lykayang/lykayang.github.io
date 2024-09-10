@@ -37,19 +37,56 @@ print("脚注重新排序完成并已保存为 about_reordered.md")
 
 ```
 
+---
+
+原文
 ```python
+<a id="footnote1"></a><a href="#bookmark0">1</a>
+```
 
-原<a id="footnote1"></a><a href="#bookmark0">1</a>
-找<a id="footnote(\d+)"></a><a href="#bookmark\d+">\d+</a>
+查找
+```python
+<a id="footnote(\d+)"></a><a href="#bookmark\d+">\d+</a>
+```
+替换为
+```python
 换[^$1]
+```
 
-原<a href="#footnote13">13</a><a id="bookmark12"></a>
-找<a href="#footnote(\d+)">\d+</a><a id="bookmark\d+"></a>
-替换为 [^$1]
+---
+
+原文
+```python
+<a href="#footnote13">13</a><a id="bookmark12"></a>
+```
+
+查找
+
+```python
+<a href="#footnote(\d+)">\d+</a><a id="bookmark\d+"></a>
+```
+
+替换为
+```python
+ [^$1]
+```
+
+---
 
 批量替换脚注编号
-原[^1]
-找 \[\^(\d+)\]
-替换为 [\^100\1] (将所有脚注编号加 100)
-
+原文
+```python
+[^1]
 ```
+
+查找
+```python
+ \[\^(\d+)\]
+```
+
+替换为
+```python
+ [\^100\1]
+```
+ (将所有脚注编号加 100)
+
