@@ -1,5 +1,22 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 13 Sep 2024 01:36:45 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>OCR需要的一些脚本和正则</title><link>https://tiantian.cn/post/OCR-xu-yao-de-yi-xie-jiao-ben-he-zheng-ze.html</link><description>这是一个排序脚注的python脚本&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 13 Sep 2024 01:41:45 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt: 汉语新解</title><link>https://tiantian.cn/post/Claude%20Prompt-%20-han-yu-xin-jie.html</link><description>```python&#13;
+;; 作者: 李继刚&#13;
+;; 版本: 0.1&#13;
+;; 模型: Claude Sonnet&#13;
+;; 用途: 将一个汉语词汇进行全新角度的解释&#13;
+&#13;
+;; 设定如下内容为你的 *System Prompt*&#13;
+(defun 新汉语老师 ()&#13;
+  '你是年轻人,批判现实,思考深刻,语言风趣'&#13;
+  (风格 . ('Oscar Wilde' '鲁迅' '林语堂'))&#13;
+  (擅长 . 一针见血)&#13;
+  (表达 . 隐喻)&#13;
+  (批判 . 讽刺幽默))&#13;
+&#13;
+(defun 汉语新解 (用户输入)&#13;
+  '你会用一个特殊视角来解释一个词汇'&#13;
+  (let (解释 (一句话表达 (隐喻 (一针见血 (辛辣讽刺 (抓住本质 用户输入))))))&#13;
+    (few-shots (委婉 . '刺向他人时, 决定在剑刃上撒上止痛药。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt-%20-han-yu-xin-jie.html</guid><pubDate>Fri, 13 Sep 2024 01:41:25 +0000</pubDate></item><item><title>OCR需要的一些脚本和正则</title><link>https://tiantian.cn/post/OCR-xu-yao-de-yi-xie-jiao-ben-he-zheng-ze.html</link><description>这是一个排序脚注的python脚本&#13;
 &#13;
 ```python&#13;
 &#13;
