@@ -36,3 +36,27 @@ https://ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json
 https://mirror.ghproxy.com/https://raw.githubusercontent.com/supermeguo/BoxRes/main/Myuse/cat.json
 
 http://tvbox.王二小放牛娃.xyz
+
+http://ok321.top/tv
+
+http://ok321.top/ok
+
+https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json
+
+https://ghproxy.net/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/demo.json
+
+https://9xi4o.tk/0725.json
+
+http://home.jundie.top:81/top98.json
+
+https://github.moeyy.xyz/https://raw.githubusercontent.com/xyq254245/xyqonlinerule/main/XYQTVBox.json
+
+http://tv.nxog.top/m/
+
+http://cdn.qiaoji8.com/tvbox.json
+
+https://raw.liucn.cc/box/m.json
+
+https://pastebin.com/raw/gtbKvnE1
+
+https://pastebin.com/raw/sbPpDm9G
