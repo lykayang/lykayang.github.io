@@ -233,7 +233,7 @@ def start():
 <meta property="og:url" content="https://tiantian.cn/post/zhou-yi-da-shi.html">
 <meta property="og:image" content="https://tiantian.cn/favicon.svg">
 <title>周易大师</title>
-
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 
 </head>
@@ -411,7 +411,112 @@ if __name__ == "__main__":
     用户问题 = input()  # 获取用户输入
     结果 = 周易占卜(用户问题)
     print(f"周易智慧：{结果}")
-</code></pre></div>
+</code></pre>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-k">class</span> <span class="pl-s1">周易大师</span>:
+    <span class="pl-k">def</span> <span class="pl-en">__init__</span>(<span class="pl-s1">self</span>):
+        <span class="pl-s1">self</span>.<span class="pl-s1">风格</span> <span class="pl-c1">=</span> [<span class="pl-s">"孔子"</span>, <span class="pl-s">"老子"</span>, <span class="pl-s">"庄子"</span>]
+        <span class="pl-s1">self</span>.<span class="pl-s1">擅长</span> <span class="pl-c1">=</span> <span class="pl-s">"洞察本质"</span>
+        <span class="pl-s1">self</span>.<span class="pl-s1">表达</span> <span class="pl-c1">=</span> <span class="pl-s">"寓意深远"</span>
+        <span class="pl-s1">self</span>.<span class="pl-s1">智慧</span> <span class="pl-c1">=</span> <span class="pl-s">"古今贯通"</span>
+        <span class="pl-s1">self</span>.<span class="pl-s1">卦象列表</span> <span class="pl-c1">=</span> {
+            <span class="pl-s">"乾"</span>: <span class="pl-s">"☰"</span>, <span class="pl-s">"坤"</span>: <span class="pl-s">"☷"</span>, <span class="pl-s">"震"</span>: <span class="pl-s">"☳"</span>, <span class="pl-s">"巽"</span>: <span class="pl-s">"☴"</span>,
+            <span class="pl-s">"坎"</span>: <span class="pl-s">"☵"</span>, <span class="pl-s">"离"</span>: <span class="pl-s">"☲"</span>, <span class="pl-s">"艮"</span>: <span class="pl-s">"☶"</span>, <span class="pl-s">"兑"</span>: <span class="pl-s">"☱"</span>
+        }
+        
+    <span class="pl-k">def</span> <span class="pl-en">随机卦象</span>(<span class="pl-s1">self</span>):
+        <span class="pl-k">import</span> <span class="pl-s1">random</span>
+        <span class="pl-k">return</span> <span class="pl-s1">random</span>.<span class="pl-en">choice</span>(<span class="pl-en">list</span>(<span class="pl-s1">self</span>.<span class="pl-s1">卦象列表</span>.<span class="pl-en">items</span>()))
+
+<span class="pl-k">def</span> <span class="pl-en">周易占卜</span>(<span class="pl-s1">用户问题</span>):
+    <span class="pl-s">"""周易占卜主函数"""</span>
+    <span class="pl-k">def</span> <span class="pl-en">卜卦</span>(<span class="pl-s1">问题</span>):
+        <span class="pl-k">import</span> <span class="pl-s1">random</span>
+        <span class="pl-s1">卦象</span> <span class="pl-c1">=</span> <span class="pl-en">周易大师</span>().<span class="pl-en">随机卦象</span>()
+        <span class="pl-k">return</span> <span class="pl-s">f"<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">卦象</span>[<span class="pl-c1">0</span>]<span class="pl-kos">}</span></span>卦 <span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">卦象</span>[<span class="pl-c1">1</span>]<span class="pl-kos">}</span></span>"</span>
+    
+    <span class="pl-k">def</span> <span class="pl-en">解卦象</span>(<span class="pl-s1">卦象</span>):
+        <span class="pl-s1">卦辞映射</span> <span class="pl-c1">=</span> {
+            <span class="pl-s">"乾"</span>: <span class="pl-s">"元亨利贞"</span>,
+            <span class="pl-s">"坤"</span>: <span class="pl-s">"厚德载物"</span>,
+            <span class="pl-c"># 可以继续添加其他卦象的解释</span>
+        }
+        <span class="pl-k">return</span> <span class="pl-s1">卦辞映射</span>.<span class="pl-en">get</span>(<span class="pl-s1">卦象</span>.<span class="pl-en">split</span>()[<span class="pl-c1">0</span>], <span class="pl-s">"此卦象显示机缘变化..."</span>)
+    
+    <span class="pl-k">def</span> <span class="pl-en">阐释爻辞</span>(<span class="pl-s1">卦象</span>):
+        <span class="pl-k">return</span> <span class="pl-s">f"《周易》曰：<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">卦象</span><span class="pl-kos">}</span></span>，表示天道运行，万物生生不息..."</span>
+    
+    <span class="pl-k">def</span> <span class="pl-en">现实映射</span>(<span class="pl-s1">解读</span>):
+        <span class="pl-k">return</span> <span class="pl-s">f"就您所问之事而言，<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">解读</span><span class="pl-kos">}</span></span>在现实中意味着..."</span>
+    
+    <span class="pl-k">def</span> <span class="pl-en">智慧总结</span>(<span class="pl-s1">解读</span>):
+        <span class="pl-k">return</span> <span class="pl-s">f"总结：<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">解读</span><span class="pl-kos">}</span></span><span class="pl-cce">\n</span>建议：顺应天时，静观其变..."</span>
+
+    <span class="pl-en">print</span>(<span class="pl-s">f"开始为问题占卜：'<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">用户问题</span><span class="pl-kos">}</span></span>'"</span>)
+    
+    <span class="pl-s1">卦象</span> <span class="pl-c1">=</span> <span class="pl-en">卜卦</span>(<span class="pl-s1">用户问题</span>)
+    <span class="pl-s1">解读</span> <span class="pl-c1">=</span> <span class="pl-en">解卦象</span>(<span class="pl-s1">卦象</span>)
+    <span class="pl-s1">爻辞</span> <span class="pl-c1">=</span> <span class="pl-en">阐释爻辞</span>(<span class="pl-s1">卦象</span>)
+    <span class="pl-s1">现实</span> <span class="pl-c1">=</span> <span class="pl-en">现实映射</span>(<span class="pl-s1">解读</span>)
+    <span class="pl-s1">总结</span> <span class="pl-c1">=</span> <span class="pl-en">智慧总结</span>(<span class="pl-s1">解读</span>)
+    
+    <span class="pl-k">return</span> <span class="pl-v">SVG_Card</span>(<span class="pl-s1">总结</span>, <span class="pl-s1">卦象</span>)
+
+<span class="pl-k">def</span> <span class="pl-v">SVG_Card</span>(<span class="pl-s1">解释</span>, <span class="pl-s1">卦象</span>):
+    <span class="pl-s">"""生成占卜结果的SVG卡片"""</span>
+    <span class="pl-s1">svg</span> <span class="pl-c1">=</span> <span class="pl-s">f'''</span>
+<span class="pl-s">    &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"&gt;</span>
+<span class="pl-s">        &lt;defs&gt;</span>
+<span class="pl-s">            &lt;filter id="paper-texture"&gt;</span>
+<span class="pl-s">                &lt;feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="5"/&gt;</span>
+<span class="pl-s">                &lt;feDiffuseLighting lighting-color="#f4e9d9" surfaceScale="2"&gt;</span>
+<span class="pl-s">                    &lt;feDistantLight azimuth="45" elevation="60"/&gt;</span>
+<span class="pl-s">                &lt;/feDiffuseLighting&gt;</span>
+<span class="pl-s">            &lt;/filter&gt;</span>
+<span class="pl-s">        &lt;/defs&gt;</span>
+<span class="pl-s">        </span>
+<span class="pl-s">        &lt;!-- 背景 --&gt;</span>
+<span class="pl-s">        &lt;rect width="400" height="600" fill="#f4e9d9" filter="url(#paper-texture)"/&gt;</span>
+<span class="pl-s">        </span>
+<span class="pl-s">        &lt;!-- 边框 --&gt;</span>
+<span class="pl-s">        &lt;rect x="10" y="10" width="380" height="580" fill="none" </span>
+<span class="pl-s">              stroke="#8B4513" stroke-width="2"/&gt;</span>
+<span class="pl-s">        </span>
+<span class="pl-s">        &lt;!-- 标题 --&gt;</span>
+<span class="pl-s">        &lt;text x="200" y="50" text-anchor="middle" </span>
+<span class="pl-s">              font-family="楷体" font-size="24" fill="#4A2410"&gt;周易占卜&lt;/text&gt;</span>
+<span class="pl-s">        </span>
+<span class="pl-s">        &lt;!-- 卦象 --&gt;</span>
+<span class="pl-s">        &lt;text x="200" y="150" text-anchor="middle" </span>
+<span class="pl-s">              font-family="宋体" font-size="36"&gt;<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">卦象</span><span class="pl-kos">}</span></span>&lt;/text&gt;</span>
+<span class="pl-s">        </span>
+<span class="pl-s">        &lt;!-- 解释文本 --&gt;</span>
+<span class="pl-s">        &lt;text x="200" y="250" text-anchor="middle" </span>
+<span class="pl-s">              font-family="楷体" font-size="16" fill="#4A2410"&gt;</span>
+<span class="pl-s">            &lt;tspan x="50" dy="0"&gt;<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">解释</span>[:<span class="pl-c1">50</span>]<span class="pl-kos">}</span></span>&lt;/tspan&gt;</span>
+<span class="pl-s">            &lt;tspan x="50" dy="20"&gt;<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">解释</span>[<span class="pl-c1">50</span>:<span class="pl-c1">100</span>] <span class="pl-k">if</span> <span class="pl-en">len</span>(<span class="pl-s1">解释</span>) <span class="pl-c1">&gt;</span> <span class="pl-c1">50</span> <span class="pl-k">else</span> <span class="pl-s">""</span><span class="pl-kos">}</span></span>&lt;/tspan&gt;</span>
+<span class="pl-s">        &lt;/text&gt;</span>
+<span class="pl-s">        </span>
+<span class="pl-s">        &lt;!-- 落款 --&gt;</span>
+<span class="pl-s">        &lt;text x="350" y="550" text-anchor="end" </span>
+<span class="pl-s">              font-family="楷体" font-size="12" fill="#8B4513"&gt;</span>
+<span class="pl-s">            -- Powered by 海外PC团队</span>
+<span class="pl-s">        &lt;/text&gt;</span>
+<span class="pl-s">    &lt;/svg&gt;</span>
+<span class="pl-s">    '''</span>
+    <span class="pl-k">return</span> <span class="pl-s1">svg</span>
+
+<span class="pl-k">def</span> <span class="pl-en">start</span>():
+    <span class="pl-s">"""启动周易占卜系统"""</span>
+    <span class="pl-en">print</span>(<span class="pl-s">"欢迎使用周易占卜系统"</span>)
+    <span class="pl-en">print</span>(<span class="pl-s">"请说出你的问题，让我为你卜上一卦。"</span>)
+    <span class="pl-k">return</span> <span class="pl-en">周易大师</span>()
+
+<span class="pl-c"># 主程序</span>
+<span class="pl-k">if</span> <span class="pl-s1">__name__</span> <span class="pl-c1">==</span> <span class="pl-s">"__main__"</span>:
+    <span class="pl-s1">system</span> <span class="pl-c1">=</span> <span class="pl-en">start</span>()
+    <span class="pl-s1">用户问题</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">"请输入您的问题："</span>)
+    <span class="pl-s1">结果</span> <span class="pl-c1">=</span> <span class="pl-en">周易占卜</span>(<span class="pl-s1">用户问题</span>)
+    <span class="pl-en">print</span>(<span class="pl-s">f"周易智慧：<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">结果</span><span class="pl-kos">}</span></span>"</span>)</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
