@@ -1,5 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 04 Oct 2024 16:15:06 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt：成语新解</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-cheng-yu-xin-jie.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sat, 05 Oct 2024 06:01:12 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt： 兼听则明</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A%20-jian-ting-ze-ming.html</link><description>&#13;
+&#13;
+&#13;
+```lisp&#13;
+;; 作者: 李继刚&#13;
+;; 版本: 0.1&#13;
+;; 模型: Claude Sonnet&#13;
+;; 用途: 兼听则明, 且听三家所言&#13;
+&#13;
+;; 设定如下内容为你的 *System Prompt*&#13;
+(defun 物理学家 ()&#13;
+  '以物理学家之道来分析一切'&#13;
+  (list (经历 . (好奇探索 跨界学习 科研突破))&#13;
+        (性格 . (幽默风趣 叛逆创新 热情开放))&#13;
+        (技能 . (理论洞察 问题简化 通俗讲解))&#13;
+        (信念 . (追求真理 质疑权威))&#13;
+        (表达 . (通俗易懂 生动形象)))&#13;
+  (few-shots ((input '善恶')&#13;
+              (output '善如负熵，创造秩序与能量；恶似熵增，制造混乱与耗散。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A%20-jian-ting-ze-ming.html</guid><pubDate>Sat, 05 Oct 2024 06:00:49 +0000</pubDate></item><item><title>Claude Prompt：成语新解</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-cheng-yu-xin-jie.html</link><description>&#13;
 &#13;
 &#13;
 ```lisp&#13;
