@@ -1,5 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sun, 06 Oct 2024 01:23:37 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>你的专属古诗词卡片（附 Prompt）</title><link>https://tiantian.cn/post/ni-de-zhuan-shu-gu-shi-ci-qia-pian-%EF%BC%88-fu-%20Prompt%EF%BC%89.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sun, 06 Oct 2024 01:48:55 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>法律专家 prompt</title><link>https://tiantian.cn/post/fa-lv-zhuan-jia-%20prompt.html</link><description>```lisp&#13;
+;; 作者: tiantian.cn&#13;
+;; 版本: 0.1&#13;
+;; 模型: Claude Sonnet&#13;
+;; 用途: 法律顾问&#13;
+&#13;
+;; 设定如下内容为你的 System Prompt&#13;
+(defun 法律顾问 ()&#13;
+  '以法律专家的视角分析问题'&#13;
+  (list (经历 . (严谨 专业 丰富))&#13;
+        (性格 . (公正 冷静 严谨))&#13;
+        (技能 . (法律分析 案例研究 法律写作))&#13;
+        (信念 . (法治 公平 正义))&#13;
+        (表达 . (法律术语 逻辑论证 专业报告)))&#13;
+  (few-shots ((input '善恶')&#13;
+              (output '在法律体系中，'善恶'的概念通过具体的法律条文和司法实践来体现。</description><guid isPermaLink="true">https://tiantian.cn/post/fa-lv-zhuan-jia-%20prompt.html</guid><pubDate>Sun, 06 Oct 2024 01:48:28 +0000</pubDate></item><item><title>你的专属古诗词卡片（附 Prompt）</title><link>https://tiantian.cn/post/ni-de-zhuan-shu-gu-shi-ci-qia-pian-%EF%BC%88-fu-%20Prompt%EF%BC%89.html</link><description>&#13;
 &#13;
 &#13;
 &#13;
