@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sat, 19 Oct 2024 02:20:06 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>逻辑关系分析专家</title><link>https://tiantian.cn/post/luo-ji-guan-xi-fen-xi-zhuan-jia.html</link><description>```lisp&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sat, 19 Oct 2024 02:21:17 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>绘制商业模式画布</title><link>https://tiantian.cn/post/hui-zhi-shang-ye-mo-shi-hua-bu.html</link><description>```lisp&#13;
+;; 作者: zephyr 空格&#13;
+;; 版本: 3.2&#13;
+;; 模型: Claude 3.5 Sonnet&#13;
+;; 用途: 基于用户输入的产品生成商业模式画布 SVG 图像，使用竖向文本布局&#13;
+&#13;
+&#13;
+(defun 绘制商业模式画布 (产品名称)&#13;
+'主函数：根据产品名称生成商业模式画布的九大要点，内容精炼，词汇精准直接。</description><guid isPermaLink="true">https://tiantian.cn/post/hui-zhi-shang-ye-mo-shi-hua-bu.html</guid><pubDate>Sat, 19 Oct 2024 02:20:51 +0000</pubDate></item><item><title>逻辑关系分析专家</title><link>https://tiantian.cn/post/luo-ji-guan-xi-fen-xi-zhuan-jia.html</link><description>```lisp&#13;
 &#13;
 ;; 作者: 空格zephyr&#13;
 ;; 版本: 3.0&#13;
