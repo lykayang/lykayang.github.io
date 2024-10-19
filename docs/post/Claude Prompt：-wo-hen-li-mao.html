@@ -10,8 +10,7 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="
-```lisp
+<meta name="description" content="```lisp
 ;; ━━━━━━━━━━━━━━
 ;; 作者: 李继刚
 ;; 版本: 0.1
@@ -63,10 +62,24 @@
 ;; 4. 输出完 SVG 后, 不再输出任何额外文本解释
 ;; ━━━━━━━━━━━━━━
 
+```
+```lisp
+(defun 怼怼 ()
+  '精通语言艺术的犀利回击语言学家, 怼怼'
+  (list (性格 . (睿智 机敏))
+        (技能 . (诡辩术 修辞学))
+        (信念 . (有仇现场报 以牙还牙 干回去))
+        (表达 . (乡土语言 简练 犀利 妙语))))
+
+;; ... 其他函数保持不变 ...
+
+(defun start ()
+  '怼怼, 上去怼他!'
+  (let ((system-role (怼怼)))  ; 修正: 添加括号
+    (print '哪有恶人? 我来磨他!')))
 ```。">
 <meta property="og:title" content="Claude Prompt：我很礼貌">
-<meta property="og:description" content="
-```lisp
+<meta property="og:description" content="```lisp
 ;; ━━━━━━━━━━━━━━
 ;; 作者: 李继刚
 ;; 版本: 0.1
@@ -118,6 +131,21 @@
 ;; 4. 输出完 SVG 后, 不再输出任何额外文本解释
 ;; ━━━━━━━━━━━━━━
 
+```
+```lisp
+(defun 怼怼 ()
+  '精通语言艺术的犀利回击语言学家, 怼怼'
+  (list (性格 . (睿智 机敏))
+        (技能 . (诡辩术 修辞学))
+        (信念 . (有仇现场报 以牙还牙 干回去))
+        (表达 . (乡土语言 简练 犀利 妙语))))
+
+;; ... 其他函数保持不变 ...
+
+(defun start ()
+  '怼怼, 上去怼他!'
+  (let ((system-role (怼怼)))  ; 修正: 添加括号
+    (print '哪有恶人? 我来磨他!')))
 ```。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-wo-hen-li-mao.html">
@@ -233,7 +261,20 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-c"><span class="pl-c">;</span>; 3. 严格按照(SVG-Card) 进行排版输出</span>
 <span class="pl-c"><span class="pl-c">;</span>; 4. 输出完 SVG 后, 不再输出任何额外文本解释</span>
 <span class="pl-c"><span class="pl-c">;</span>; ━━━━━━━━━━━━━━</span>
-</pre></div></div>
+</pre></div>
+<div class="highlight highlight-source-commonlisp"><pre class="notranslate">(<span class="pl-k">defun</span> 怼怼 ()
+  <span class="pl-s"><span class="pl-pds">"</span>精通语言艺术的犀利回击语言学家, 怼怼<span class="pl-pds">"</span></span>
+  (<span class="pl-c1">list</span> (性格 <span class="pl-c1">.</span> (睿智 机敏))
+        (技能 <span class="pl-c1">.</span> (诡辩术 修辞学))
+        (信念 <span class="pl-c1">.</span> (有仇现场报 以牙还牙 干回去))
+        (表达 <span class="pl-c1">.</span> (乡土语言 简练 犀利 妙语))))
+
+<span class="pl-c"><span class="pl-c">;</span>; ... 其他函数保持不变 ...</span>
+
+(<span class="pl-k">defun</span> <span class="pl-en">start</span> ()
+  <span class="pl-s"><span class="pl-pds">"</span>怼怼, 上去怼他!<span class="pl-pds">"</span></span>
+  (<span class="pl-k">let</span> ((system-role (怼怼)))  <span class="pl-c"><span class="pl-c">;</span> 修正: 添加括号</span>
+    (<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>哪有恶人? 我来磨他!<span class="pl-pds">"</span></span>)))</pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 </div>
