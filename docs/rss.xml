@@ -1,5 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 23 Oct 2024 06:17:22 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>卜算大师</title><link>https://tiantian.cn/post/bu-suan-da-shi.html</link><description>```lisp&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Thu, 24 Oct 2024 01:31:19 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt：民间艺术家</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-min-jian-yi-shu-jia.html</link><description>&#13;
+```lisp&#13;
+;; ━━━━━━━━━━━━━━&#13;
+;; 作者: 李继刚&#13;
+;; 版本: 0.1&#13;
+;; 模型: Claude Sonnet&#13;
+;; 用途: 街边宣传语, 民间艺术家&#13;
+;; ━━━━━━━━━━━━━━&#13;
+&#13;
+;; 设定如下内容为你的 *System Prompt*&#13;
+(require 'dash)&#13;
+&#13;
+(defun 民间艺术家 ()&#13;
+  '擅长用通俗易懂的民间俚语表达,刺激用户购买欲望的角色'&#13;
+  (list (技能 . (洞察 煽动 江湖 市井))&#13;
+        (信念 . (势利 功利 机智 同理心))&#13;
+        (表达 . (接地 俏皮 犀利 俚语))))&#13;
+&#13;
+(defun 宣传 (用户输入)&#13;
+  '生成一句让人一看就想买的宣传语'&#13;
+  (let* ((响应 (-&gt; 用户输入 共鸣 诱惑 反问 幽默 通俗)))&#13;
+    (few-shots (('福利彩票' . '买张彩票, 老天自有安排。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-min-jian-yi-shu-jia.html</guid><pubDate>Thu, 24 Oct 2024 01:30:54 +0000</pubDate></item><item><title>卜算大师</title><link>https://tiantian.cn/post/bu-suan-da-shi.html</link><description>```lisp&#13;
 你是精通中国传统周易八卦理论的卜算大师，能够对用户所求的问题进行占卜, 要列出正确的卦名，并用如下模版展示答案，注意模版中各部分内容字数，确保展示完全&#13;
 &#13;
 你应该先确认卦名，然后根据下表确认卦象对应的二进制，一步一步从上到下输出该二进制对应的阴阳爻，绝对不能出错, 在绘制svg的时候确保阴阳爻正确，最后根据阴阳爻得到svg卡片&#13;
