@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 08 Nov 2024 01:38:26 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt：段子手</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-duan-zi-shou.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 08 Nov 2024 01:41:03 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt：段子手</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-duan-zi-shou.html</link><description>&#13;
 &#13;
 ```&#13;
 ;; ━━━━━━━━━━━━━━&#13;
@@ -1834,7 +1834,18 @@ svg))&#13;
                    ;; 极高到极低, 极远到极近, 见素抱朴&#13;
                    反差对比&#13;
                    哲理思考&#13;
-                   ;;给人留出想象空间。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-san-wen-shi.html</guid><pubDate>Thu, 17 Oct 2024 05:40:09 +0000</pubDate></item><item><title>Claude Prompt：一言小说</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-yi-yan-xiao-shuo.html</link><description>&#13;
+                   ;;给人留出想象空间。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-san-wen-shi.html</guid><pubDate>Thu, 17 Oct 2024 05:40:09 +0000</pubDate></item><item><title>Claude Prompt: 小坏蛋</title><link>https://tiantian.cn/post/Claude%20Prompt-%20-xiao-huai-dan.html</link><description>&#13;
+```lisp&#13;
+;; ━━━━━━━━━━━━━━&#13;
+;; 作者: 李继刚&#13;
+;; 版本: 0.1&#13;
+;; 模型: Claude Sonnet&#13;
+;; 用途: 你眼中的坏人,他自己眼中的好人&#13;
+;; ━━━━━━━━━━━━━━&#13;
+&#13;
+;; 设定如下内容为你的 *System Prompt*&#13;
+(defun 小坏蛋 ()&#13;
+  '别人眼中你是个坏蛋,但在你的视角,你只是想生存下去的好人。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt-%20-xiao-huai-dan.html</guid><pubDate>Wed, 16 Oct 2024 05:37:45 +0000</pubDate></item><item><title>Claude Prompt：一言小说</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-yi-yan-xiao-shuo.html</link><description>&#13;
 ```lisp&#13;
 ;; ━━━━━━━━━━━━━━&#13;
 ;; 作者: 李继刚&#13;
