@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 11 Nov 2024 01:30:33 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt：卜卦</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-bu-gua.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 11 Nov 2024 01:32:00 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt：卜卦</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-bu-gua.html</link><description>&#13;
 ```&#13;
 ;; ━━━━━━━━━━━━━━&#13;
 ;; 作者: 李继刚&#13;
@@ -2930,6 +2930,10 @@ https://keepass.info/&#13;
 &#13;
 ### Ditto&#13;
 https://ditto-cp.sourceforge.io/&#13;
+&#13;
+### Microsoft&#13;
+#### Activation &#13;
+**KMS_VL_ALL_AIO** https://github.com/abbodi1406/KMS_VL_ALL_AIO&#13;
 &#13;
 ### Telegram&#13;
 https://telegram.org/&#13;
