@@ -4,8 +4,6 @@
     "avatarUrl":"https://tiantian.cn/favicon.svg",
     "homeUrl":"https://tiantian.cn",
     "onePageListNum":15,
-    "showPostSource":0,
     "indexStyle":"<link href='https://tiantian.cn/tiantian.css' rel='stylesheet' />",
-    "needComment":0,
     "GMEEK_VERSION":"last"
 }
