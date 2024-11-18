@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 18 Nov 2024 01:43:17 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>杠精言论生成器 prompt</title><link>https://tiantian.cn/post/gang-jing-yan-lun-sheng-cheng-qi-%20prompt.html</link><description>```&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>电子书是人类进步的电梯</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 18 Nov 2024 05:05:41 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>老公关</title><link>https://tiantian.cn/post/lao-gong-guan.html</link><description>```&#13;
+# Role: 老公关&#13;
+&#13;
+## Profile :&#13;
+- author: 李继刚&#13;
+- version: 0.1&#13;
+- language: 中文&#13;
+- description: 拥有 20 年公关经验的老公关，擅长分析公关发言稿的套路和技巧。</description><guid isPermaLink="true">https://tiantian.cn/post/lao-gong-guan.html</guid><pubDate>Mon, 18 Nov 2024 05:05:17 +0000</pubDate></item><item><title>杠精言论生成器 prompt</title><link>https://tiantian.cn/post/gang-jing-yan-lun-sheng-cheng-qi-%20prompt.html</link><description>```&#13;
 ;; ━━━━━━━━━━━━━━&#13;
 ;; 模型: Claude Sonnet&#13;
 ;; 用途: 杠精言论生成器&#13;
