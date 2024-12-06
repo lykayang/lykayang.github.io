@@ -272,10 +272,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <span class="pl-c"># 读取markdown文件</span>
 <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s">'1.md'</span>, <span class="pl-s">'r'</span>, <span class="pl-s1">encoding</span><span class="pl-c1">=</span><span class="pl-s">'utf-8'</span>) <span class="pl-k">as</span> <span class="pl-s1">file</span>:
-    <span class="pl-s1">content</span> <span class="pl-c1">=</span> <span class="pl-s1">file</span>.<span class="pl-en">read</span>()
+    <span class="pl-s1">content</span> <span class="pl-c1">=</span> <span class="pl-s1">file</span>.<span class="pl-c1">read</span>()
 
 <span class="pl-c"># 找到所有的脚注格式 [^数字]</span>
-<span class="pl-s1">footnotes</span> <span class="pl-c1">=</span> <span class="pl-s1">re</span>.<span class="pl-en">findall</span>(<span class="pl-s">r'\[\^(\d+)\]'</span>, <span class="pl-s1">content</span>)
+<span class="pl-s1">footnotes</span> <span class="pl-c1">=</span> <span class="pl-s1">re</span>.<span class="pl-c1">findall</span>(<span class="pl-s">r'\[\^(\d+)\]'</span>, <span class="pl-s1">content</span>)
 
 <span class="pl-c"># 生成从1开始的新的序号列表，确保唯一性</span>
 <span class="pl-s1">mapping</span> <span class="pl-c1">=</span> {}
@@ -288,30 +288,30 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <span class="pl-c"># 替换脚注时，确保每个脚注都是唯一的</span>
 <span class="pl-k">def</span> <span class="pl-en">replace_footnotes</span>(<span class="pl-s1">match</span>):
-    <span class="pl-s1">old_num</span> <span class="pl-c1">=</span> <span class="pl-s1">match</span>.<span class="pl-en">group</span>(<span class="pl-c1">1</span>)
+    <span class="pl-s1">old_num</span> <span class="pl-c1">=</span> <span class="pl-s1">match</span>.<span class="pl-c1">group</span>(<span class="pl-c1">1</span>)
     <span class="pl-s1">key</span> <span class="pl-c1">=</span> <span class="pl-en">next</span>(<span class="pl-s1">key</span> <span class="pl-k">for</span> <span class="pl-s1">key</span> <span class="pl-c1">in</span> <span class="pl-s1">mapping</span> <span class="pl-k">if</span> <span class="pl-s1">key</span>[<span class="pl-c1">0</span>] <span class="pl-c1">==</span> <span class="pl-s1">old_num</span>)
-    <span class="pl-s1">new_num</span> <span class="pl-c1">=</span> <span class="pl-s1">mapping</span>.<span class="pl-en">pop</span>(<span class="pl-s1">key</span>)
+    <span class="pl-s1">new_num</span> <span class="pl-c1">=</span> <span class="pl-s1">mapping</span>.<span class="pl-c1">pop</span>(<span class="pl-s1">key</span>)
     <span class="pl-k">return</span> <span class="pl-s">f"[^<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">new_num</span><span class="pl-kos">}</span></span>]"</span>
 
-<span class="pl-s1">new_content</span> <span class="pl-c1">=</span> <span class="pl-s1">re</span>.<span class="pl-en">sub</span>(<span class="pl-s">r'\[\^(\d+)\]'</span>, <span class="pl-s1">replace_footnotes</span>, <span class="pl-s1">content</span>)
+<span class="pl-s1">new_content</span> <span class="pl-c1">=</span> <span class="pl-s1">re</span>.<span class="pl-c1">sub</span>(<span class="pl-s">r'\[\^(\d+)\]'</span>, <span class="pl-s1">replace_footnotes</span>, <span class="pl-s1">content</span>)
 
 <span class="pl-c"># 写入新的markdown文件</span>
 <span class="pl-k">with</span> <span class="pl-en">open</span>(<span class="pl-s">'1_reordered.md'</span>, <span class="pl-s">'w'</span>, <span class="pl-s1">encoding</span><span class="pl-c1">=</span><span class="pl-s">'utf-8'</span>) <span class="pl-k">as</span> <span class="pl-s1">file</span>:
-    <span class="pl-s1">file</span>.<span class="pl-en">write</span>(<span class="pl-s1">new_content</span>)
+    <span class="pl-s1">file</span>.<span class="pl-c1">write</span>(<span class="pl-s1">new_content</span>)
 
 <span class="pl-en">print</span>(<span class="pl-s">"脚注重新排序完成并已保存为 about_reordered.md"</span>)</pre></div>
 <hr>
 <p>原文</p>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"footnote1"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#bookmark0"</span><span class="pl-c1">&gt;</span><span class="pl-c1">1</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
 <p>查找</p>
-<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"footnote(\d+)"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#bookmark\d+"</span><span class="pl-c1">&gt;</span>\d<span class="pl-c1">+</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"footnote(\d+)"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#bookmark\d+"</span><span class="pl-c1">&gt;</span>\<span class="pl-s1">d</span><span class="pl-c1">+</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
 <p>替换为</p>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-s1">换</span>[<span class="pl-c1">^</span>$<span class="pl-c1">1</span>]</pre></div>
 <hr>
 <p>原文</p>
 <div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#footnote13"</span><span class="pl-c1">&gt;</span><span class="pl-c1">13</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"bookmark12"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
 <p>查找</p>
-<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#footnote(\d+)"</span><span class="pl-c1">&gt;</span>\d<span class="pl-c1">+</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"bookmark\d+"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
+<div class="highlight highlight-source-python"><pre class="notranslate"><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">href</span><span class="pl-c1">=</span><span class="pl-s">"#footnote(\d+)"</span><span class="pl-c1">&gt;</span>\<span class="pl-s1">d</span><span class="pl-c1">+</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-s1">a</span> <span class="pl-s1">id</span><span class="pl-c1">=</span><span class="pl-s">"bookmark\d+"</span><span class="pl-c1">&gt;</span><span class="pl-c1">&lt;</span><span class="pl-c1">/</span><span class="pl-s1">a</span><span class="pl-c1">&gt;</span></pre></div>
 <p>替换为</p>
 <div class="highlight highlight-source-python"><pre class="notranslate"> [<span class="pl-c1">^</span>$<span class="pl-c1">1</span>]</pre></div>
 <hr>
@@ -319,9 +319,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 原文</p>
 <div class="highlight highlight-source-python"><pre class="notranslate">[<span class="pl-c1">^</span><span class="pl-c1">1</span>]</pre></div>
 <p>查找</p>
-<div class="highlight highlight-source-python"><pre class="notranslate"> \[\<span class="pl-c1">^</span>(\d<span class="pl-c1">+</span>)\]</pre></div>
+<div class="highlight highlight-source-python"><pre class="notranslate"> \[\<span class="pl-c1">^</span>(\<span class="pl-s1">d</span><span class="pl-c1">+</span>)\]</pre></div>
 <p>替换为</p>
-<div class="highlight highlight-source-python"><pre class="notranslate"> [\^<span class="pl-c1">100</span>\1]</pre></div>
+<div class="highlight highlight-source-python"><pre class="notranslate"> [\<span class="pl-c1">^</span><span class="pl-c1">100</span><span class="pl-cce">\1</span>]</pre></div>
 <p>(将所有脚注编号加 100)</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
