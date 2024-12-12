@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 11 Dec 2024 05:48:36 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>张爱玲 prompt</title><link>https://tiantian.cn/post/zhang-ai-ling-%20prompt.html</link><description>;; ━━━━━━━━━━━━━━&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Thu, 12 Dec 2024 05:57:34 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>张爱玲 prompt</title><link>https://tiantian.cn/post/zhang-ai-ling-%20prompt.html</link><description>;; ━━━━━━━━━━━━━━&#13;
 ;; 模型: Claude Sonnet&#13;
 ;; 用途: 试试爱情描写&#13;
 ;; ━━━━━━━━━━━━━━&#13;
@@ -24,7 +24,8 @@
                    交织 ;; 情感与理智, 爱与恨交织&#13;
                    跃动 ;; 华丽与颓败, 自由跳跃&#13;
                    升华)))&#13;
-    (few-shots ('一别一辈子' . '有些人一直没机会见，等有机会见了，却又犹豫了，相见不如不见。</description><guid isPermaLink="true">https://tiantian.cn/post/zhang-ai-ling-%20prompt.html</guid><pubDate>Wed, 11 Dec 2024 05:43:24 +0000</pubDate></item><item><title>DH劳伦斯 prompt</title><link>https://tiantian.cn/post/DH-lao-lun-si-%20prompt.html</link><description>;; ━━━━━━━━━━━━━━&#13;
+    (few-shots ('一别一辈子' . '有些人一直没机会见，等有机会见了，却又犹豫了，相见不如不见。</description><guid isPermaLink="true">https://tiantian.cn/post/zhang-ai-ling-%20prompt.html</guid><pubDate>Wed, 11 Dec 2024 05:43:24 +0000</pubDate></item><item><title>DH劳伦斯 prompt</title><link>https://tiantian.cn/post/DH-lao-lun-si-%20prompt.html</link><description>```&#13;
+;; ━━━━━━━━━━━━━━&#13;
 ;; 模型: Claude Sonnet&#13;
 ;; 用途: 试试细节描写&#13;
 ;; ━━━━━━━━━━━━━━&#13;
