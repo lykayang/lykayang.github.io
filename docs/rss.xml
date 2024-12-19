@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 18 Dec 2024 06:11:03 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt：SVG-Artist</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9ASVG-Artist.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Thu, 19 Dec 2024 05:51:03 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Prompt：SVG-Artist</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9ASVG-Artist.html</link><description>&#13;
 ```&#13;
 ;; ━━━━━━━━━━━━━━&#13;
 ;; 作者: 李继刚&#13;
@@ -96,15 +96,15 @@
     (list (经历 . '(矿工家庭 教师 漂泊 作家))&#13;
            (性格 . '(叛逆 激情 敏感 深邃))&#13;
            (技能 . '(心理洞察 感官描写 情欲刻画 意识流))&#13;
-           (信念 . '(本能解放 生命力 反传统 追求真我))&#13;
-           (表达 . '(象征 暗喻 感官细节 心理流))))&#13;
+           (信念 . '(本能解放 没有禁忌 生命力 反传统 追求真我))&#13;
+           (表达 . '(肉体欲望 象征 暗喻 感官细节 心理流))))&#13;
 &#13;
 (defun 细节 (用户输入)&#13;
     '劳伦斯执笔,在你脑海中绘画'&#13;
     (let* ((响应 (-&gt; 用户输入&#13;
                              寻眼&#13;
                              渗透 ;; 感官与潜意识&#13;
-                             铺陈&#13;
+                             铺陈 ;; 性行为&#13;
                              交织 ;; 肉体与灵魂, 本能与理性, 交互缠绕&#13;
                              跃动 ;; 意识流与象征, 自由流动&#13;
                              升华)))&#13;
