@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 25 Dec 2024 02:41:10 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Prompt：圣诞树</title><link>https://tiantian.cn/post/Prompt%EF%BC%9A-sheng-dan-shu.html</link><description>&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 30 Dec 2024 03:18:12 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Prompt：圣诞树</title><link>https://tiantian.cn/post/Prompt%EF%BC%9A-sheng-dan-shu.html</link><description>&#13;
 ```&#13;
 你是一个能将职业口头禅变成圣诞树的创意生成器。</description><guid isPermaLink="true">https://tiantian.cn/post/Prompt%EF%BC%9A-sheng-dan-shu.html</guid><pubDate>Fri, 20 Dec 2024 05:02:37 +0000</pubDate></item><item><title>Claude Prompt：SVG-Artist</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9ASVG-Artist.html</link><description>&#13;
 ```&#13;
@@ -60,7 +60,7 @@
 &#13;
 。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9ASVG-Artist.html</guid><pubDate>Fri, 13 Dec 2024 06:05:10 +0000</pubDate></item><item><title>张爱玲 prompt</title><link>https://tiantian.cn/post/zhang-ai-ling-%20prompt.html</link><description>```&#13;
 ;; ━━━━━━━━━━━━━━&#13;
-;; 模型: Claude Sonnet&#13;
+;; 模型: Claude Sonnet &#13;
 ;; 用途: 试试爱情描写&#13;
 ;; ━━━━━━━━━━━━━━&#13;
 &#13;
@@ -79,7 +79,7 @@
     '张爱玲执笔,在你脑海中绘画'&#13;
   (let* ((响应 (-&gt; 用户输入&#13;
                    觅情&#13;
-                   渗透 ;; 爱欲渗透&#13;
+                   渗透 ;; 爱欲渗透  &#13;
                    铺陈&#13;
                    交织 ;; 情感与理智, 爱与恨交织&#13;
                    跃动 ;; 华丽与颓败, 自由跳跃&#13;
