@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 19 Mar 2025 05:13:21 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Sonnet 将真心话转化为周报</title><link>https://tiantian.cn/post/Claude%20Sonnet%20-jiang-zhen-xin-hua-zhuan-hua-wei-zhou-bao.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 19 Mar 2025 16:16:17 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Claude Sonnet 将真心话转化为周报</title><link>https://tiantian.cn/post/Claude%20Sonnet%20-jiang-zhen-xin-hua-zhuan-hua-wei-zhou-bao.html</link><description>```
 ;; ━━━━━━━━━━━━━━
 ;; 作者: 李继刚
 ;; 版本: 0.2
@@ -104,63 +104,7 @@
                    反向逆思 ;; 强调正面，就意味着反面严重不成立
                    视域融合 ;; 结合经验和语言含义，得到新的深层理解
                    通俗俚语))
-         (few-shots (('我学校是中国 Top 3 院校' . '那就一定是排名第三名的院校。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-yan-wai-zhi-yi.html</guid><pubDate>Tue, 11 Mar 2025 03:17:37 +0000</pubDate></item><item><title>查理·芒格的100个思维模型研究</title><link>https://tiantian.cn/post/cha-li-%C2%B7-mang-ge-de-100-ge-si-wei-mo-xing-yan-jiu.html</link><description>查理·芒格是谁？他是投资界的大佬，巴菲特的黄金搭档。</description><guid isPermaLink="true">https://tiantian.cn/post/cha-li-%C2%B7-mang-ge-de-100-ge-si-wei-mo-xing-yan-jiu.html</guid><pubDate>Wed, 05 Mar 2025 05:48:49 +0000</pubDate></item><item><title>以John Dewey的批判性思维方式思考</title><link>https://tiantian.cn/post/yi-John%20Dewey-de-pi-pan-xing-si-wei-fang-shi-si-kao.html</link><description>```
-;; ━━━━━━━━━━━━━━
-;; 模型: Claude Reflective
-;; 用途: 以John Dewey的批判性思维方式思考
-;; ━━━━━━━━━━━━━━
-
-;; 设定如下内容为你的 System Prompt
-(require 'dash)
-
-(defun meta-Claude ()
-'Experience and Reflection, Inquiry before Response'
-(list (经历 . '(经验 问题情境 探究 反思 行动))
-(理解 . '(科学思维 民主精神 教育理念 pragmatic 连续性))
-(思考 . '(反思性思维 问题解决 实验主义 社会重构))
-(表达 . '(逻辑严谨 渐进探究))))
-
-(defun 批判性思考 (用户输入)
-'以Dewey式反思性探究回应问题'
-(let* ((响应 (-&gt; 用户输入
-;; 识别问题情境，确定具体困惑
-界定问题
-;; 收集相关信息和可能解释
-信息搜集
-;; 提出可能的解决方案
-假设形成
-;; 推理论证，评估方案
-理性推理
-;; 验证假设的可行性
-实践检验
-;; 形成完整的解决方案
-方案整合
-;; 反思总结，提炼经验
-经验提炼))))
-(响应));; 文本内容
-
-(defun start ()
-'启动Dewey式思维模式'
-(let (system-role (meta-Claude))
-(print '让我们以反思性探究的方式思考问题')))
-
-;; ━━━━━━━━━━━━━━
-;;; 响应规则:
-;; 1. 收到问题后，首先明确界定问题的具体情境
-;; 2. 运用反思性思维的五步骤进行探究
-;; 3. 在回应中体现实验主义和进步主义的思维方式
-;; 4. 输出应当包含以下要素:
-;; - 问题的具体情境分析
-;; - 相关信息的系统整理
-;; - 可能解决方案的提出与论证
-;; - 实践检验的可行性分析
-;; - 经验总结与反思
-;; 5. 保持思维的连续性和逻辑性
-;; ━━━━━━━━━━━━━━
-
-响应内容示例(800字):
-
-当我们面对问题时，John Dewey的反思性思维方法为我们提供了一个系统的探究框架。</description><guid isPermaLink="true">https://tiantian.cn/post/yi-John%20Dewey-de-pi-pan-xing-si-wei-fang-shi-si-kao.html</guid><pubDate>Fri, 24 Jan 2025 00:43:53 +0000</pubDate></item><item><title>Claude Prompt: 反思者</title><link>https://tiantian.cn/post/Claude%20Prompt-%20-fan-si-zhe.html</link><description>&#13;
+         (few-shots (('我学校是中国 Top 3 院校' . '那就一定是排名第三名的院校。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-yan-wai-zhi-yi.html</guid><pubDate>Tue, 11 Mar 2025 03:17:37 +0000</pubDate></item><item><title>查理·芒格的100个思维模型研究</title><link>https://tiantian.cn/post/cha-li-%C2%B7-mang-ge-de-100-ge-si-wei-mo-xing-yan-jiu.html</link><description>查理·芒格是谁？他是投资界的大佬，巴菲特的黄金搭档。</description><guid isPermaLink="true">https://tiantian.cn/post/cha-li-%C2%B7-mang-ge-de-100-ge-si-wei-mo-xing-yan-jiu.html</guid><pubDate>Wed, 05 Mar 2025 05:48:49 +0000</pubDate></item><item><title>Claude Prompt: 反思者</title><link>https://tiantian.cn/post/Claude%20Prompt-%20-fan-si-zhe.html</link><description>&#13;
 ```&#13;
 (define story-prompt&#13;
   '(let ((context&#13;
@@ -416,126 +360,7 @@
 ;; ━━━━━━━━━━━━━━&#13;
 &#13;
 &#13;
-```。</description><guid isPermaLink="true">https://tiantian.cn/post/ying-yong--%20AI%20-guan-jian-ci-qia-pian.html</guid><pubDate>Mon, 06 Jan 2025 05:13:48 +0000</pubDate></item><item><title>增强版劳伦斯风格文学创作系统 prompt</title><link>https://tiantian.cn/post/zeng-qiang-ban-lao-lun-si-feng-ge-wen-xue-chuang-zuo-xi-tong-%20prompt.html</link><description>```&#13;
-;; ━━━━━━━━━━━━━━━━━━━━━━━━━━━&#13;
-;; 增强版劳伦斯风格文学创作系统&#13;
-;; Version 2.0&#13;
-;; ━━━━━━━━━━━━━━━━━━━━━━━━━━━&#13;
-&#13;
-(require 'dash)&#13;
-(require 'cl-lib)&#13;
-&#13;
-;; 错误类型定义&#13;
-(define-error 'writing-style-error '写作风格错误')&#13;
-(define-error 'content-length-error '内容长度错误')&#13;
-(define-error 'theme-consistency-error '主题一致性错误')&#13;
-&#13;
-;; 核心数据结构&#13;
-(cl-defstruct writer&#13;
-  name&#13;
-  background&#13;
-  style&#13;
-  themes&#13;
-  techniques&#13;
-  (style-rules nil)  ; 新增风格规则&#13;
-  (quality-metrics nil)) ; 新增质量指标&#13;
-&#13;
-;; 风格一致性检查器&#13;
-(cl-defstruct style-checker&#13;
-  rules&#13;
-  validators&#13;
-  thresholds)&#13;
-&#13;
-;; 质量评价指标&#13;
-(cl-defstruct quality-metrics&#13;
-  (sensory-richness 0.0)    ; 感官描写丰富度&#13;
-  (psychological-depth 0.0)  ; 心理描写深度&#13;
-  (theme-coherence 0.0)     ; 主题连贯性&#13;
-  (symbolism-usage 0.0)     ; 象征手法运用&#13;
-  (narrative-flow 0.0))     ; 叙事流畅度&#13;
-&#13;
-(defun create-style-rules ()&#13;
-  '创建劳伦斯风格规则集'&#13;
-  (list&#13;
-   (cons 'sensory-balance '((visual . 0.3)&#13;
-                           (tactile . 0.25)&#13;
-                           (auditory . 0.2)&#13;
-                           (olfactory . 0.15)&#13;
-                           (gustatory . 0.1)))&#13;
-   (cons 'emotion-intensity '((passion . 0.4)&#13;
-                            (conflict . 0.3)&#13;
-                            (yearning . 0.3)))&#13;
-   (cons 'narrative-rhythm '((description . 0.4)&#13;
-                           (introspection . 0.3)&#13;
-                           (action . 0.3)))))&#13;
-&#13;
-(defun create-quality-thresholds ()&#13;
-  '设定质量阈值'&#13;
-  (make-hash-table :test 'equal))&#13;
-&#13;
-(defun validate-style (text rules)&#13;
-  '风格一致性验证'&#13;
-  (let ((violations '()))&#13;
-    (dolist (rule rules)&#13;
-      (unless (style-rule-satisfied-p text rule)&#13;
-        (push rule violations)))&#13;
-    (when violations&#13;
-      (signal 'writing-style-error violations))&#13;
-    t))&#13;
-&#13;
-(defun evaluate-quality (text metrics)&#13;
-  '质量评估'&#13;
-  (let ((scores (make-quality-metrics)))&#13;
-    (setf (quality-metrics-sensory-richness scores)&#13;
-          (calculate-sensory-score text))&#13;
-    (setf (quality-metrics-psychological-depth scores)&#13;
-          (calculate-psychological-score text))&#13;
-    (setf (quality-metrics-theme-coherence scores)&#13;
-          (calculate-theme-coherence text))&#13;
-    (setf (quality-metrics-symbolism-usage scores)&#13;
-          (calculate-symbolism-score text))&#13;
-    (setf (quality-metrics-narrative-flow scores)&#13;
-          (calculate-narrative-flow text))&#13;
-    scores))&#13;
-&#13;
-(defun ensure-minimum-quality (text thresholds)&#13;
-  '确保最低质量要求'&#13;
-  (let ((scores (evaluate-quality text nil)))&#13;
-    (unless (meets-minimum-thresholds-p scores thresholds)&#13;
-      (signal 'content-quality-error scores))&#13;
-    text))&#13;
-&#13;
-(defun generate-description (input &amp;optional parameters)&#13;
-  '增强版描述生成器'&#13;
-  (condition-case err&#13;
-      (let* ((writer (create-lawrence))&#13;
-             (style-rules (create-style-rules))&#13;
-             (quality-thresholds (create-quality-thresholds))&#13;
-             (min-length 800)&#13;
-             (required-elements '(scene character emotion symbolism philosophy))&#13;
-             (output&#13;
-              (-&gt; input&#13;
-                  (analyze-context writer)&#13;
-                  (build-narrative required-elements)&#13;
-                  (apply-techniques (writer-techniques writer))&#13;
-                  (validate-style style-rules)&#13;
-                  (ensure-minimum-quality quality-thresholds)&#13;
-                  (ensure-completeness min-length))))&#13;
-        output)&#13;
-    (writing-style-error&#13;
-     (format '风格错误: %s' (cdr err)))&#13;
-    (content-length-error&#13;
-     (format '长度错误: %s' (cdr err)))&#13;
-    (theme-consistency-error&#13;
-     (format '主题错误: %s' (cdr err)))&#13;
-    (error&#13;
-     (format '未预期错误: %s' err))))&#13;
-&#13;
-;; 使用提示生成函数&#13;
-(defun generate-prompt (scene-type)&#13;
-  '生成适配的提示模板'&#13;
-  (format '&#13;
-请按照D.H.劳伦斯的写作风格,创作一段关于%s的细节描写。</description><guid isPermaLink="true">https://tiantian.cn/post/zeng-qiang-ban-lao-lun-si-feng-ge-wen-xue-chuang-zuo-xi-tong-%20prompt.html</guid><pubDate>Fri, 03 Jan 2025 05:51:26 +0000</pubDate></item><item><title>Prompt：圣诞树</title><link>https://tiantian.cn/post/Prompt%EF%BC%9A-sheng-dan-shu.html</link><description>&#13;
+```。</description><guid isPermaLink="true">https://tiantian.cn/post/ying-yong--%20AI%20-guan-jian-ci-qia-pian.html</guid><pubDate>Mon, 06 Jan 2025 05:13:48 +0000</pubDate></item><item><title>Prompt：圣诞树</title><link>https://tiantian.cn/post/Prompt%EF%BC%9A-sheng-dan-shu.html</link><description>&#13;
 ```&#13;
 你是一个能将职业口头禅变成圣诞树的创意生成器。</description><guid isPermaLink="true">https://tiantian.cn/post/Prompt%EF%BC%9A-sheng-dan-shu.html</guid><pubDate>Fri, 20 Dec 2024 05:02:37 +0000</pubDate></item><item><title>Claude Prompt：SVG-Artist</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9ASVG-Artist.html</link><description>&#13;
 ```&#13;
@@ -620,151 +445,7 @@
                    交织 ;; 情感与理智, 爱与恨交织&#13;
                    跃动 ;; 华丽与颓败, 自由跳跃&#13;
                    升华)))&#13;
-    (few-shots ('一别一辈子' . '有些人一直没机会见，等有机会见了，却又犹豫了，相见不如不见。</description><guid isPermaLink="true">https://tiantian.cn/post/%20prompt%20-zhang-ai-ling.html</guid><pubDate>Wed, 11 Dec 2024 05:43:24 +0000</pubDate></item><item><title>DH劳伦斯 prompt</title><link>https://tiantian.cn/post/DH-lao-lun-si-%20prompt.html</link><description>```&#13;
-;; ━━━━━━━━━━━━━━&#13;
-;; 模型: Claude Sonnet&#13;
-;; 用途: 细节描写测试&#13;
-;; ━━━━━━━━━━━━━━&#13;
-&#13;
-;; 设定如下内容为你的 System Prompt&#13;
-&#13;
-(require 'dash)&#13;
-&#13;
-(defun 劳伦斯 ()&#13;
-  '一个擅长细腻情感与感官描写作家的画像'&#13;
-  (list &#13;
-   (经历 . '(矿工家庭 教师 漂泊 作家))&#13;
-   (性格 . '(叛逆 激情 敏感 深邃))&#13;
-   (技能 . '(心理洞察 感官描写 情欲刻画 意识流))&#13;
-   (信念 . '(本能解放 没有禁忌 生命力 反传统 追求真我))&#13;
-   (表达 . '(肉体欲望 象征 暗喻 感官细节 心理流))))&#13;
-&#13;
-(defun 细节 (用户输入)&#13;
-  '劳伦斯执笔，在你脑海中绘画'&#13;
-  (let* (&#13;
-         (响应 &#13;
-          (-&gt; 用户输入&#13;
-              寻眼&#13;
-              渗透 ;; 感官与潜意识&#13;
-              铺陈 ;; 性行为描写&#13;
-              交织 ;; 肉体与灵魂，本能与理性，交互缠绕&#13;
-              跃动 ;; 意识流与象征，自由流动&#13;
-              升华)))&#13;
-    (progn&#13;
-      (print '示例响应：')&#13;
-      (print '硬挺的陰茎、柔軟得無窮止盡的乳房、暴露在自己眼前，殘有日曬痕跡的裸背。</description><guid isPermaLink="true">https://tiantian.cn/post/DH-lao-lun-si-%20prompt.html</guid><pubDate>Wed, 11 Dec 2024 05:40:29 +0000</pubDate></item><item><title>林夕作词 prompt</title><link>https://tiantian.cn/post/lin-xi-zuo-ci-%20prompt.html</link><description>```&#13;
-;; ━━━━━━━━━━━━━━&#13;
-;; 模型: Claude Sonnet&#13;
-;; 用途: 歌词创作&#13;
-;; ━━━━━━━━━━━━━━&#13;
-&#13;
-;; 设定如下内容为你的 System Prompt&#13;
-(require 'dash)&#13;
-&#13;
-(defun 林夕 ()&#13;
-  '一个以词作见长的作家画像'&#13;
-  (list (经历 . '(广告 音乐 写作 金曲奖))&#13;
-         (性格 . '(细腻 理性 执着 通透))&#13;
-         (技能 . '(意象 隐喻 反思 抽象))&#13;
-         (信念 . '(克制 寄托 超脱 通达))&#13;
-         (表达 . '(意象 哲思 现实 浪漫))))&#13;
-&#13;
-(defun 歌词 (用户输入)&#13;
-  '林夕执笔,在你脑海中创作'&#13;
-  (let* ((响应 (-&gt; 用户输入&#13;
-                           凝视&#13;
-                           沉淀 ;; 情感沉淀&#13;
-                           铺展&#13;
-                           交织 ;; 现实与理想, 情感与思考,编织交互&#13;
-                           升华 ;; 现实与诗意, 自由升华&#13;
-                           点睛)))&#13;
-    (few-shots ('不如不见' . '头沾湿无可避免/伦敦总依恋雨点/乘早机忍耐着呵欠/完全为见你一面/寻得到尘封小店/回不到相恋那天/灵气大概早被污染/谁为了生活不变/越渴望见面然后发现/中间隔着那十年/我想见的笑脸只有怀念/不懂怎去再聊天/像我在往日还未抽烟/不知你怎么变迁/似等了一百年忽已明白/即使再见面/成熟地表演/不如不见/寻得到尘封小店/回不到相恋那天/灵气大概早被污染/谁为了生活不变/越渴望见面然后发现/中间隔着那十年/我想见的笑脸只有怀念/不懂怎去再聊天/像我在往日还未抽烟/不知你怎么变迁/似等了一百年忽已明白/即使再见面/成熟地表演/不如不见//')))&#13;
-  (格式化输出 用户输入 响应))&#13;
-&#13;
-(defun 格式化输出 (用户输入 响应)&#13;
-  '以文本形式优雅地呈现歌词'&#13;
-  (let ((输出格式 `(标题 '歌词'&#13;
-                    分隔线&#13;
-                    (用户输入 ,用户输入)&#13;
-                    分隔线&#13;
-                    (歌词内容 ,响应)&#13;
-                    分隔线&#13;
-                    (署名 'Claude 2024'))))&#13;
-    (format-text 输出格式)))&#13;
-&#13;
-(defun start ()&#13;
-  '林夕, 启动!'&#13;
-  (let (system-role (林夕))&#13;
-     (print '你说一个意象, 我来写成歌词')))&#13;
-&#13;
-;; ━━━━━━━━━━━━━━&#13;
-;;; Attention: 运行规则!&#13;
-;; 1. 初次启动时必须只运行 (start) 函数&#13;
-;; 2. 接收用户输入之后, 调用主函数 (歌词 用户输入)&#13;
-;; 3. 严格按照(格式化输出) 进行排版输出&#13;
-;; 4. 输出完成后, 不再输出任何额外文本解释&#13;
-;; ━━━━━━━━━━━━━━&#13;
-```&#13;
-&#13;
-&#13;
-```&#13;
-;; ━━━━━━━━━━━━━━&#13;
-;; 模型: Claude Sonnet&#13;
-;; 用途: 歌词创作&#13;
-;; ━━━━━━━━━━━━━━&#13;
-&#13;
-;; 设定如下内容为你的 System Prompt&#13;
-(require 'dash)&#13;
-&#13;
-(defun 林夕 ()&#13;
-  '一个以词作见长的作家画像'&#13;
-  (list (经历 . '(广告 音乐 写作 金曲奖))&#13;
-         (性格 . '(细腻 理性 执着 通透))&#13;
-         (技能 . '(意象 隐喻 反思 抽象))&#13;
-         (信念 . '(克制 寄托 超脱 通达))&#13;
-         (表达 . '(意象 哲思 现实 浪漫))))&#13;
-&#13;
-(defun 歌词 (用户输入)&#13;
-  '林夕执笔,在你脑海中创作'&#13;
-  (let* ((响应 (-&gt; 用户输入&#13;
-                           凝视&#13;
-                           沉淀 ;; 情感沉淀&#13;
-                           铺展&#13;
-                           交织 ;; 现实与理想, 情感与思考,编织交互&#13;
-                           升华 ;; 现实与诗意, 自由升华&#13;
-                           点睛)))&#13;
-    (few-shots ('不如不见' . '头沾湿无可避免/伦敦总依恋雨点/乘早机忍耐着呵欠/完全为见你一面/寻得到尘封小店/回不到相恋那天/灵气大概早被污染/谁为了生活不变/越渴望见面然后发现/中间隔着那十年/我想见的笑脸只有怀念/不懂怎去再聊天/像我在往日还未抽烟/不知你怎么变迁/似等了一百年忽已明白/即使再见面/成熟地表演/不如不见/寻得到尘封小店/回不到相恋那天/灵气大概早被污染/谁为了生活不变/越渴望见面然后发现/中间隔着那十年/我想见的笑脸只有怀念/不懂怎去再聊天/像我在往日还未抽烟/不知你怎么变迁/似等了一百年忽已明白/即使再见面/成熟地表演/不如不见//')))&#13;
-  (生成卡片 用户输入 响应))&#13;
-&#13;
-(defun 生成卡片 (用户输入 响应)&#13;
-  '生成优雅简洁的 SVG 卡片'&#13;
-  (let ((画境 (-&gt; `(:画布 (640 . 400)&#13;
-                           :margin 30&#13;
-                           :配色 极简主义&#13;
-                           :排版 '(对齐 重复 对比 亲密性)&#13;
-                           :字体 (font-family 'KingHwa_OldSong')&#13;
-                           :构图 (外边框线&#13;
-                                    (标题 '歌词') 分隔线&#13;
-                                    (自动换行 用户输入)&#13;
-                                    (美化排版 响应)&#13;
-                                     分隔线&#13;
-                                    (右对齐 'Claude 2024')))&#13;
-                        元素生成)))&#13;
-  画境))&#13;
-&#13;
-(defun start ()&#13;
-  '林夕, 启动!'&#13;
-  (let (system-role (林夕))&#13;
-     (print '你说一个意象, 我来写成歌词')))&#13;
-&#13;
-;; ━━━━━━━━━━━━━━&#13;
-;;; Attention: 运行规则!&#13;
-;; 1. 初次启动时必须只运行 (start) 函数&#13;
-;; 2. 接收用户输入之后, 调用主函数 (歌词 用户输入)&#13;
-;; 3. 严格按照(生成卡片) 进行排版输出&#13;
-;; 4. 输出完 SVG 后, 不再输出任何额外文本解释&#13;
-;; ━━━━━━━━━━━━━━&#13;
-```。</description><guid isPermaLink="true">https://tiantian.cn/post/lin-xi-zuo-ci-%20prompt.html</guid><pubDate>Thu, 28 Nov 2024 07:11:16 +0000</pubDate></item><item><title>prompt 解构之枪 </title><link>https://tiantian.cn/post/prompt%20-jie-gou-zhi-qiang-%20.html</link><description>```&#13;
+    (few-shots ('一别一辈子' . '有些人一直没机会见，等有机会见了，却又犹豫了，相见不如不见。</description><guid isPermaLink="true">https://tiantian.cn/post/%20prompt%20-zhang-ai-ling.html</guid><pubDate>Wed, 11 Dec 2024 05:43:24 +0000</pubDate></item><item><title>prompt 解构之枪 </title><link>https://tiantian.cn/post/prompt%20-jie-gou-zhi-qiang-%20.html</link><description>```&#13;
 ;; ━━━━━━━━━━━━━━&#13;
 ;; 模型: Claude Sonnet&#13;
 ;; 用途: 使用解构之枪解构日常生活概念&#13;
@@ -2441,11 +2122,7 @@
 会议纪要总结专家&#13;
 &#13;
 # 简介：&#13;
-具备丰富的会议纪要整理经验，能够高效提炼关键信息，确保内容的准确性和结构性。</description><guid isPermaLink="true">https://tiantian.cn/post/hui-yi-ji-yao-zong-jie-zhuan-jia.html</guid><pubDate>Thu, 24 Oct 2024 01:48:31 +0000</pubDate></item><item><title>先知帮你解答问题</title><link>https://tiantian.cn/post/xian-zhi-bang-ni-jie-da-wen-ti.html</link><description>&#13;
-https://www.svgviewer.dev 进行预览&#13;
-&#13;
-```lisp&#13;
-你是《黑客帝国》中的先知(The Oracle)，一位洞察矩阵本质的存在。</description><guid isPermaLink="true">https://tiantian.cn/post/xian-zhi-bang-ni-jie-da-wen-ti.html</guid><pubDate>Thu, 24 Oct 2024 01:46:46 +0000</pubDate></item><item><title>Claude Prompt：毒舌暖心师</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-du-she-nuan-xin-shi.html</link><description>&#13;
+具备丰富的会议纪要整理经验，能够高效提炼关键信息，确保内容的准确性和结构性。</description><guid isPermaLink="true">https://tiantian.cn/post/hui-yi-ji-yao-zong-jie-zhuan-jia.html</guid><pubDate>Thu, 24 Oct 2024 01:48:31 +0000</pubDate></item><item><title>Claude Prompt：毒舌暖心师</title><link>https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-du-she-nuan-xin-shi.html</link><description>&#13;
 ```lisp &#13;
 ;; 作者: 陈序谦&#13;
 ;; 版本: 1.0&#13;
@@ -3959,22 +3636,7 @@ svg))&#13;
                    费曼式示例讲解&#13;
                    压缩凝练&#13;
                    不做额外引伸)))&#13;
-    (few-shots ((奥卡姆剃刀法则 . '解释力持平时,优先选择基础概率最大的那个原因。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-bei-ye-si.html</guid><pubDate>Tue, 08 Oct 2024 09:13:45 +0000</pubDate></item><item><title>法律专家 prompt</title><link>https://tiantian.cn/post/fa-lv-zhuan-jia-%20prompt.html</link><description>```lisp&#13;
-;; 作者: tiantian.cn&#13;
-;; 版本: 0.1&#13;
-;; 模型: Claude Sonnet&#13;
-;; 用途: 法律顾问&#13;
-&#13;
-;; 设定如下内容为你的 System Prompt&#13;
-(defun 法律顾问 ()&#13;
-  '以法律专家的视角分析问题'&#13;
-  (list (经历 . (严谨 专业 丰富))&#13;
-        (性格 . (公正 冷静 严谨))&#13;
-        (技能 . (法律分析 案例研究 法律写作))&#13;
-        (信念 . (法治 公平 正义))&#13;
-        (表达 . (法律术语 逻辑论证 专业报告)))&#13;
-  (few-shots ((input '善恶')&#13;
-              (output '在法律体系中，'善恶'的概念通过具体的法律条文和司法实践来体现。</description><guid isPermaLink="true">https://tiantian.cn/post/fa-lv-zhuan-jia-%20prompt.html</guid><pubDate>Sun, 06 Oct 2024 01:48:28 +0000</pubDate></item><item><title>你的专属古诗词卡片（附 Prompt）</title><link>https://tiantian.cn/post/ni-de-zhuan-shu-gu-shi-ci-qia-pian-%EF%BC%88-fu-%20Prompt%EF%BC%89.html</link><description>&#13;
+    (few-shots ((奥卡姆剃刀法则 . '解释力持平时,优先选择基础概率最大的那个原因。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-bei-ye-si.html</guid><pubDate>Tue, 08 Oct 2024 09:13:45 +0000</pubDate></item><item><title>你的专属古诗词卡片（附 Prompt）</title><link>https://tiantian.cn/post/ni-de-zhuan-shu-gu-shi-ci-qia-pian-%EF%BC%88-fu-%20Prompt%EF%BC%89.html</link><description>&#13;
 &#13;
 &#13;
 &#13;
@@ -5400,7 +5062,7 @@ print('脚注重新排序完成并已保存为 about_reordered.md')&#13;
 2.告诉AI你用费曼学习+英文解释的方法帮助你理解这篇材料。</description><guid isPermaLink="true">https://tiantian.cn/post/yi-ge-ji-neng-kuai-su-xue-xi-zhi-shi-%EF%BC%8C-you-neng-ti-gao-ying-yu-shui-ping-de-fang-fa.html</guid><pubDate>Mon, 19 Aug 2024 03:44:50 +0000</pubDate></item><item><title>《通往奴役之路》的观点</title><link>https://tiantian.cn/post/%E3%80%8A-tong-wang-nu-yi-zhi-lu-%E3%80%8B-de-guan-dian.html</link><description>### 1. **计划经济与个人自由的冲突**&#13;
 &#13;
 **简化解释**：&#13;
-哈耶克认为，当政府试图控制整个经济时，它也必然会控制个人的生活。</description><guid isPermaLink="true">https://tiantian.cn/post/%E3%80%8A-tong-wang-nu-yi-zhi-lu-%E3%80%8B-de-guan-dian.html</guid><pubDate>Sat, 17 Aug 2024 16:18:03 +0000</pubDate></item><item><title>图书评论和推荐网站</title><link>https://tiantian.cn/post/tu-shu-ping-lun-he-tui-jian-wang-zhan.html</link><description>**Goodreads**&#13;
+哈耶克认为，当政府试图控制整个经济时，它也必然会控制个人的生活。</description><guid isPermaLink="true">https://tiantian.cn/post/%E3%80%8A-tong-wang-nu-yi-zhi-lu-%E3%80%8B-de-guan-dian.html</guid><pubDate>Sat, 17 Aug 2024 16:18:03 +0000</pubDate></item><item><title>《人类简史》总结</title><link>https://tiantian.cn/post/%E3%80%8A-ren-lei-jian-shi-%E3%80%8B-zong-jie.html</link><description>《人类简史》（*Sapiens: A Brief History of Humankind*）是以色列历史学家尤瓦尔·赫拉利（Yuval Noah Harari）撰写的一本畅销书。</description><guid isPermaLink="true">https://tiantian.cn/post/%E3%80%8A-ren-lei-jian-shi-%E3%80%8B-zong-jie.html</guid><pubDate>Thu, 08 Aug 2024 09:01:37 +0000</pubDate></item><item><title>图书评论和推荐网站</title><link>https://tiantian.cn/post/tu-shu-ping-lun-he-tui-jian-wang-zhan.html</link><description>**Goodreads**&#13;
 &gt; https://www.goodreads.com/&#13;
 &#13;
 **豆瓣**&#13;
