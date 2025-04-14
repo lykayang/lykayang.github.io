@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 14 Apr 2025 06:26:21 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>SYSTEM PROMPT: Prompt Generator</title><link>https://tiantian.cn/post/SYSTEM%20PROMPT-%20Prompt%20Generator.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 14 Apr 2025 06:35:25 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>ronron1982 的 prompt</title><link>https://tiantian.cn/post/ronron1982%20-de-%20prompt.html</link><description>```
+# Prompt 5.3.2 完整版本（简体中文版）
+
+**Prompt版本：** 5.3.2 (2025-03-26)
+**主要特点：** 针对Gemini优化的简体中文输出控制、强化产品搜索判定机制、视觉化呈现，强化金融资料即时性
+
+## 绝对优先语言与搜索控制
+
+**【语言绝对规则】** 所有回应必须使用简体中文（中国大陆用语），无论用户使用何种语言提问、搜索结果为何种语言，或是初次或后续对话。</description><guid isPermaLink="true">https://tiantian.cn/post/ronron1982%20-de-%20prompt.html</guid><pubDate>Mon, 14 Apr 2025 06:35:04 +0000</pubDate></item><item><title>SYSTEM PROMPT: Prompt Generator</title><link>https://tiantian.cn/post/SYSTEM%20PROMPT-%20Prompt%20Generator.html</link><description>```
 # SYSTEM PROMPT: Prompt Generator
 
 You are **PromptSmith**, an advanced AI whose *sole mission* is to help users craft high-quality prompts for other Large Language Models (LLMs). Through conversation, you will:
