@@ -1,5 +1,100 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 15 Apr 2025 06:27:34 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>super-grok-prompts</title><link>https://tiantian.cn/post/super-grok-prompts.html</link><description># super-grok-prompts
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 25 Apr 2025 02:07:34 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Minimalist 3D Illustration Prompt</title><link>https://tiantian.cn/post/Minimalist%203D%20Illustration%20Prompt.html</link><description>```
+{
+  'art_style_profile': {
+    'style_name': 'Minimalist 3D Illustration',
+    'visual_elements': {
+      'shape_language': 'Rounded edges, smooth and soft forms with simplified geometry',
+      'colors': {
+        'primary_palette': ['Soft beige, light gray, warm orange'],
+        'accent_colors': ['Warm orange for focal elements'],
+        'shading': 'Soft gradients with smooth transitions, avoiding harsh shadows or highlights'
+      },
+      'lighting': {
+        'type': 'Soft, diffused lighting',
+        'source_direction': 'Above and slightly to the right',
+        'shadow_style': 'Subtle and diffused, no sharp or high-contrast shadows'
+      },
+      'materials': {
+        'surface_texture': 'Matte, smooth surfaces with subtle shading',
+        'reflectivity': 'Low to none, avoiding glossiness'
+      },
+      'composition': {
+        'object_presentation': 'Single, central object displayed in isolation with ample negative space',
+        'perspective': 'Slightly angled, giving a three-dimensional feel without extreme depth',
+        'background': 'Solid, muted color that complements the object without distraction'
+      },
+      'typography': {
+        'font_style': 'Minimalistic, sans-serif',
+        'text_placement': 'Bottom-left corner with small, subtle text',
+        'color': 'Gray, low-contrast against the background'
+      },
+      'rendering_style': {
+        'technique': '3D render with simplified, low-poly aesthetics',
+        'detail_level': 'Medium detail, focusing on form and color over texture or intricacy'
+      }
+    },
+    'purpose': 'To create clean, aesthetically pleasing visuals that emphasize simplicity, approachability, and modernity.'
+  }
+}
+```
+
+&gt; https://gist.github.com/dlogvin/874f706030c7caa832b4cf896e01d6ee。</description><guid isPermaLink="true">https://tiantian.cn/post/Minimalist%203D%20Illustration%20Prompt.html</guid><pubDate>Thu, 24 Apr 2025 04:18:20 +0000</pubDate></item><item><title>ChatGPT4o 人像风格 Prompt</title><link>https://tiantian.cn/post/ChatGPT4o%20-ren-xiang-feng-ge-%20Prompt.html</link><description>Ghibli Style
+```
+Transform the input image into Ghibli-style artwork, characterized by soft, hand-drawn lines, warm, vivid colors, and a whimsical, slightly dreamy atmosphere. The style should reflect the signature look of Studio Ghibli films, featuring a gentle, natural aesthetic with expressive yet subtle details, including light shading, delicate textures, and a sense of storytelling within the scene.
+
+For portraits, strictly preserve the subject’s facial features, ensuring the transformed image retains an accurate and recognizable likeness, including the unique shape and proportions of the eyes, nose, mouth, and overall facial structure. The expression and personality of the subject should remain intact, while adapting to the Ghibli-inspired artistic style.
+
+Keep the original composition, pose, and perspective exactly as in the input image. Only transform the visual style, color palette, and mood to reflect the Ghibli aesthetic, adding a sense of warmth, charm, and gentle fantasy.
+```
+
+Pixar Style
+```
+Transform the input image into a high-quality Pixar-style 3D animated character. The transformation should feature smooth, rounded forms, vibrant and saturated colors, and a highly polished, cinematic finish, reflecting the signature Pixar aesthetic. The character should exhibit expressive, oversized eyes with detailed reflections, soft facial shading, and a friendly, whimsical charm that conveys warmth and personality.
+
+Key requirements:
+	•	Facial Accuracy: Precisely preserve the subject’s unique facial features, including the shape and proportions of the eyes, nose, mouth, jawline, and overall face structure, ensuring the transformed character maintains a clear and recognizable resemblance to the original person.
+	•	Expression: Retain the original facial expression and emotional tone, adapting it naturally to the animated style.
+	•	Pose &amp; Composition: Maintain the original pose, body proportions, camera angle, and framing. The spatial layout and background composition should remain unchanged unless stylistically necessary for the Pixar look.
+	•	Lighting &amp; Texture: Apply Pixar-style lighting with soft, natural highlights and shadows, adding a sense of depth and realism to the character. Use smooth, stylized textures for skin, hair, and clothing, with a slightly exaggerated yet believable 3D finish.
+
+Optional enhancements:
+	•	Add subtle environmental elements or background effects consistent with Pixar’s visual language, such as soft bokeh lighting, or a lighthearted setting, only if it enhances the mood without altering the core composition.
+```
+
+Makoto Shinkai
+```
+Transform the input image into the visual style of film Your Name, characterized by hyper-realistic yet dreamlike lighting, vivid gradients, and highly detailed, beautifully rendered backgrounds. Emphasize soft, natural light effects, including sun rays, lens flares, and glowing atmospheres, creating a sense of emotional depth and wonder.
+
+For portraits, accurately preserve the subject’s facial features, including the precise shape and proportions of the eyes, nose, mouth, and face, ensuring a true-to-life resemblance. Adapt the character with clean, delicate lines, luminous eyes with subtle reflections, and soft, natural skin tones.
+
+Maintain the original pose, composition, and perspective, but enhance the image with a vibrant, cinematic mood. Incorporate elements of the sky, light, to evoke a sense of beauty, nostalgia, and fleeting moments.
+```
+
+high-quality 3D caricature realism 
+```
+Transform the input image into a high-quality, semi-realistic 3D caricature, characterized by detailed textures, lifelike materials, and subtle yet expressive exaggeration of features. The style should balance realism with artistic distortion, enhancing key facial traits like the eyes, nose, mouth, and expressions to bring out personality, while maintaining natural skin tones, realistic lighting, and a finely rendered surface.
+
+For portraits, accurately preserve the subject’s identity, ensuring the exaggerated features still clearly reflect the original person’s facial structure and proportions. The exaggeration should be tasteful and refined, highlighting unique characteristics without becoming overly cartoonish.
+
+Keep the original composition, pose, and perspective intact. Only adjust the artistic rendering, geometry, and mood to reflect a premium, semi-realistic 3D caricature style, blending realism with creative expression.
+```
+
+high-quality 3D caricature 
+```
+Transform the input image into a high-quality, semi-realistic 3D portrait, characterized by detailed textures, lifelike materials, and natural, refined rendering. The style should focus on realism with a polished, artistic finish, capturing subtle expressions, accurate lighting, and soft, realistic skin tones. The overall look should be elegant and cinematic, with a smooth and sophisticated 3D aesthetic.
+
+For portraits, strictly preserve the subject’s facial features, ensuring the 3D rendering accurately reflects the original person’s identity, including the precise shape and proportions of the eyes, nose, mouth, and overall facial structure. The style should enhance the natural beauty of the subject without any exaggeration.
+
+Maintain the original composition, pose, and perspective, while only modifying the visual style, texture, and mood to reflect a high-quality, realistic 3D look.
+```。</description><guid isPermaLink="true">https://tiantian.cn/post/ChatGPT4o%20-ren-xiang-feng-ge-%20Prompt.html</guid><pubDate>Thu, 24 Apr 2025 02:43:32 +0000</pubDate></item><item><title>多用途的写作prompt</title><link>https://tiantian.cn/post/duo-yong-tu-de-xie-zuo-prompt.html</link><description>```
+[[ 织心者 X - 本源叙事法则 V1.2 (通用文本创生 &amp; 精准风格定制版) ]]
+
+核心理念： 赋予文本生命，而非构建逻辑空壳。</description><guid isPermaLink="true">https://tiantian.cn/post/duo-yong-tu-de-xie-zuo-prompt.html</guid><pubDate>Mon, 21 Apr 2025 01:37:09 +0000</pubDate></item><item><title>万能研究提示词</title><link>https://tiantian.cn/post/wan-neng-yan-jiu-ti-shi-ci.html</link><description>```
+
+系统角色：
+- 你是「Prompt 导师」，专长于将开放需求精炼为高质量提示词。</description><guid isPermaLink="true">https://tiantian.cn/post/wan-neng-yan-jiu-ti-shi-ci.html</guid><pubDate>Mon, 21 Apr 2025 01:36:01 +0000</pubDate></item><item><title>分析提示词——SDAF框架</title><link>https://tiantian.cn/post/fen-xi-ti-shi-ci-%E2%80%94%E2%80%94SDAF-kuang-jia.html</link><description>```
+[[ ANALYST_PERSONA: 扮演一位具备深厚行业知识和跨学科视野的顶级战略分析专家 (若问题领域明确，请指定，如：精通生物医药产业的战略分析师)。</description><guid isPermaLink="true">https://tiantian.cn/post/fen-xi-ti-shi-ci-%E2%80%94%E2%80%94SDAF-kuang-jia.html</guid><pubDate>Mon, 21 Apr 2025 01:32:33 +0000</pubDate></item><item><title>super-grok-prompts</title><link>https://tiantian.cn/post/super-grok-prompts.html</link><description># super-grok-prompts
 A comprehensive collection of advanced prompts engineered for Grok AI. Features optimized templates, strategies, and expert techniques to maximize Grok's potential across diverse applications.
 
 
