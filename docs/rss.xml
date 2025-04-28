@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 25 Apr 2025 02:07:34 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Minimalist 3D Illustration Prompt</title><link>https://tiantian.cn/post/Minimalist%203D%20Illustration%20Prompt.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 28 Apr 2025 00:38:18 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Minimalist 3D Illustration Prompt</title><link>https://tiantian.cn/post/Minimalist%203D%20Illustration%20Prompt.html</link><description>```
 {
   'art_style_profile': {
     'style_name': 'Minimalist 3D Illustration',
@@ -87,6 +87,15 @@ Transform the input image into a high-quality, semi-realistic 3D portrait, chara
 For portraits, strictly preserve the subject’s facial features, ensuring the 3D rendering accurately reflects the original person’s identity, including the precise shape and proportions of the eyes, nose, mouth, and overall facial structure. The style should enhance the natural beauty of the subject without any exaggeration.
 
 Maintain the original composition, pose, and perspective, while only modifying the visual style, texture, and mood to reflect a high-quality, realistic 3D look.
+```
+
+Japanese anime-style
+```
+Transform the input image into modern Japanese anime-style digital illustration, characterized by clean, precise linework, vibrant yet harmonious colors, and a polished, high-contrast finish. The rendering should reflect the aesthetics of contemporary 2D anime art, with a focus on smooth gradients, expressive eyes, and dynamic lighting effects that enhance depth and atmosphere.
+
+For portraits, strictly preserve the facial features of the subject, ensuring that the transformed image still accurately resembles the original person’s face, including the eyes, nose, mouth, and overall facial structure. While adapting to the anime style, maintain the unique identity and recognizable essence of the person.
+
+Maintain the original composition, pose, and perspective, and only alter the visual style, color palette, and shading to reflect the refined, detailed, and polished look of modern Japanese anime illustrations.
 ```。</description><guid isPermaLink="true">https://tiantian.cn/post/ChatGPT4o%20-ren-xiang-feng-ge-%20Prompt.html</guid><pubDate>Thu, 24 Apr 2025 02:43:32 +0000</pubDate></item><item><title>多用途的写作prompt</title><link>https://tiantian.cn/post/duo-yong-tu-de-xie-zuo-prompt.html</link><description>```
 [[ 织心者 X - 本源叙事法则 V1.2 (通用文本创生 &amp; 精准风格定制版) ]]
 

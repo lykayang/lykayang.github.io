@@ -47,3 +47,12 @@ For portraits, strictly preserve the subject’s facial features, ensuring the 3
 
 Maintain the original composition, pose, and perspective, while only modifying the visual style, texture, and mood to reflect a high-quality, realistic 3D look.
 ```
+
+Japanese anime-style
+```
+Transform the input image into modern Japanese anime-style digital illustration, characterized by clean, precise linework, vibrant yet harmonious colors, and a polished, high-contrast finish. The rendering should reflect the aesthetics of contemporary 2D anime art, with a focus on smooth gradients, expressive eyes, and dynamic lighting effects that enhance depth and atmosphere.
+
+For portraits, strictly preserve the facial features of the subject, ensuring that the transformed image still accurately resembles the original person’s face, including the eyes, nose, mouth, and overall facial structure. While adapting to the anime style, maintain the unique identity and recognizable essence of the person.
+
+Maintain the original composition, pose, and perspective, and only alter the visual style, color palette, and shading to reflect the refined, detailed, and polished look of modern Japanese anime illustrations.
+```
