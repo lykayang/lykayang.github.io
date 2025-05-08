@@ -1,5 +1,37 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Mon, 28 Apr 2025 00:38:18 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Minimalist 3D Illustration Prompt</title><link>https://tiantian.cn/post/Minimalist%203D%20Illustration%20Prompt.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Thu, 08 May 2025 04:36:30 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Studio Ghibli–inspired artwork</title><link>https://tiantian.cn/post/Studio%20Ghibli%E2%80%93inspired%20artwork.html</link><description>Transform the input image into **Studio Ghibli–inspired artwork** while preserving all original spatial relationships.
+
+★ 1 — Artistic Style
+• Hand-drawn linework: soft, slightly uneven strokes that feel organic  
+• Palette: warm, vivid hues with gentle gradients (sunlit yellows, dusty terracottas, muted teals)  
+• Textures: watercolor washes in the background, light gouache layering in the foreground, subtle paper grain  
+• Shading &amp; lighting: mild cel-style shading for volume, cozy golden back-light or rim-light to enhance warmth  
+• Atmosphere: whimsical, slightly dreamy, evoking quiet wonder and a sense of storytelling
+
+★ 2 — Subject Fidelity
+• **STRICTLY PRESERVE FACIAL FEATURES**: eyes, nose, mouth, and overall facial proportions must remain accurate and recognizable  
+• Retain the subject’s exact **expression, pose, clothing, and props**  
+• Keep hairstyle, accessories, and surface details unchanged—only restyle their rendering
+
+★ 3 — Composition Integrity
+• **DO NOT** crop, rotate, mirror, resize, or reposition any element  
+• Keep the original camera perspective, framing, and aspect ratio exactly as in the source
+
+★ 4 — Output &amp; Technical Specs
+• Resolution: ≥ 4 K (or original, whichever is higher)  
+• Aspect ratio: identical to input  
+• File format: PNG or JPEG, artifact-free  
+• Color profile: sRGB  
+• Background must remain contextually consistent; add only subtle Ghibli-style environmental details (e.g., drifting dust, distant birds) without altering layout
+
+★ 5 — Negative Constraints
+• No stylization drift into chibi, manga, or Western cartoon aesthetics  
+• No facial distortion, exaggeration, or de-aging  
+• Avoid heavy outlines, posterization, neon highlights, or glitch effects  
+• Do not introduce additional objects, characters, or text overlays
+
+**Goal:** The final image should look like a frame from a classic Ghibli film—soft, warm, and narrative-rich—while remaining unmistakably faithful to the original subject and composition.
+。</description><guid isPermaLink="true">https://tiantian.cn/post/Studio%20Ghibli%E2%80%93inspired%20artwork.html</guid><pubDate>Thu, 08 May 2025 04:36:06 +0000</pubDate></item><item><title>Minimalist 3D Illustration Prompt</title><link>https://tiantian.cn/post/Minimalist%203D%20Illustration%20Prompt.html</link><description>```
 {
   'art_style_profile': {
     'style_name': 'Minimalist 3D Illustration',
