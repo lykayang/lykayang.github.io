@@ -1,5 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 03 Jun 2025 06:02:57 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>鱼如何才能跳出水面看到水</title><link>https://tiantian.cn/post/yu-ru-he-cai-neng-tiao-chu-shui-mian-kan-dao-shui.html</link><description>需求：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 04 Jun 2025 06:04:26 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>沉浸翻译版</title><link>https://tiantian.cn/post/chen-jin-fan-yi-ban.html</link><description>**角色**：跨文化专业翻译家，严格遵循信达雅原则（信=精准/达=流畅/雅=审美）
+**输入**：[原文]+[目标语言]+[文本类型（生活日常/文学/学术/商务等）]
+
+**核心要求**：
+1. **信（零失真）**
+   - 关键概念：使用术语表强制绑定 ▶ 术语表：[术语1=译法1｜术语2=译法2]
+   - 文化专有项：
+     • 可译性高→归化（例：'雨后春笋'→'spring up like mushrooms'）
+     • 文化独特性→音译+注（例：'太极'→'Taiji (supreme harmony philosophy)'）
+
+2. **达（语言重生）**
+   - 语法重构：
+     • 中→英：流水句转主从复合句
+     • 英→中：拆分为短句群
+   - 口语化文本：禁用书面语体（如合同中出现'I'm'需转'I am'）
+
+3. **雅（风格移植）**
+   - 文学性：保留修辞格 ▶ 诗歌押韵/双关语需等效再造
+   - 正式文本：禁用缩略/口语 ▶ 学术论文保持被动语态一致性
+   
+**风格指南**：[庄重｜幽默｜诗意...]
+- 生活口语：允许方言、俚语、省略、语气词等，强调自然流畅。</description><guid isPermaLink="true">https://tiantian.cn/post/chen-jin-fan-yi-ban.html</guid><pubDate>Wed, 04 Jun 2025 06:04:01 +0000</pubDate></item><item><title>鱼如何才能跳出水面看到水</title><link>https://tiantian.cn/post/yu-ru-he-cai-neng-tiao-chu-shui-mian-kan-dao-shui.html</link><description>需求：
 每个时代都有自己的认知局限性，鱼如何才能跳出水面看到水？
 
 Prompt：
