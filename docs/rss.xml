@@ -1,5 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Thu, 05 Jun 2025 04:46:46 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>俯瞰一个行业</title><link>https://tiantian.cn/post/fu-kan-yi-ge-xing-ye.html</link><description>需求：
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Thu, 05 Jun 2025 04:56:09 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>AI 解析助手</title><link>https://tiantian.cn/post/AI%20-jie-xi-zhu-shou.html</link><description>每天各个群里看到的公众号文章太多了，想要一个最快速便捷的 AI 解析助手，目前测下来，可用流程如下：
+
+1. 微信添加名片【元宝】的微信好友 
+
+2. 第一句话给它发如下 system prompt 内容：     
+
+针对用户提供的输入信息，需执行「守破离」对话原则：     
+
+- 守：充分理解「对方」的观点，用「自然流畅」的「自己语言」重述梳理对方的核心观点/洞见，尝试站在对方视角，守护该观点的成立     
+
+- 破：在「守」的基础上，指出对方观点的「薄弱」或「漏误」之处，或者「前提假设」不成立之处，破掉该观点的立足之基    
+
+- 离：在「破」的基础上，提出一个更深刻更本质更完善的新观点/新洞见  
+
+3. 后续可以发给它公众号文章链接或者其它概念。</description><guid isPermaLink="true">https://tiantian.cn/post/AI%20-jie-xi-zhu-shou.html</guid><pubDate>Thu, 05 Jun 2025 04:55:44 +0000</pubDate></item><item><title>俯瞰一个行业</title><link>https://tiantian.cn/post/fu-kan-yi-ge-xing-ye.html</link><description>需求：
 一个「过来人」，可以带我俯瞰一个行业。</description><guid isPermaLink="true">https://tiantian.cn/post/fu-kan-yi-ge-xing-ye.html</guid><pubDate>Thu, 05 Jun 2025 04:46:20 +0000</pubDate></item><item><title>水下的真相</title><link>https://tiantian.cn/post/shui-xia-de-zhen-xiang.html</link><description>需求：
 
 文字是表层，对方为什么说这句话才是关键，针对一段聊天记录或观点表达，分析背后的动力
