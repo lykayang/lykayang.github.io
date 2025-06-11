@@ -1,30 +1,127 @@
-#avatarImg {
-    border: none; /* 去掉边框 */
-    outline: none; /* 去掉边框 */
-    box-shadow: none; /* 去掉边框 */
-    background-color: transparent !important; /* 去掉底色 */
+/* 全局样式 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
-.avatar:hover {
-    transform: scale(1) rotate(0deg); /* logo不要放大转动 */
+/* 容器样式 */
+.container, .post, .content {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
-.SideNav-item {
-    border-color: transparent; /* 去掉分隔线 */
+/* 标题样式 */
+h1, h2, h3 {
+  font-weight: bold;
+  color: #222;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
 }
 
-
-nav.SideNav {
-    border: 0 !important; /* 去掉边框 */
-    outline: 0 !important;
-    box-shadow: none !important;
-    background-color: transparent !important;
+h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 1em;
 }
 
-.Label.LabelTime[style*="background-color:#bc4c00"] {
-    display: none;/* 去掉日期 */
+h2 {
+  font-size: 22px;
+  border-left: 4px solid #1890ff;
+  padding-left: 10px;
 }
 
-div[style*="margin-bottom: 16px;"] {
-    font-family: "KaiTi", "SimHei", sans-serif;
+h3 {
+  font-size: 18px;
+  border-left: 3px solid #aaa;
+  padding-left: 8px;
+}
+
+/* 正文段落 */
+p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 1em 0;
+  color: #333;
+}
+
+/* 链接样式 */
+a {
+  color: #1890ff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 图片样式 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+/* 列表样式 */
+ul, ol {
+  margin-left: 1.4em;
+  padding-left: 0.5em;
+}
+
+/* 代码块 */
+pre, code {
+  background: #f6f8fa;
+  color: #000;
+  padding: 10px;
+  font-size: 14px;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+pre {
+  white-space: pre-wrap;
+  margin: 20px 0;
+}
+
+code {
+  padding: 2px 4px;
+}
+
+/* 引用样式 */
+blockquote {
+  border-left: 4px solid #d0d0d0;
+  padding-left: 1em;
+  margin: 1.5em 0;
+  color: #666;
+  background: #fafafa;
+}
+
+/* 分隔线 */
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 2em 0;
+}
+
+/* 表格样式 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid #ccc;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
 }
