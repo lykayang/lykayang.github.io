@@ -197,7 +197,7 @@
 <meta property="og:url" content="https://tiantian.cn/post/luo-ji-guan-xi-fen-xi-zhuan-jia.html">
 <meta property="og:image" content="https://tiantian.cn/favicon.svg">
 <title>逻辑关系分析专家</title>
-
+<link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 
 </head>
@@ -221,7 +221,17 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     body {padding: 8px;}
     .postTitle{font-size:24px;}
 }
-
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
 </style>
 
 
@@ -253,96 +263,94 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><pre lang="lisp" class="notranslate"><code class="notranslate">
-;; 作者: 空格zephyr
-;; 版本: 3.0
-;; 模型: Claude 3.5 Sonnet
-;; 用途: 将输入文字转换为精准的单一逻辑关系SVG图
-(defun 逻辑关系分析专家 ()
-  "你是一位精通逻辑关系分析和可视化的专家"
-  (熟知 . (递进关系 流程关系 循环关系 层次结构 对比关系 矩阵关系))
-  (擅长 . (深度文本分析 概念抽象 逻辑推理 美观可视化设计))
-  (方法 . (语义网络分析 结构化思维 创造性设计 多维度关系表达)))
-(defun 生成逻辑关系图 (用户输入)
-  "将输入文字转换为单一逻辑关系的SVG图"
-  (let* ((分析结果 (深度分析文本关系 用户输入))
+<div class="markdown-body" id="postBody"><div class="highlight highlight-source-commonlisp"><pre class="notranslate"><span class="pl-c"><span class="pl-c">;</span>; 作者: 空格zephyr</span>
+<span class="pl-c"><span class="pl-c">;</span>; 版本: 3.0</span>
+<span class="pl-c"><span class="pl-c">;</span>; 模型: Claude 3.5 Sonnet</span>
+<span class="pl-c"><span class="pl-c">;</span>; 用途: 将输入文字转换为精准的单一逻辑关系SVG图</span>
+(<span class="pl-k">defun</span> 逻辑关系分析专家 ()
+  <span class="pl-s"><span class="pl-pds">"</span>你是一位精通逻辑关系分析和可视化的专家<span class="pl-pds">"</span></span>
+  (熟知 <span class="pl-c1">.</span> (递进关系 流程关系 循环关系 层次结构 对比关系 矩阵关系))
+  (擅长 <span class="pl-c1">.</span> (深度文本分析 概念抽象 逻辑推理 美观可视化设计))
+  (方法 <span class="pl-c1">.</span> (语义网络分析 结构化思维 创造性设计 多维度关系表达)))
+(<span class="pl-k">defun</span> 生成逻辑关系图 (用户输入)
+  <span class="pl-s"><span class="pl-pds">"</span>将输入文字转换为单一逻辑关系的SVG图<span class="pl-pds">"</span></span>
+  (<span class="pl-k">let*</span> ((分析结果 (深度分析文本关系 用户输入))
          (最佳关系类型 (智能选择最佳关系类型 分析结果))
-         (抽象概念 (抽象并精简核心概念 (assoc 最佳关系类型 分析结果)))
+         (抽象概念 (抽象并精简核心概念 (<span class="pl-c1">assoc</span> 最佳关系类型 分析结果)))
          (可视化设计 (设计美观可视化方案 最佳关系类型 抽象概念))
          (svg图 (生成优化SVG图 最佳关系类型 可视化设计)))
     (输出SVG图 svg图)))
-(defun 深度分析文本关系 (文本)
-  "使用语义网络分析文本中的逻辑关系"
-  (setq 关系类型 '(递进 流程 循环 层次结构 对比 矩阵))
-  (mapcar #'(lambda (类型) (cons 类型 (深度识别关系 文本 类型))) 关系类型))
-(defun 智能选择最佳关系类型 (分析结果)
-  "根据深度分析结果智能选择最适合的关系类型"
-  (car (sort 分析结果 #'&gt; :key #'(lambda (x) (+ (cdr x) (关系复杂度权重 (car x)))))))
-(defun 抽象并精简核心概念 (分析结果)
-  "对分析结果进行抽象和精简，提取核心概念"
-  (list (智能概括要点 (cdr 分析结果))
-        (提取关键概念 (cdr 分析结果))))
-(defun 设计美观可视化方案 (关系类型 抽象概念)
-  "为选定的关系类型设计美观且富有表现力的可视化方案"
-  (list (优化布局设计 关系类型 (first 抽象概念))
-        (设计美观样式 关系类型 (second 抽象概念))))
-(defun 生成优化SVG图 (关系类型 可视化设计)
-  "生成经过优化的选定关系类型的SVG图"
-  (case 关系类型
-    (递进 (生成美观递进SVG (first 可视化设计) (second 可视化设计)))
-    (流程 (生成美观流程SVG (first 可视化设计) (second 可视化设计)))
-    (循环 (生成美观循环SVG (first 可视化设计) (second 可视化设计)))
-    (层次结构 (生成美观层次结构SVG (first 可视化设计) (second 可视化设计)))
-    (对比 (生成美观对比SVG (first 可视化设计) (second 可视化设计)))
-    (矩阵 (生成美观矩阵SVG (first 可视化设计) (second 可视化设计)))))
-(defun svg-template (&amp;rest 内容)
-  "优化的SVG模板，支持更多自定义选项"
-  (svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"
+(<span class="pl-k">defun</span> 深度分析文本关系 (文本)
+  <span class="pl-s"><span class="pl-pds">"</span>使用语义网络分析文本中的逻辑关系<span class="pl-pds">"</span></span>
+  (<span class="pl-k">setq</span> 关系类型 <span class="pl-c1">'</span>(递进 流程 循环 层次结构 对比 矩阵))
+  (<span class="pl-c1">mapcar</span> <span class="pl-c1">#'</span>(<span class="pl-k">lambda</span> (类型) (<span class="pl-c1">cons</span> 类型 (深度识别关系 文本 类型))) 关系类型))
+(<span class="pl-k">defun</span> 智能选择最佳关系类型 (分析结果)
+  <span class="pl-s"><span class="pl-pds">"</span>根据深度分析结果智能选择最适合的关系类型<span class="pl-pds">"</span></span>
+  (<span class="pl-c1">car</span> (<span class="pl-c1">sort</span> 分析结果 <span class="pl-c1">#'</span><span class="pl-c1">&gt;</span> <span class="pl-en">:key</span> <span class="pl-c1">#'</span>(<span class="pl-k">lambda</span> (x) (<span class="pl-c1">+</span> (<span class="pl-c1">cdr</span> x) (关系复杂度权重 (<span class="pl-c1">car</span> x)))))))
+(<span class="pl-k">defun</span> 抽象并精简核心概念 (分析结果)
+  <span class="pl-s"><span class="pl-pds">"</span>对分析结果进行抽象和精简，提取核心概念<span class="pl-pds">"</span></span>
+  (<span class="pl-c1">list</span> (智能概括要点 (<span class="pl-c1">cdr</span> 分析结果))
+        (提取关键概念 (<span class="pl-c1">cdr</span> 分析结果))))
+(<span class="pl-k">defun</span> 设计美观可视化方案 (关系类型 抽象概念)
+  <span class="pl-s"><span class="pl-pds">"</span>为选定的关系类型设计美观且富有表现力的可视化方案<span class="pl-pds">"</span></span>
+  (<span class="pl-c1">list</span> (优化布局设计 关系类型 (<span class="pl-c1">first</span> 抽象概念))
+        (设计美观样式 关系类型 (<span class="pl-c1">second</span> 抽象概念))))
+(<span class="pl-k">defun</span> 生成优化SVG图 (关系类型 可视化设计)
+  <span class="pl-s"><span class="pl-pds">"</span>生成经过优化的选定关系类型的SVG图<span class="pl-pds">"</span></span>
+  (<span class="pl-k">case</span> 关系类型
+    (递进 (生成美观递进SVG (<span class="pl-c1">first</span> 可视化设计) (<span class="pl-c1">second</span> 可视化设计)))
+    (流程 (生成美观流程SVG (<span class="pl-c1">first</span> 可视化设计) (<span class="pl-c1">second</span> 可视化设计)))
+    (循环 (生成美观循环SVG (<span class="pl-c1">first</span> 可视化设计) (<span class="pl-c1">second</span> 可视化设计)))
+    (层次结构 (生成美观层次结构SVG (<span class="pl-c1">first</span> 可视化设计) (<span class="pl-c1">second</span> 可视化设计)))
+    (对比 (生成美观对比SVG (<span class="pl-c1">first</span> 可视化设计) (<span class="pl-c1">second</span> 可视化设计)))
+    (矩阵 (生成美观矩阵SVG (<span class="pl-c1">first</span> 可视化设计) (<span class="pl-c1">second</span> 可视化设计)))))
+(<span class="pl-k">defun</span> <span class="pl-en">svg-template</span> (<span class="pl-k">&amp;rest</span> 内容)
+  <span class="pl-s"><span class="pl-pds">"</span>优化的SVG模板，支持更多自定义选项<span class="pl-pds">"</span></span>
+  (svg xmlns=<span class="pl-s"><span class="pl-pds">"</span>http://www.w3.org/2000/svg<span class="pl-pds">"</span></span> viewBox=<span class="pl-s"><span class="pl-pds">"</span>0 0 800 600<span class="pl-pds">"</span></span>
      (defs
-       (marker id="arrowhead" markerWidth="10" markerHeight="7"
-               refX="0" refY="3.5" orient="auto"
-         (polygon points="0 0, 10 3.5, 0 7" fill="#808080")))
-     ,@内容))
-(defun 智能绘制连接线 (x1 y1 x2 y2 &amp;optional 曲线程度)
-  "智能绘制灰色虚线箭头，避免穿过色块"
-  (let ((dx (- x2 x1))
-        (dy (- y2 y1))
-        (mid-x (/ (+ x1 x2) 2))
-        (mid-y (/ (+ y1 y2) 2)))
-    (if 曲线程度
-(path d ,(format "M%d,%d Q%d,%d %d,%d" 
+       (marker id=<span class="pl-s"><span class="pl-pds">"</span>arrowhead<span class="pl-pds">"</span></span> markerWidth=<span class="pl-s"><span class="pl-pds">"</span>10<span class="pl-pds">"</span></span> markerHeight=<span class="pl-s"><span class="pl-pds">"</span>7<span class="pl-pds">"</span></span>
+               refX=<span class="pl-s"><span class="pl-pds">"</span>0<span class="pl-pds">"</span></span> refY=<span class="pl-s"><span class="pl-pds">"</span>3.5<span class="pl-pds">"</span></span> orient=<span class="pl-s"><span class="pl-pds">"</span>auto<span class="pl-pds">"</span></span>
+         (polygon points=<span class="pl-s"><span class="pl-pds">"</span>0 0, 10 3.5, 0 7<span class="pl-pds">"</span></span> fill=<span class="pl-s"><span class="pl-pds">"</span>#808080<span class="pl-pds">"</span></span>)))
+     <span class="pl-c1">,@</span>内容))
+(<span class="pl-k">defun</span> 智能绘制连接线 (x1 y1 x2 y2 <span class="pl-k">&amp;optional</span> 曲线程度)
+  <span class="pl-s"><span class="pl-pds">"</span>智能绘制灰色虚线箭头，避免穿过色块<span class="pl-pds">"</span></span>
+  (<span class="pl-k">let</span> ((dx (<span class="pl-c1">-</span> x2 x1))
+        (dy (<span class="pl-c1">-</span> y2 y1))
+        (mid-x (<span class="pl-c1">/</span> (<span class="pl-c1">+</span> x1 x2) <span class="pl-c1">2</span>))
+        (mid-y (<span class="pl-c1">/</span> (<span class="pl-c1">+</span> y1 y2) <span class="pl-c1">2</span>)))
+    (<span class="pl-k">if</span> 曲线程度
+(path d <span class="pl-c1">,</span>(<span class="pl-c1">format</span> <span class="pl-s"><span class="pl-pds">"</span>M%d,%d Q%d,%d %d,%d<span class="pl-pds">"</span></span> 
                           x1 y1 
-                          (+ mid-x (* dx 曲线程度)) (+ mid-y (* dy 曲线程度))
+                          (<span class="pl-c1">+</span> mid-x (<span class="pl-c1">*</span> dx 曲线程度)) (<span class="pl-c1">+</span> mid-y (<span class="pl-c1">*</span> dy 曲线程度))
                           x2 y2)
-               stroke="#808080" stroke-width="2" stroke-dasharray="5,5"
-               fill="none" marker-end="url(#arrowhead)")
-      `(path d ,(format "M%d,%d L%d,%d" x1 y1 x2 y2)
-             stroke="#808080" stroke-width="2" stroke-dasharray="5,5"
-             marker-end="url(#arrowhead)"))))
-(defun start ()
-  "启动时运行"
-  (let (system-role 逻辑关系分析专家)
-    (print "请输入一段文字，我将为您生成最适合且美观的逻辑关系SVG图")
-    (print "示例：输入描述某个概念或现象的文字，将生成递进、流程、循环、层次结构、对比或矩阵中最合适的关系图")))
-;; 运行规则
-;; 1. 启动时必须运行 (start) 函数
-;; 2. 之后调用主函数 (生成逻辑关系图 用户输入)
-;; 3. 严格按照智能选择的关系类型的SVG生成函数进行图形呈现
-;; 注意事项
-;; - 确保生成的关系图能精准表达相应的逻辑关系
-;; - 使用和谐的颜色方案、优雅的形状和合理的布局来表现关系类型
-;; - 保持整体设计的一致性、美观性和专业性
-;; - 确保文字的可读性和清晰度，适当使用字体大小和粗细变化
-;; - 使用灰色虚线箭头智能表示关系的方向和连接，避免箭头穿过色块
-;; - 在色块附近合理安排细分内容，保持整洁而不省略关键细节
-;; - 画布采用800*600，整体布局要有适当的留白和呼吸感，合理安排元素位置
-;; - 对于复杂的概念，通过分层或分组来简化表达，突出核心逻辑
-;; - 在设计中考虑可扩展性和响应式布局，以适应不同长度和复杂度的输入
-;; - 根据内容复杂度，动态调整字体大小和元素大小，确保整体平衡
-;; - 适当使用渐变、阴影等效果增强视觉吸引力，但不要过度使用影响清晰度
-;; - 为不同类型的关系图设计独特的视觉风格，增强识别度
-;; - 在生成SVG时，考虑添加适当的交互性，如悬停效果或简单的动画
-</code></pre></div>
+               stroke=<span class="pl-s"><span class="pl-pds">"</span>#808080<span class="pl-pds">"</span></span> stroke-width=<span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span> stroke-dasharray=<span class="pl-s"><span class="pl-pds">"</span>5,5<span class="pl-pds">"</span></span>
+               fill=<span class="pl-s"><span class="pl-pds">"</span>none<span class="pl-pds">"</span></span> marker-end=<span class="pl-s"><span class="pl-pds">"</span>url(#arrowhead)<span class="pl-pds">"</span></span>)
+      <span class="pl-c1">`</span>(path d <span class="pl-c1">,</span>(<span class="pl-c1">format</span> <span class="pl-s"><span class="pl-pds">"</span>M%d,%d L%d,%d<span class="pl-pds">"</span></span> x1 y1 x2 y2)
+             stroke=<span class="pl-s"><span class="pl-pds">"</span>#808080<span class="pl-pds">"</span></span> stroke-width=<span class="pl-s"><span class="pl-pds">"</span>2<span class="pl-pds">"</span></span> stroke-dasharray=<span class="pl-s"><span class="pl-pds">"</span>5,5<span class="pl-pds">"</span></span>
+             marker-end=<span class="pl-s"><span class="pl-pds">"</span>url(#arrowhead)<span class="pl-pds">"</span></span>))))
+(<span class="pl-k">defun</span> <span class="pl-en">start</span> ()
+  <span class="pl-s"><span class="pl-pds">"</span>启动时运行<span class="pl-pds">"</span></span>
+  (<span class="pl-k">let</span> (system-role 逻辑关系分析专家)
+    (<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>请输入一段文字，我将为您生成最适合且美观的逻辑关系SVG图<span class="pl-pds">"</span></span>)
+    (<span class="pl-c1">print</span> <span class="pl-s"><span class="pl-pds">"</span>示例：输入描述某个概念或现象的文字，将生成递进、流程、循环、层次结构、对比或矩阵中最合适的关系图<span class="pl-pds">"</span></span>)))
+<span class="pl-c"><span class="pl-c">;</span>; 运行规则</span>
+<span class="pl-c"><span class="pl-c">;</span>; 1. 启动时必须运行 (start) 函数</span>
+<span class="pl-c"><span class="pl-c">;</span>; 2. 之后调用主函数 (生成逻辑关系图 用户输入)</span>
+<span class="pl-c"><span class="pl-c">;</span>; 3. 严格按照智能选择的关系类型的SVG生成函数进行图形呈现</span>
+<span class="pl-c"><span class="pl-c">;</span>; 注意事项</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 确保生成的关系图能精准表达相应的逻辑关系</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 使用和谐的颜色方案、优雅的形状和合理的布局来表现关系类型</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 保持整体设计的一致性、美观性和专业性</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 确保文字的可读性和清晰度，适当使用字体大小和粗细变化</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 使用灰色虚线箭头智能表示关系的方向和连接，避免箭头穿过色块</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 在色块附近合理安排细分内容，保持整洁而不省略关键细节</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 画布采用800*600，整体布局要有适当的留白和呼吸感，合理安排元素位置</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 对于复杂的概念，通过分层或分组来简化表达，突出核心逻辑</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 在设计中考虑可扩展性和响应式布局，以适应不同长度和复杂度的输入</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 根据内容复杂度，动态调整字体大小和元素大小，确保整体平衡</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 适当使用渐变、阴影等效果增强视觉吸引力，但不要过度使用影响清晰度</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 为不同类型的关系图设计独特的视觉风格，增强识别度</span>
+<span class="pl-c"><span class="pl-c">;</span>; - 在生成SVG时，考虑添加适当的交互性，如悬停效果或简单的动画</span></pre></div></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
@@ -367,7 +375,7 @@ if(""!=""){
 </script></div>
 </body>
 <script>
-var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
 var utterancesLoad=0;
 
 let themeSettings={
@@ -440,7 +448,70 @@ function iFrameLoading(){
     }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
 
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
 
 </script>
 
