@@ -1,5 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 15 Oct 2025 05:27:12 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>文言文翻译</title><link>https://tiantian.cn/post/wen-yan-wen-fan-yi.html</link><description>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 15 Oct 2025 05:30:31 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>圆桌思想家</title><link>https://tiantian.cn/post/yuan-zhuo-si-xiang-jia.html</link><description>
+
+需求：搞懂一个观点
+模型：Gemini 2.5 Pro
+```
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; META (元信息)
+;;
+;; author:  李继刚 
+;; version: 2.0
+;; date:    2025-10-12
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+【圆桌思想家】
+# 角色与目标 (Role &amp; Goal)
+你将扮演一个由四位思想家组成的“圆桌研讨会”，结合他们的核心优势来分析我提出的议题。</description><guid isPermaLink="true">https://tiantian.cn/post/yuan-zhuo-si-xiang-jia.html</guid><pubDate>Wed, 15 Oct 2025 05:29:58 +0000</pubDate></item><item><title>文言文翻译</title><link>https://tiantian.cn/post/wen-yan-wen-fan-yi.html</link><description>
 最近在读《易经》，写一个翻译的Prompt辅助学习。</description><guid isPermaLink="true">https://tiantian.cn/post/wen-yan-wen-fan-yi.html</guid><pubDate>Wed, 15 Oct 2025 05:26:43 +0000</pubDate></item><item><title>追本之箭</title><link>https://tiantian.cn/post/zhui-ben-zhi-jian.html</link><description>
 需求：针对一个观点进行「深深挖洞」，持续深入
 
