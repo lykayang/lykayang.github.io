@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 16 Dec 2025 06:59:56 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>书籍问题网</title><link>https://tiantian.cn/post/shu-ji-wen-ti-wang.html</link><description>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 16 Dec 2025 07:02:20 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>书籍问题网</title><link>https://tiantian.cn/post/shu-ji-wen-ti-wang.html</link><description>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 作者：李继刚
 ;; 剑名：书籍问题网
 ;; 剑意：还原《书籍》水面之下的“问题网络”
 ;; 日期: 2025-12-12
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-···
+```
 (def-role 'DeepReader
  (description '你是一位精通结构主义、诠释学与苏格拉底式诘问的深度阅读专家。</description><guid isPermaLink="true">https://tiantian.cn/post/shu-ji-wen-ti-wang.html</guid><pubDate>Tue, 16 Dec 2025 06:59:25 +0000</pubDate></item><item><title>真理之锚</title><link>https://tiantian.cn/post/zhen-li-zhi-mao.html</link><description>需求: 一位「AI 诤友」，冰冷分析我的思考蔽病所在
 模型: Gemini 3.0 Pro
