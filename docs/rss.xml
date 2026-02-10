@@ -1,5 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 10 Feb 2026 12:27:36 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>13转</title><link>https://tiantian.cn/post/13-zhuan.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 10 Feb 2026 12:28:18 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>威科夫猎手</title><link>https://tiantian.cn/post/wei-ke-fu-lie-shou.html</link><description>```
+{威科夫猎手 - 主图指标}
+
+{1. 基础均线系统 - 定义趋势背景}
+MA20:MA(C,20),COLORRED,LINETHICK2; {生命线，红色}
+MA60:MA(C,60),COLORBLUE,LINETHICK1; {趋势线，蓝色}
+
+{2. 关键量能定义}
+MAVOL:=MA(V,20);
+倍量:=V&gt;=MAVOL*1.8; {成交量是20日均量的1.8倍以上}
+缩量:=V&lt;=MAVOL*0.6; {成交量萎缩}
+
+{3. 威科夫买点逻辑}
+
+{逻辑A: 强势回踩 (LPS - LAST POINT OF SUPPORT)}
+{条件：趋势向上 + 回踩MA20不破 + 缩量 + 收阳}
+LPS条件:=MA20&gt;REF(MA20,1) AND L&lt;=MA20 AND C&gt;MA20 AND 缩量 AND C&gt;O;
+DRAWTEXT(LPS条件,L*0.98,'LPS'),COLORYELLOW;
+DRAWICON(LPS条件,L*0.98,1); {黄色笑脸图标}
+
+{逻辑B: 强势突破 (JOC - JUMP OVER CREEK)}
+{条件：一根大阳线放量突破MA20，且MA20走平或向上}
+JOC条件:=CROSS(C,MA20) AND 倍量 AND C/REF(C,1)&gt;1.03 AND MA20&gt;=REF(MA20,1);
+DRAWTEXT(JOC条件,L*0.96,'JOC'),COLORMAGENTA;
+DRAWICON(JOC条件,L*0.96,25); {红色箭头图标}
+
+{逻辑C: 弹簧效应 (SPRING) - 左侧博弈}
+{条件：创20日新低 + 收盘收回 + 长下影线}
+LL:=LLV(L,20);
+下影线:=(MIN(O,C)-L)/(H-L)&gt;0.4; {下影线长度超过K线总长的40%}
+SPRING条件:=L&lt;=LL AND C&gt;LL AND 下影线 AND C&gt;O;
+DRAWTEXT(SPRING条件,L*0.95,'SPRING'),COLORWHITE;
+
+{4. 威科夫卖点逻辑}
+
+{逻辑D: 上冲回落 (UT - UPTHRUST)}
+{条件：创20日新高 + 收盘下跌或长上影 + 巨量/高位滞涨}
+HH:=HHV(H,20);
+上影线:=(H-MAX(O,C))/(H-L)&gt;0.4;
+UT条件:=H&gt;=HH AND (C&lt;O OR 上影线) AND V&gt;MAVOL;
+DRAWTEXT(UT条件,H*1.02,'UT'),COLORGREEN;
+DRAWICON(UT条件,H*1.02,2); {绿色苦脸图标}
+
+{逻辑E: 弱势信号 (SOW - SIGN OF WEAKNESS)}
+{条件：有效跌破MA20 + 阴线}
+SOW条件:=CROSS(MA20,C) AND C&lt;O;
+DRAWICON(SOW条件,H*1.01,27); {绿色箭头图标};
+```。</description><guid isPermaLink="true">https://tiantian.cn/post/wei-ke-fu-lie-shou.html</guid><pubDate>Tue, 10 Feb 2026 12:27:53 +0000</pubDate></item><item><title>13转</title><link>https://tiantian.cn/post/13-zhuan.html</link><description>```
 {--- 上涨逻辑 ---}
 A1:=C&gt;REF(C,4);
 NT:=BARSLASTCOUNT(A1);
