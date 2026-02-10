@@ -1,5 +1,49 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 10 Feb 2026 12:28:18 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>威科夫猎手</title><link>https://tiantian.cn/post/wei-ke-fu-lie-shou.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 10 Feb 2026 14:03:20 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>回踩20线</title><link>https://tiantian.cn/post/hui-cai-20-xian.html</link><description>```
+{选股名称：回踩20线_大师进阶版}
+
+{1. 基础均线系统}
+MA20 := MA(C, 20);
+MA60 := MA(C, 60);
+MA120 := MA(C, 120);
+
+{2. 涨停基因 (30天内)}
+ZT := (C/REF(C,1) &gt;= 1.095) AND (C = H);
+ZT_COUNT := COUNT(ZT, 30);
+COND_GENE := ZT_COUNT &gt;= 1 AND ZT_COUNT &lt;= 3; {放宽到3次，包容妖股}
+
+{3. 位置回踩}
+COND_POS := ABS((C - MA20) / MA20) &lt;= 0.025; {稍微放宽到2.5%，防止错失}
+
+{4. ★进阶1：长期趋势保护 (多头排列)}
+{20线在60线之上，且60线不能向下拐头太厉害}
+COND_TREND := MA20 &gt; MA60 AND MA60 &gt; REF(MA60, 5);
+
+{5. ★进阶2：极致缩量 (相比涨停日)}
+{获取最近一次涨停距今的天数}
+DAYS_LAST_ZT := BARSLAST(ZT);
+{那天的成交量}
+VOL_AT_ZT := REF(VOL, DAYS_LAST_ZT);
+{今天的量 &lt; 涨停量的0.6倍 (即缩量4成以上)}
+COND_PVOL := VOL &lt; VOL_AT_ZT * 0.6 AND VOL &lt; REF(VOL, 1);
+
+{6. ★进阶3：相对强度 (跑赢大盘)}
+MY_RPS := (C - REF(C, 10)) / REF(C, 10);
+INDEX_RPS := (INDEXC - REF(INDEXC, 10)) / REF(INDEXC, 10);
+COND_STRONG := MY_RPS &gt; INDEX_RPS;
+
+{7. 辅助指标 (筹码 + MACD)}
+COND_WIN := WINNER(C)*100 &gt; 60;
+DIF := EMA(C, 12) - EMA(C, 26);
+COND_MACD := DIF &gt; -0.1; {允许轻微跌破0轴，只要趋势没崩}
+
+{8. 安全过滤}
+NO_ST := NAMELIKE('ST')=0 AND NAMELIKE('*ST')=0 AND DYNAINFO(4)&gt;0;
+NO_BAD := C/REF(C,1) &gt; 0.91;
+
+{----最终输出----}
+XG: COND_GENE AND COND_POS AND COND_TREND AND COND_PVOL AND COND_STRONG AND COND_WIN AND COND_MACD AND NO_ST AND NO_BAD;
+```。</description><guid isPermaLink="true">https://tiantian.cn/post/hui-cai-20-xian.html</guid><pubDate>Tue, 10 Feb 2026 14:02:50 +0000</pubDate></item><item><title>威科夫猎手</title><link>https://tiantian.cn/post/wei-ke-fu-lie-shou.html</link><description>```
 {威科夫猎手 - 主图指标}
 
 {1. 基础均线系统 - 定义趋势背景}
