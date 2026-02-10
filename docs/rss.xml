@@ -1,5 +1,55 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sat, 07 Feb 2026 13:59:25 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>10x agency</title><link>https://tiantian.cn/post/10x%20agency.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 10 Feb 2026 12:27:36 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>13转</title><link>https://tiantian.cn/post/13-zhuan.html</link><description>```
+{--- 上涨逻辑 ---}
+A1:=C&gt;REF(C,4);
+NT:=BARSLASTCOUNT(A1);
+TJ11:=NT=9;
+DIST9:=BARSLAST(TJ11);
+TJ13:=ISLASTBAR AND NT&gt;=5 AND NT&lt;=8;
+AY:=(BACKSET(TJ11&gt;0,9) OR BACKSET(TJ13&gt;0,NT))*NT;
+
+{上涨计数1-8显示为洋红色}
+DRAWTEXT(AY=1,H*1.01,'1'),COLORMAGENTA;
+DRAWTEXT(AY=2,H*1.01,'2'),COLORMAGENTA;
+DRAWTEXT(AY=3,H*1.01,'3'),COLORMAGENTA;
+DRAWTEXT(AY=4,H*1.01,'4'),COLORMAGENTA;
+DRAWTEXT(AY=5,H*1.01,'5'),COLORMAGENTA;
+DRAWTEXT(AY=6,H*1.01,'6'),COLORMAGENTA;
+DRAWTEXT(AY=7,H*1.01,'7'),COLORMAGENTA;
+DRAWTEXT(AY=8,H*1.01,'8'),COLORMAGENTA;
+
+{上涨计数9及后续显示为绿色}
+DRAWTEXT(DIST9=0,H*1.01,'9'),COLORGREEN;
+DRAWTEXT(DIST9=1,H*1.01,'10'),COLORGREEN;
+DRAWTEXT(DIST9=2,H*1.01,'11'),COLORGREEN;
+DRAWTEXT(DIST9=3,H*1.01,'12'),COLORGREEN;
+DRAWTEXT(DIST9=4,H*1.01,'13'),COLORGREEN;
+
+{--- 下跌逻辑 ---}
+B1:=C&lt;REF(C,4);
+NT0:=BARSLASTCOUNT(B1);
+TJ21:=NT0=9;
+DIST09:=BARSLAST(TJ21);
+TJ23:=ISLASTBAR AND NT0&gt;=5 AND NT0&lt;=8;
+AY1:=(BACKSET(TJ21&gt;0,9) OR BACKSET(TJ23&gt;0,NT0))*NT0;
+
+{下跌计数1-8显示为绿色}
+DRAWTEXT(AY1=1,H*1.01,'1'),COLORGREEN;
+DRAWTEXT(AY1=2,H*1.01,'2'),COLORGREEN;
+DRAWTEXT(AY1=3,H*1.01,'3'),COLORGREEN;
+DRAWTEXT(AY1=4,H*1.01,'4'),COLORGREEN;
+DRAWTEXT(AY1=5,H*1.01,'5'),COLORGREEN;
+DRAWTEXT(AY1=6,H*1.01,'6'),COLORGREEN;
+DRAWTEXT(AY1=7,H*1.01,'7'),COLORGREEN;
+DRAWTEXT(AY1=8,H*1.01,'8'),COLORGREEN;
+
+{下跌计数9及后续显示为洋红色}
+DRAWTEXT(DIST09=0,H*1.01,'9'),COLORMAGENTA;
+DRAWTEXT(DIST09=1,H*1.01,'10'),COLORMAGENTA;
+DRAWTEXT(DIST09=2,H*1.01,'11'),COLORMAGENTA;
+DRAWTEXT(DIST09=3,H*1.01,'12'),COLORMAGENTA;
+DRAWTEXT(DIST09=4,H*1.01,'13'),COLORMAGENTA;
+```。</description><guid isPermaLink="true">https://tiantian.cn/post/13-zhuan.html</guid><pubDate>Tue, 10 Feb 2026 12:27:05 +0000</pubDate></item><item><title>10x agency</title><link>https://tiantian.cn/post/10x%20agency.html</link><description>```
 Here's my situation [describe your situation]. Help me explore: What would I do if I had 10x agency?
 ```。</description><guid isPermaLink="true">https://tiantian.cn/post/10x%20agency.html</guid><pubDate>Sat, 07 Feb 2026 02:45:40 +0000</pubDate></item><item><title>优化威科夫</title><link>https://tiantian.cn/post/you-hua-wei-ke-fu.html</link><description>260207
 ```
