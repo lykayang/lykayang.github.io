@@ -125,3 +125,8 @@ th, td {
   padding: 10px;
   text-align: left;
 }
+
+.Box {
+    border-radius: 12px !important; /* 數值越大越圓，!important 確保覆蓋默認樣式 */
+    overflow: hidden; /* 確保內部內容不會超出圓角 */
+}
