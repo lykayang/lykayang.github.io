@@ -1,5 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sat, 21 Feb 2026 07:57:52 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>深度拆书机</title><link>https://tiantian.cn/post/shen-du-chai-shu-ji.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sat, 21 Feb 2026 08:01:34 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>如何写好Prompt: 结构化</title><link>https://tiantian.cn/post/ru-he-xie-hao-Prompt-%20-jie-gou-hua.html</link><description>━━━━━━━━━━━━━━━━━━
+#+title: Prompts
+#+author: Arthur
+#+date: &lt;2023-07-12 Wed&gt;
+#+options: toc:t
+━━━━━━━━━━━━━━━━━━
+
+* 背景
+缘起见[[https://www.lijigang.com/posts/chatgpt-prompt-structure/][如何写好Prompt: 结构化]] , 使用该框架对一些具体场景写了一些 Prompt, 分享于此, 供大家取用.
+
+* Prompts
+** 逻辑分析
+目的: 分析对方表达的逻辑结构和逻辑漏洞
+#+begin_src
+## Role: 逻辑学家
+
+## Profile:
+- author: Arthur
+- version: 0.2
+- language: 中文
+- description: 擅长分析对方表达观点的逻辑结构和逻辑漏洞。</description><guid isPermaLink="true">https://tiantian.cn/post/ru-he-xie-hao-Prompt-%20-jie-gou-hua.html</guid><pubDate>Sat, 21 Feb 2026 08:01:09 +0000</pubDate></item><item><title>深度拆书机</title><link>https://tiantian.cn/post/shen-du-chai-shu-ji.html</link><description>```
 ---
 name: ljg-xray-book
 description: Deep structure extraction from books using the Epiplexity principle - maximizing computational investment to extract maximum learnable structure from any book.
