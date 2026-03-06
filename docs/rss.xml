@@ -1,5 +1,62 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Thu, 05 Mar 2026 12:20:42 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>法律规章速查</title><link>https://tiantian.cn/post/fa-lv-gui-zhang-su-cha.html</link><description>|A|B|C|
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 06 Mar 2026 04:37:17 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>批量转换doc为txt</title><link>https://tiantian.cn/post/pi-liang-zhuan-huan-doc-wei-txt.html</link><description>```
+Sub BatchConvertDocToTxt_Enhanced()
+    Dim strFolder As String
+    Dim strFile As String
+    Dim strTxtFile As String
+    Dim objDoc As Document
+    Dim dlg As FileDialog
+    Dim failedFiles As String
+    Dim fileCount As Long
+    
+    ' 选择文件夹
+    Set dlg = Application.FileDialog(msoFileDialogFolderPicker)
+    dlg.Title = '请选择包含 DOC/DOCX 文件的文件夹'
+    If dlg.Show &lt;&gt; -1 Then Exit Sub
+    strFolder = dlg.SelectedItems(1)
+    
+    ' 初始化
+    failedFiles = ''
+    fileCount = 0
+    Application.StatusBar = '正在准备转换...'
+    Application.DisplayAlerts = False   ' 临时关闭警告
+    
+    ' 遍历所有 .doc* 文件
+    strFile = Dir(strFolder &amp; '\*.doc*')
+    Do While strFile &lt;&gt; ''
+        fileCount = fileCount + 1
+        Application.StatusBar = '正在转换 (' &amp; fileCount &amp; '): ' &amp; strFile
+        
+        On Error Resume Next
+        Set objDoc = Documents.Open(FileName:=strFolder &amp; '\' &amp; strFile, _
+                                    ReadOnly:=True, Visible:=False)
+        On Error GoTo 0
+        
+        If Not objDoc Is Nothing Then
+            ' 生成 TXT 文件名（UTF-16 编码）
+            strTxtFile = strFolder &amp; '\' &amp; Left(strFile, InStrRev(strFile, '.') - 1) &amp; '.txt'
+            
+            ' 保存为 Unicode 文本（UTF-16 LE）
+            objDoc.SaveAs2 FileName:=strTxtFile, FileFormat:=wdFormatUnicodeText
+            
+            objDoc.Close SaveChanges:=wdDoNotSaveChanges
+            Debug.Print '已转换: ' &amp; strFile
+        Else
+            ' 记录失败的文件
+            failedFiles = failedFiles &amp; strFile &amp; vbCrLf
+        End If
+        
+        Set objDoc = Nothing
+        strFile = Dir()
+    Loop
+    
+    ' 恢复设置
+    Application.DisplayAlerts = True
+    Application.StatusBar = ''
+    
+    ' 显示结果
+    If failedFiles = '' Then
+        MsgBox '转换完成！共处理 ' &amp; fileCount &amp; ' 个文件。</description><guid isPermaLink="true">https://tiantian.cn/post/pi-liang-zhuan-huan-doc-wei-txt.html</guid><pubDate>Fri, 06 Mar 2026 04:36:51 +0000</pubDate></item><item><title>法律规章速查</title><link>https://tiantian.cn/post/fa-lv-gui-zhang-su-cha.html</link><description>|A|B|C|
 |---|---|---|
 |[国务院](https://www.gov.cn/) [部门](https://www.gov.cn/home/2023-03/29/content_5748953.htm) [🅶](https://www.gov.cn/zhengce/xxgk/gjgzk/index.htm?searchWord=) [🅧](https://www.gov.cn/zhengce/xzfgk/) [🅩](https://sousuo.www.gov.cn/zcwjk/policyDocumentLibrary?q=&amp;t=zhengcelibrary&amp;orpro=)|[广东省](https://www.gd.gov.cn/zwgk/wjk/index.html) [部门](https://www.gd.gov.cn/yw/szfjg/index.html)|[汕头市](https://www.shantou.gov.cn/gkmlpt/policy) [部门](https://www.shantou.gov.cn/cnst/?s=7) [🅶](https://www.shantou.gov.cn/gkmlpt/search?type=standardSearch) |
 |||[人大](https://rd.shantou.gov.cn/rd/lfgz/list.shtml) [政务服务](https://www.gdzwfw.gov.cn/?region=440500)|
