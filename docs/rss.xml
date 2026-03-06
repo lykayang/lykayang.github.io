@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 06 Mar 2026 04:37:17 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>批量转换doc为txt</title><link>https://tiantian.cn/post/pi-liang-zhuan-huan-doc-wei-txt.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 06 Mar 2026 04:52:14 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>批量转换doc为txt</title><link>https://tiantian.cn/post/pi-liang-zhuan-huan-doc-wei-txt.html</link><description>```
 Sub BatchConvertDocToTxt_Enhanced()
     Dim strFolder As String
     Dim strFile As String
@@ -93,7 +93,8 @@ Sub BatchConvertDocToTxt_Enhanced()
 |[网信办](https://www.cac.gov.cn/wxzw/zcfg/A093703index_1.htm)|[网信办](https://www.cagd.gov.cn/c/a/5/)||
 ||[税务局](https://guangdong.chinatax.gov.cn/siteapps/webpage/gdtax/fgk/ssfgk/policy_list.jsp)||
 |[铁路局](https://www.nra.gov.cn/xxgk/gkml/)|||
-|[邮政局](https://www.spb.gov.cn/gjyzj/c100009/c100014/xxgk_index.shtml)|[邮政局](https://gd.spb.gov.cn/gdsyzglj/c100056/sjxxgk_index.shtml)|[邮政局](https://gd.spb.gov.cn/gdsyzglj/c106107/c106108/xxgk_index.shtml)|。</description><guid isPermaLink="true">https://tiantian.cn/post/fa-lv-gui-zhang-su-cha.html</guid><pubDate>Wed, 04 Mar 2026 04:26:20 +0000</pubDate></item><item><title>如何写好Prompt: 结构化</title><link>https://tiantian.cn/post/ru-he-xie-hao-Prompt-%20-jie-gou-hua.html</link><description>```
+|[邮政局](https://www.spb.gov.cn/gjyzj/c100009/c100014/xxgk_index.shtml)|[邮政局](https://gd.spb.gov.cn/gdsyzglj/c100056/sjxxgk_index.shtml)|[邮政局](https://gd.spb.gov.cn/gdsyzglj/c106107/c106108/xxgk_index.shtml)|
+|[消防局](https://www.119.gov.cn/qmxfgk/flfg/index.shtml)|[消防总队](https://gd.119.gov.cn/zwgk/flfg/index.html)||。</description><guid isPermaLink="true">https://tiantian.cn/post/fa-lv-gui-zhang-su-cha.html</guid><pubDate>Wed, 04 Mar 2026 04:26:20 +0000</pubDate></item><item><title>如何写好Prompt: 结构化</title><link>https://tiantian.cn/post/ru-he-xie-hao-Prompt-%20-jie-gou-hua.html</link><description>```
 
 ━━━━━━━━━━━━━━━━━━
 #+title: Prompts
