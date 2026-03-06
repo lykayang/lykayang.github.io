@@ -63,3 +63,5 @@ Sub BatchConvertDocToTxt_Enhanced()
     Set dlg = Nothing
 End Sub
 ```
+
+alt+F11，插入模块。F5选择文件夹
