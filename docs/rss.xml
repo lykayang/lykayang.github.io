@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sun, 08 Mar 2026 11:11:29 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Nosebleed 越狱教程：支持部分 Kindle &amp; 5.16.4~5.18.6 固件</title><link>https://tiantian.cn/post/Nosebleed%20-yue-yu-jiao-cheng-%EF%BC%9A-zhi-chi-bu-fen-%20Kindle%20%26%205.16.4~5.18.6%20-gu-jian.html</link><description>**警告**！越狱操作具有一定风险，请务必谨慎处理。</description><guid isPermaLink="true">https://tiantian.cn/post/Nosebleed%20-yue-yu-jiao-cheng-%EF%BC%9A-zhi-chi-bu-fen-%20Kindle%20%26%205.16.4~5.18.6%20-gu-jian.html</guid><pubDate>Fri, 06 Mar 2026 06:19:37 +0000</pubDate></item><item><title>批量转换doc为txt</title><link>https://tiantian.cn/post/pi-liang-zhuan-huan-doc-wei-txt.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Sun, 08 Mar 2026 11:20:26 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>Nosebleed 越狱教程：支持部分 Kindle &amp; 5.16.4~5.18.6 固件</title><link>https://tiantian.cn/post/Nosebleed%20-yue-yu-jiao-cheng-%EF%BC%9A-zhi-chi-bu-fen-%20Kindle%20%26%205.16.4~5.18.6%20-gu-jian.html</link><description>**警告**！越狱操作具有一定风险，请务必谨慎处理。</description><guid isPermaLink="true">https://tiantian.cn/post/Nosebleed%20-yue-yu-jiao-cheng-%EF%BC%9A-zhi-chi-bu-fen-%20Kindle%20%26%205.16.4~5.18.6%20-gu-jian.html</guid><pubDate>Fri, 06 Mar 2026 06:19:37 +0000</pubDate></item><item><title>批量转换doc为txt</title><link>https://tiantian.cn/post/pi-liang-zhuan-huan-doc-wei-txt.html</link><description>```
 Sub BatchConvertDocToTxt_Enhanced()
     Dim strFolder As String
     Dim strFile As String
@@ -5975,42 +5975,14 @@ claude 修正&#13;
 &#13;
 微信公众号李继刚。</description><guid isPermaLink="true">https://tiantian.cn/post/Claude%20Prompt%EF%BC%9A-qing-xu-jie-xi-qi.html</guid><pubDate>Mon, 23 Sep 2024 08:15:59 +0000</pubDate></item><item><title>常用软件和网站</title><link>https://tiantian.cn/post/chang-yong-ruan-jian-he-wang-zhan.html</link><description>**AI** [🆈uabao元宝](https://yuanbao.tencent.com/chat/) - [🅿oe](https://poe.com/) - [🆀wen千问](https://chat.qwen.ai/) - [🅲hatGPT](https://chatgpt.com/) - [🅲laude](https://claude.ai/) - [🅶emini](https://gemini.google.com/) - [🅳eepSeek](https://chat.deepseek.com/) - [🅶rok](https://grok.com/)  
 
-**电子书** [🆂LUM](https://open-slum.org/) - [🆉-Library](https://z-library.sk/) - [🅰nna‘s Archive](https://zh.annas-archive.org/) - [🅻ibrary Genesis](https://libgen.rs/) 
-- WeLib https://welib.org/
-- PDF Drive https://www.pdfdrive.com/
-- MobileRead https://www.mobileread.com/
-- mLook  https://www.mlook.mobi/
-- 阡陌居 https://www.1000qm.vip/
-- [ebook-treasure-chest](https://github.com/jbiaojerry/ebook-treasure-chest)
-- [书伴](https://bookfere.com/)
----
-**论坛**
+**电子书** [🆂LUM](https://open-slum.org/) - [🆉-Library](https://z-library.sk/) - [🅰nna‘s Archive](https://zh.annas-archive.org/) - [🅻ibrary Genesis](https://libgen.rs/) - [WeLib](https://welib.org/) - [🅿DF Drive]( https://www.pdfdrive.com/) - [🅼obileRead](https://www.mobileread.com/) - [mLook](https://www.mlook.mobi/)  - [阡陌居](https://www.1000qm.vip/) - [ebook-treasure-chest](https://github.com/jbiaojerry/ebook-treasure-chest) - [书伴](https://bookfere.com/)
+ 
+**论坛** [🆅2EX](https://www.v2ex.com/) - [🅻INUX DO](https://linux.do/) - [🅲🅲🅵](https://bbs.et8.net/bbs/) - [🅳🆁🅻](https://dream4ever.org/index.php) 
 
-- V2EX https://www.v2ex.com/
-- LINUX DO https://linux.do/
-- CCF https://bbs.et8.net/bbs/
-- DRL https://dream4ever.org/index.php
 
----
+**软件下载** - [rsload](https://rsload.net/)  - [0daydown](https://www.0daydown.com/)  - [scnlog](https://scnlog.me/apps/win/) 
 
-**软件下载** 
-
-- rsload https://rsload.net/
-- 0daydown https://www.0daydown.com/
-- scnlog https://scnlog.me/apps/win/
-
----
-
-**PT**
-
-- soulvoice https://pt.soulvoice.club/special.php 
-- hdsky https://hdsky.me/torrents.php 
-- iptorrents https://www.iptorrents.com/t 
-- m-team https://kp.m-team.cc/index 
-- totheglory https://totheglory.im/browse.php?c=M 
-- TCCF https://et8.org/torrents.php 
-
----
+**PT** - [soulvoice](https://pt.soulvoice.club/special.php) - [hdsky](https://hdsky.me/torrents.php)  - [iptorrents](https://www.iptorrents.com/t)  - [m-team](https://kp.m-team.cc/index)  - [totheglory](https://totheglory.im/browse.php?c=M)  - [TCCF](https://et8.org/torrents.php)  
 
 **APP**
 
