@@ -1,5 +1,37 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 13 Mar 2026 09:10:49 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>html批量转txt</title><link>https://tiantian.cn/post/html-pi-liang-zhuan-txt.html</link><description>```
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Tue, 17 Mar 2026 06:07:46 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>自动下载doc</title><link>https://tiantian.cn/post/zi-dong-xia-zai-doc.html</link><description>```
+(function() {
+    'use strict';
+
+    console.log('开始搜索住建部网站的政策文件下载链接...');
+
+    // 1. 寻找所有可能的下载链接（匹配API模式和常见的文件链接）
+    const allLinks = Array.from(document.querySelectorAll('a[href]'));
+    
+    // 匹配两种模式：1. 你提供的API接口 2. 以.docx结尾的传统链接
+    const downloadLinks = allLinks
+        .map(a =&gt; a.href)
+        .filter(href =&gt; {
+            return href.includes('/document/download?') || 
+                   href.includes('.docx') || 
+                   href.includes('.doc');
+        })
+        .map(href =&gt; {
+            // 处理相对路径
+            try {
+                return new URL(href, window.location.href).href;
+            } catch (e) {
+                return href;
+            }
+        });
+
+    const uniqueLinks = [...new Set(downloadLinks)];
+    
+    console.log(`找到 ${uniqueLinks.length} 个可能的下载链接:`);
+    uniqueLinks.forEach((link, i) =&gt; console.log(`${i+1}: ${link}`));
+
+    if (uniqueLinks.length === 0) {
+        console.log('未找到下载链接。</description><guid isPermaLink="true">https://tiantian.cn/post/zi-dong-xia-zai-doc.html</guid><pubDate>Tue, 17 Mar 2026 06:07:12 +0000</pubDate></item><item><title>html批量转txt</title><link>https://tiantian.cn/post/html-pi-liang-zhuan-txt.html</link><description>```
 Add-Type -AssemblyName System.Web
 Get-ChildItem *.html -Recurse | ForEach-Object {
     $html = Get-Content $_.FullName -Raw -Encoding UTF8
