@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 18 Mar 2026 00:24:17 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>chrome 设置</title><link>https://tiantian.cn/post/chrome%20-she-zhi.html</link><description>Chrome 浏览器默认会**阻止网站自动下载多个文件**（multiple automatic downloads），这是为了防止恶意网站偷偷下载很多东西。</description><guid isPermaLink="true">https://tiantian.cn/post/chrome%20-she-zhi.html</guid><pubDate>Wed, 18 Mar 2026 00:22:54 +0000</pubDate></item><item><title>自动下载doc</title><link>https://tiantian.cn/post/zi-dong-xia-zai-doc.html</link><description>改进版
-```
-(async function() {
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>AI是人类制造的玩具</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Wed, 18 Mar 2026 00:51:31 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>chrome 设置</title><link>https://tiantian.cn/post/chrome%20-she-zhi.html</link><description>Chrome 浏览器默认会**阻止网站自动下载多个文件**（multiple automatic downloads），这是为了防止恶意网站偷偷下载很多东西。</description><guid isPermaLink="true">https://tiantian.cn/post/chrome%20-she-zhi.html</guid><pubDate>Wed, 18 Mar 2026 00:22:54 +0000</pubDate></item><item><title>自动下载doc</title><link>https://tiantian.cn/post/zi-dong-xia-zai-doc.html</link><description>+wps
+```(async function() {
     'use strict';
 
     console.log('🔍 开始搜索政策文件下载链接...');
@@ -12,8 +11,8 @@
         // 排除掉 javascript:void(0) 这种无效链接
         .filter(href =&gt; !href.startsWith('javascript:')) 
         .filter(href =&gt; {
-            // 使用正则更精确地匹配：以 .doc 或 .docx 结尾（允许后面带 ? 参数或 # 锚点）
-            const isDocRegex = /\.(doc|docx)(?:$|\?|#)/i;
+            // 增加 wps 支持：以 .doc、.docx 或 .wps 结尾（允许后面带 ? 参数或 # 锚点）
+            const isDocRegex = /\.(doc|docx|wps)(?:$|\?|#)/i;
             return href.includes('/document/download?') || isDocRegex.test(href);
         });
 
