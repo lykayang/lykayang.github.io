@@ -7,3 +7,9 @@ hps://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html
 hps://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes
 
 [Adobe GenP CGP](https://gen.paramore.su/#downloads)
+
+[Patch](https://w16.monkrus.ws/) 
+
+[AdobeGenp](https://github.com/wangzhenjjcn/AdobeGenp)  
+
+[Adobe-URL-Block-List](https://github.com/Ruddernation-Designs/Adobe-URL-Block-List)
