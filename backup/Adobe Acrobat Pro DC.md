@@ -42,3 +42,6 @@ hps://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html#Acr
 
 方法2：使用防火墙软件阻止Acrobat的出网、进网连接，此方法最有效，推荐第三方防火墙软件，MS的防火墙基本无效。
 
+五、其它
+
+最新的破解补丁是GenP-CGP发布的。f发布页 ttps://gen.paramore.su/#downloads
