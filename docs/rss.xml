@@ -1,5 +1,44 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>㆝㆝</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Thu, 02 Apr 2026 11:56:25 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>墓碑</title><link>https://tiantian.cn/post/mu-bei.html</link><description>[前言](https://tiantian.cn/post/qian-yan-%EF%BC%9A-yong-jiu-de-mu-bei.html)
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>TIANTIAN</title><link>https://tiantian.cn</link><description>㆝㆝</description><copyright>TIANTIAN</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://tiantian.cn/favicon.svg</url><title>avatar</title><link>https://tiantian.cn</link></image><lastBuildDate>Fri, 03 Apr 2026 04:07:06 +0000</lastBuildDate><managingEditor>TIANTIAN</managingEditor><ttl>60</ttl><webMaster>TIANTIAN</webMaster><item><title>基金</title><link>https://tiantian.cn/post/ji-jin.html</link><description>|QM |         |  | ME                  |                         |         |     |
+|------------------|---------|----------|------------------|--------------------------|---------|-----|
+| 中证红利         | 100032  | 13       | 100红利          | 红利ETF易方达            | 515180  | 5   |
+|                  |         |          | 中证红利         | 中证红利ETF              | 515080  | 4   |
+|                  |         |          | 红利ETF          | 红利ETF华泰柏瑞          | 510880  | 1   |
+|                  |         |          | 红利300          | 300红利低波ETF嘉实       | 515300  | 1   |
+| 博时红利低波100  | 021550  | 1        | 100红利          | 红利低波100ETF博时       | 159307  | 1   |
+| 富国300          | 100038  | 7        |                  |                          | 159300  |     |
+| 建信500          | 000478  | 6        |                  |                          |         |     |
+| 中证500          | 001052  | 5        | 广发500          | 中证500ETF广发           | 510510  | 5   |
+| 全指医药         | 001180  | 7        | 医药             | 医药ETF广发              | 159938  | 2   |
+| 养老产业         | 000968  | 7        | 养老ETF          | 养老ETF                  | 516560  | 4   |
+| 华宝医疗C        | 012323  | 5        | 医疗ETF          | 医疗ETF华宝              | 512170  | 7   |
+| 华宝医疗A        | 162412  | 3        | 医疗基金         | 医疗基金LOF              | 162412  | 3   |
+| 富国消费         | 519915  | 3        | 消费50           | 消费50ETF富国            | 515650  | 3   |
+| 富国消费C        | 011309  | 3        |                  |                          |         |     |
+| 汇添富消费       | 000248  | 1        | 消费ETF          | 消费ETF                  | 159928  | 1   |
+| 易方达消费       | 110022  | 1        | 消费50           | 消费ETF易方达            | 159798  | 2   |
+| 上证50           |         | 3        | SZ50ETF          | 上证50ETF易方达          | 510100  | 1   |
+|                  |         |          | 50ETF            | 上证50ETF华夏            | 510050  | 5   |
+| 大摩健康产业     | 002708  | 4        | 医药ETF          | 医药ETF易方达            | 512010  | 2   |
+|                  |         |          | 生物医药ETF      | 生物医药ETF              | 512290  | 1   |
+|                  |         |          | 医药ETF          | 医药ETF汇添富            | 159929  | 1   |
+| 沪深300          | 000051  | 2        |                  |                          |         |     |
+| 富国500          | 161017  | 1        | 500ETFFG         | 中证500ETF富国           | 159500  | 2   |
+| 中证环保         | 001064  | 0        |                  |                          |         |     |
+| 证券公司         | 502010  | 1        | 证券LOF          | 证券LOF                  | 502010  |     |
+|                  |         |          | 证券ETF          | 证券ETF                  | 512880  | 4   |
+| 融通健康产业     | 000727  | 1        | HK创新药         | /港股创新药              | 159567  | 1   |
+| 全球医疗保健     | 000369  | 2        | HK创新药         | 港股创新药ETF            | 513120  | 1   |
+| 全指金融         | 001469  | 1        |                  |                          |         |     |
+| 恒生指数         | 000071  | 7        | 恒生ETF          | 恒生ETF华夏              | 159920  | 7   |
+| 恒生科技         | 012348  | 3        | 恒生科技         | 恒生科技ETF大成          | 159740  | 9   |
+| 中国海外互联     | 164906  | 4        | 中国互联         | 中概互联网LOF            | 164906  | 4   |
+| 易方达中概互联   | 006327  | 2        | 中概互联         | 中概互联ETF易方达        | 513050  | 8   |
+| 标普500          | 050025  | 1        |                  |                          |         |     |
+|                  |         |          | 科创半导         | 科创半导体ETF            | 588170  | 1   |
+|                  |         |          | 上证科创         | 科创50EFT广发            | 588060  | 1   |
+|                  |         |          | 电网ETF          | 电网设备ETF国泰          | 561380  | 2   |
+|                  |         |          | 军工龙头         | 军工龙头/军工龙头ETF     | 512710  | 3   |。</description><guid isPermaLink="true">https://tiantian.cn/post/ji-jin.html</guid><pubDate>Fri, 03 Apr 2026 04:06:35 +0000</pubDate></item><item><title>墓碑</title><link>https://tiantian.cn/post/mu-bei.html</link><description>[前言](https://tiantian.cn/post/qian-yan-%EF%BC%9A-yong-jiu-de-mu-bei.html)
 
 一
 

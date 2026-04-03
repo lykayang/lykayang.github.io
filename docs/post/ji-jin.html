@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://tiantian.cn/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="|QM |         |  | ME                  |                         |         |     |
+|------------------|---------|----------|------------------|--------------------------|---------|-----|
+| 中证红利         | 100032  | 13       | 100红利          | 红利ETF易方达            | 515180  | 5   |
+|                  |         |          | 中证红利         | 中证红利ETF              | 515080  | 4   |
+|                  |         |          | 红利ETF          | 红利ETF华泰柏瑞          | 510880  | 1   |
+|                  |         |          | 红利300          | 300红利低波ETF嘉实       | 515300  | 1   |
+| 博时红利低波100  | 021550  | 1        | 100红利          | 红利低波100ETF博时       | 159307  | 1   |
+| 富国300          | 100038  | 7        |                  |                          | 159300  |     |
+| 建信500          | 000478  | 6        |                  |                          |         |     |
+| 中证500          | 001052  | 5        | 广发500          | 中证500ETF广发           | 510510  | 5   |
+| 全指医药         | 001180  | 7        | 医药             | 医药ETF广发              | 159938  | 2   |
+| 养老产业         | 000968  | 7        | 养老ETF          | 养老ETF                  | 516560  | 4   |
+| 华宝医疗C        | 012323  | 5        | 医疗ETF          | 医疗ETF华宝              | 512170  | 7   |
+| 华宝医疗A        | 162412  | 3        | 医疗基金         | 医疗基金LOF              | 162412  | 3   |
+| 富国消费         | 519915  | 3        | 消费50           | 消费50ETF富国            | 515650  | 3   |
+| 富国消费C        | 011309  | 3        |                  |                          |         |     |
+| 汇添富消费       | 000248  | 1        | 消费ETF          | 消费ETF                  | 159928  | 1   |
+| 易方达消费       | 110022  | 1        | 消费50           | 消费ETF易方达            | 159798  | 2   |
+| 上证50           |         | 3        | SZ50ETF          | 上证50ETF易方达          | 510100  | 1   |
+|                  |         |          | 50ETF            | 上证50ETF华夏            | 510050  | 5   |
+| 大摩健康产业     | 002708  | 4        | 医药ETF          | 医药ETF易方达            | 512010  | 2   |
+|                  |         |          | 生物医药ETF      | 生物医药ETF              | 512290  | 1   |
+|                  |         |          | 医药ETF          | 医药ETF汇添富            | 159929  | 1   |
+| 沪深300          | 000051  | 2        |                  |                          |         |     |
+| 富国500          | 161017  | 1        | 500ETFFG         | 中证500ETF富国           | 159500  | 2   |
+| 中证环保         | 001064  | 0        |                  |                          |         |     |
+| 证券公司         | 502010  | 1        | 证券LOF          | 证券LOF                  | 502010  |     |
+|                  |         |          | 证券ETF          | 证券ETF                  | 512880  | 4   |
+| 融通健康产业     | 000727  | 1        | HK创新药         | /港股创新药              | 159567  | 1   |
+| 全球医疗保健     | 000369  | 2        | HK创新药         | 港股创新药ETF            | 513120  | 1   |
+| 全指金融         | 001469  | 1        |                  |                          |         |     |
+| 恒生指数         | 000071  | 7        | 恒生ETF          | 恒生ETF华夏              | 159920  | 7   |
+| 恒生科技         | 012348  | 3        | 恒生科技         | 恒生科技ETF大成          | 159740  | 9   |
+| 中国海外互联     | 164906  | 4        | 中国互联         | 中概互联网LOF            | 164906  | 4   |
+| 易方达中概互联   | 006327  | 2        | 中概互联         | 中概互联ETF易方达        | 513050  | 8   |
+| 标普500          | 050025  | 1        |                  |                          |         |     |
+|                  |         |          | 科创半导         | 科创半导体ETF            | 588170  | 1   |
+|                  |         |          | 上证科创         | 科创50EFT广发            | 588060  | 1   |
+|                  |         |          | 电网ETF          | 电网设备ETF国泰          | 561380  | 2   |
+|                  |         |          | 军工龙头         | 军工龙头/军工龙头ETF     | 512710  | 3   |。">
+<meta property="og:title" content="基金">
+<meta property="og:description" content="|QM |         |  | ME                  |                         |         |     |
+|------------------|---------|----------|------------------|--------------------------|---------|-----|
+| 中证红利         | 100032  | 13       | 100红利          | 红利ETF易方达            | 515180  | 5   |
+|                  |         |          | 中证红利         | 中证红利ETF              | 515080  | 4   |
+|                  |         |          | 红利ETF          | 红利ETF华泰柏瑞          | 510880  | 1   |
+|                  |         |          | 红利300          | 300红利低波ETF嘉实       | 515300  | 1   |
+| 博时红利低波100  | 021550  | 1        | 100红利          | 红利低波100ETF博时       | 159307  | 1   |
+| 富国300          | 100038  | 7        |                  |                          | 159300  |     |
+| 建信500          | 000478  | 6        |                  |                          |         |     |
+| 中证500          | 001052  | 5        | 广发500          | 中证500ETF广发           | 510510  | 5   |
+| 全指医药         | 001180  | 7        | 医药             | 医药ETF广发              | 159938  | 2   |
+| 养老产业         | 000968  | 7        | 养老ETF          | 养老ETF                  | 516560  | 4   |
+| 华宝医疗C        | 012323  | 5        | 医疗ETF          | 医疗ETF华宝              | 512170  | 7   |
+| 华宝医疗A        | 162412  | 3        | 医疗基金         | 医疗基金LOF              | 162412  | 3   |
+| 富国消费         | 519915  | 3        | 消费50           | 消费50ETF富国            | 515650  | 3   |
+| 富国消费C        | 011309  | 3        |                  |                          |         |     |
+| 汇添富消费       | 000248  | 1        | 消费ETF          | 消费ETF                  | 159928  | 1   |
+| 易方达消费       | 110022  | 1        | 消费50           | 消费ETF易方达            | 159798  | 2   |
+| 上证50           |         | 3        | SZ50ETF          | 上证50ETF易方达          | 510100  | 1   |
+|                  |         |          | 50ETF            | 上证50ETF华夏            | 510050  | 5   |
+| 大摩健康产业     | 002708  | 4        | 医药ETF          | 医药ETF易方达            | 512010  | 2   |
+|                  |         |          | 生物医药ETF      | 生物医药ETF              | 512290  | 1   |
+|                  |         |          | 医药ETF          | 医药ETF汇添富            | 159929  | 1   |
+| 沪深300          | 000051  | 2        |                  |                          |         |     |
+| 富国500          | 161017  | 1        | 500ETFFG         | 中证500ETF富国           | 159500  | 2   |
+| 中证环保         | 001064  | 0        |                  |                          |         |     |
+| 证券公司         | 502010  | 1        | 证券LOF          | 证券LOF                  | 502010  |     |
+|                  |         |          | 证券ETF          | 证券ETF                  | 512880  | 4   |
+| 融通健康产业     | 000727  | 1        | HK创新药         | /港股创新药              | 159567  | 1   |
+| 全球医疗保健     | 000369  | 2        | HK创新药         | 港股创新药ETF            | 513120  | 1   |
+| 全指金融         | 001469  | 1        |                  |                          |         |     |
+| 恒生指数         | 000071  | 7        | 恒生ETF          | 恒生ETF华夏              | 159920  | 7   |
+| 恒生科技         | 012348  | 3        | 恒生科技         | 恒生科技ETF大成          | 159740  | 9   |
+| 中国海外互联     | 164906  | 4        | 中国互联         | 中概互联网LOF            | 164906  | 4   |
+| 易方达中概互联   | 006327  | 2        | 中概互联         | 中概互联ETF易方达        | 513050  | 8   |
+| 标普500          | 050025  | 1        |                  |                          |         |     |
+|                  |         |          | 科创半导         | 科创半导体ETF            | 588170  | 1   |
+|                  |         |          | 上证科创         | 科创50EFT广发            | 588060  | 1   |
+|                  |         |          | 电网ETF          | 电网设备ETF国泰          | 561380  | 2   |
+|                  |         |          | 军工龙头         | 军工龙头/军工龙头ETF     | 512710  | 3   |。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://tiantian.cn/post/ji-jin.html">
+<meta property="og:image" content="https://tiantian.cn/favicon.svg">
+<title>基金</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">基金</h1>
+<div class="title-right">
+    <a href="https://tiantian.cn" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/lykayang/lykayang.github.io/issues/296" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>QM</th>
+<th></th>
+<th></th>
+<th>ME</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>中证红利</td>
+<td>100032</td>
+<td>13</td>
+<td>100红利</td>
+<td>红利ETF易方达</td>
+<td>515180</td>
+<td>5</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>中证红利</td>
+<td>中证红利ETF</td>
+<td>515080</td>
+<td>4</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>红利ETF</td>
+<td>红利ETF华泰柏瑞</td>
+<td>510880</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>红利300</td>
+<td>300红利低波ETF嘉实</td>
+<td>515300</td>
+<td>1</td>
+</tr>
+<tr>
+<td>博时红利低波100</td>
+<td>021550</td>
+<td>1</td>
+<td>100红利</td>
+<td>红利低波100ETF博时</td>
+<td>159307</td>
+<td>1</td>
+</tr>
+<tr>
+<td>富国300</td>
+<td>100038</td>
+<td>7</td>
+<td></td>
+<td></td>
+<td>159300</td>
+<td></td>
+</tr>
+<tr>
+<td>建信500</td>
+<td>000478</td>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>中证500</td>
+<td>001052</td>
+<td>5</td>
+<td>广发500</td>
+<td>中证500ETF广发</td>
+<td>510510</td>
+<td>5</td>
+</tr>
+<tr>
+<td>全指医药</td>
+<td>001180</td>
+<td>7</td>
+<td>医药</td>
+<td>医药ETF广发</td>
+<td>159938</td>
+<td>2</td>
+</tr>
+<tr>
+<td>养老产业</td>
+<td>000968</td>
+<td>7</td>
+<td>养老ETF</td>
+<td>养老ETF</td>
+<td>516560</td>
+<td>4</td>
+</tr>
+<tr>
+<td>华宝医疗C</td>
+<td>012323</td>
+<td>5</td>
+<td>医疗ETF</td>
+<td>医疗ETF华宝</td>
+<td>512170</td>
+<td>7</td>
+</tr>
+<tr>
+<td>华宝医疗A</td>
+<td>162412</td>
+<td>3</td>
+<td>医疗基金</td>
+<td>医疗基金LOF</td>
+<td>162412</td>
+<td>3</td>
+</tr>
+<tr>
+<td>富国消费</td>
+<td>519915</td>
+<td>3</td>
+<td>消费50</td>
+<td>消费50ETF富国</td>
+<td>515650</td>
+<td>3</td>
+</tr>
+<tr>
+<td>富国消费C</td>
+<td>011309</td>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>汇添富消费</td>
+<td>000248</td>
+<td>1</td>
+<td>消费ETF</td>
+<td>消费ETF</td>
+<td>159928</td>
+<td>1</td>
+</tr>
+<tr>
+<td>易方达消费</td>
+<td>110022</td>
+<td>1</td>
+<td>消费50</td>
+<td>消费ETF易方达</td>
+<td>159798</td>
+<td>2</td>
+</tr>
+<tr>
+<td>上证50</td>
+<td></td>
+<td>3</td>
+<td>SZ50ETF</td>
+<td>上证50ETF易方达</td>
+<td>510100</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>50ETF</td>
+<td>上证50ETF华夏</td>
+<td>510050</td>
+<td>5</td>
+</tr>
+<tr>
+<td>大摩健康产业</td>
+<td>002708</td>
+<td>4</td>
+<td>医药ETF</td>
+<td>医药ETF易方达</td>
+<td>512010</td>
+<td>2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>生物医药ETF</td>
+<td>生物医药ETF</td>
+<td>512290</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>医药ETF</td>
+<td>医药ETF汇添富</td>
+<td>159929</td>
+<td>1</td>
+</tr>
+<tr>
+<td>沪深300</td>
+<td>000051</td>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>富国500</td>
+<td>161017</td>
+<td>1</td>
+<td>500ETFFG</td>
+<td>中证500ETF富国</td>
+<td>159500</td>
+<td>2</td>
+</tr>
+<tr>
+<td>中证环保</td>
+<td>001064</td>
+<td>0</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>证券公司</td>
+<td>502010</td>
+<td>1</td>
+<td>证券LOF</td>
+<td>证券LOF</td>
+<td>502010</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>证券ETF</td>
+<td>证券ETF</td>
+<td>512880</td>
+<td>4</td>
+</tr>
+<tr>
+<td>融通健康产业</td>
+<td>000727</td>
+<td>1</td>
+<td>HK创新药</td>
+<td>/港股创新药</td>
+<td>159567</td>
+<td>1</td>
+</tr>
+<tr>
+<td>全球医疗保健</td>
+<td>000369</td>
+<td>2</td>
+<td>HK创新药</td>
+<td>港股创新药ETF</td>
+<td>513120</td>
+<td>1</td>
+</tr>
+<tr>
+<td>全指金融</td>
+<td>001469</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>恒生指数</td>
+<td>000071</td>
+<td>7</td>
+<td>恒生ETF</td>
+<td>恒生ETF华夏</td>
+<td>159920</td>
+<td>7</td>
+</tr>
+<tr>
+<td>恒生科技</td>
+<td>012348</td>
+<td>3</td>
+<td>恒生科技</td>
+<td>恒生科技ETF大成</td>
+<td>159740</td>
+<td>9</td>
+</tr>
+<tr>
+<td>中国海外互联</td>
+<td>164906</td>
+<td>4</td>
+<td>中国互联</td>
+<td>中概互联网LOF</td>
+<td>164906</td>
+<td>4</td>
+</tr>
+<tr>
+<td>易方达中概互联</td>
+<td>006327</td>
+<td>2</td>
+<td>中概互联</td>
+<td>中概互联ETF易方达</td>
+<td>513050</td>
+<td>8</td>
+</tr>
+<tr>
+<td>标普500</td>
+<td>050025</td>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>科创半导</td>
+<td>科创半导体ETF</td>
+<td>588170</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>上证科创</td>
+<td>科创50EFT广发</td>
+<td>588060</td>
+<td>1</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>电网ETF</td>
+<td>电网设备ETF国泰</td>
+<td>561380</td>
+<td>2</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>军工龙头</td>
+<td>军工龙头/军工龙头ETF</td>
+<td>512710</td>
+<td>3</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://tiantian.cn">TIANTIAN</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行 "+diffDay+" 天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.disabled=true;
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","lykayang/lykayang.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
