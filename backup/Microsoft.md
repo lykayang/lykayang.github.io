@@ -2,6 +2,8 @@
 
 [Windows 11 LTSC 2024](https://pan.baidu.com/s/1zWKKu_kHroLxdkU1XQEtvQ?pwd=24h2)
 
+`把LTSC sources目录下的 ei.cfg 文件删掉,安装时输入 CGK42-GYN6Y-VD22B-BX98W-J8JXD 开头的 key 直接就安装 iot 。`
+
 [ProPlus2024Retail](https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-cn/ProPlus2024Retail.img) 
 
 [VisioPro2024Retail](https://officecdn.microsoft.com/db/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-cn/VisioPro2024Retail.img) 
