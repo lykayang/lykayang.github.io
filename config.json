@@ -5,7 +5,7 @@
     "homeUrl":"https://tiantian.cn",
     "onePageListNum":15,
     "urlMode":"issue",
-    "allHead":"<link rel=\"stylesheet\" href='tt.css'>",
-    "script":"<script src='t1.js'></script>",
+    "allHead":"<link rel=\"stylesheet\" href='https://tiantian.cn/tt.css'>",
+    "script":"<script src='https://tiantian.cn/t1.js'></script>",
     "GMEEK_VERSION":"last"
 }
