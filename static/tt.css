@@ -1,5 +1,40 @@
-body { }
-/*a.blogTitle {display: inline-block !important;} 优化手机端不显示博客顶部LOGO文字*/
+/*body {max-width: initial !important;}不限制页面大小*/
+a.blogTitle {display: inline-block !important;}/*优化手机端不显示博客顶部LOGO文字*/
 .d-flex {display: inline-block !important;}/*调节文章标签到文章下*/
-.Label, .label {line-height: 12px !important;}/*文章标签背景颜色框缩小一点*/
-/*.LabelTime {display: inline-block !important;}调节文章标签到手机显示不全或者不显示后面的日期*/
+/*.Label, .label {line-height: 12px !important;}文章标签背景颜色框缩小一点*/
+.LabelTime {display: inline-block !important;}/*调节文章标签到手机显示不全或者不显示后面的日期*/
+.markdown-body img { height: auto;  width: 50%;}/*文章图片限制大小*/
+/*.listTitle {white-space: normal !important;}修改上面后导致首页文章标题太长手机太小文字会超溢出不会换行*/
+/*.markdown-body code {background-color: #ea9a9a;}小代码块背景颜色*/
+
+/*去除顶部图标间距太大了*/
+.title-right .circle {margin-right: 0px !important;}
+
+
+/* 1. 只给文章列表页的标签容器加顶部间距（拉开标签标题距离） */
+.listLabels {
+    margin-top: 12px !important;
+}
+
+/* 2. 只有在列表容器里的标签，才应用微小的底部正边距，防止标签换行打架 */
+.listLabels .Label, 
+.listLabels .LabelName, 
+.listLabels .LabelTime {
+    margin-bottom: 4px !important; 
+}
+
+/* 3. 针对文章列表项整体缩减底部内边距（标题下标签的底部距离缩小），从视觉上把整体往上提，不用负数 margin */
+.SideNav-item {
+    padding-bottom: 1px !important;
+}
+
+/* 4. 单独强制标签云保持默认或自己喜欢的样式，互不干扰 */
+#taglabel .Label {
+    margin-bottom: 6px !important; /* 标签云建议留大一点，方便手指点击 */
+}
+
+/* 针对首页内容区顶部的描述文字（个性签名）进行换行处理，从配置文件（config.json）里面的/n来换行文字 */
+#content > div[style*="margin-bottom: 16px"] {
+    white-space: pre-wrap !important;
+}
+
