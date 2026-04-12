@@ -1,40 +1,72 @@
-/*body {max-width: initial !important;}不限制页面大小*/
-a.blogTitle {display: inline-block !important;}/*优化手机端不显示博客顶部LOGO文字*/
-.d-flex {display: inline-block !important;}/*调节文章标签到文章下*/
-/*.Label, .label {line-height: 12px !important;}文章标签背景颜色框缩小一点*/
-.LabelTime {display: inline-block !important;}/*调节文章标签到手机显示不全或者不显示后面的日期*/
-.markdown-body img { height: auto;  width: 50%;}/*文章图片限制大小*/
-/*.listTitle {white-space: normal !important;}修改上面后导致首页文章标题太长手机太小文字会超溢出不会换行*/
-/*.markdown-body code {background-color: #ea9a9a;}小代码块背景颜色*/
+/* --- Gmeek 全局大屏适配与 UI 修正 --- */
 
-/*去除顶部图标间距太大了*/
-.title-right .circle {margin-right: 0px !important;}
-
-
-/* 1. 只给文章列表页的标签容器加顶部间距（拉开标签标题距离） */
-.listLabels {
-    margin-top: 12px !important;
+/* 1. 解除 body 宽度限制，适配大屏并恢复顶部间距 */
+body {
+    width: 95% !important;
+    max-width: none !important; /* 核心：拆除 900px 限制墙 */
+    margin: 45px auto 0 auto !important; /* 恢复顶部 45px 间距，解决靠顶问题 */
+    padding: 0 !important;
 }
 
-/* 2. 只有在列表容器里的标签，才应用微小的底部正边距，防止标签换行打架 */
-.listLabels .Label, 
-.listLabels .LabelName, 
-.listLabels .LabelTime {
-    margin-bottom: 4px !important; 
+/* 2. 标题栏：填满 body 宽度并实现垂直居中 */
+#header {
+    background: #f1f3f4 !important;
+    padding: 12px 15px !important;
+    border: 1px solid #c1c1c1 !important;
+    border-bottom: none !important;
+    border-radius: 8px 8px 0 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important; /* 图标与标题垂直中心对齐 */
 }
 
-/* 3. 针对文章列表项整体缩减底部内边距（标题下标签的底部距离缩小），从视觉上把整体往上提，不用负数 margin */
-.SideNav-item {
-    padding-bottom: 1px !important;
+/* 3. 正文内容区：同步 body 宽度 */
+#content, .main {
+    background: #fff !important;
+    border: 1px solid #c1c1c1 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    width: 100% !important;
+    padding: 40px 30px !important;
+    box-sizing: border-box !important;
+    min-height: 70vh !important;
 }
 
-/* 4. 单独强制标签云保持默认或自己喜欢的样式，互不干扰 */
-#taglabel .Label {
-    margin-bottom: 6px !important; /* 标签云建议留大一点，方便手指点击 */
+/* 4. 底部栏：同步圆角与阴影 */
+#footer {
+    background: #fff !important;
+    border: 1px solid #c1c1c1 !important;
+    border-top: none !important;
+    border-radius: 0 0 8px 8px !important;
+    width: 100% !important;
+    margin: 0 auto 30px auto !important;
+    padding: 20px 0 !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
 }
 
-/* 针对首页内容区顶部的描述文字（个性签名）进行换行处理，从配置文件（config.json）里面的/n来换行文字 */
-#content > div[style*="margin-bottom: 16px"] {
-    white-space: pre-wrap !important;
+/* 5. 标题与图标组细节优化 */
+.blogTitle, .postTitle {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    word-break: break-all !important;
+    flex: 1 !important; /* 标题自动占据剩余空间 */
 }
 
+.title-right {
+    display: flex !important;
+    gap: 12px !important;
+    align-items: center !important;
+    margin-left: 15px !important;
+    flex-shrink: 0 !important; /* 确保图标组不会被压缩 */
+}
+
+/* 6. 暗色模式适配 */
+[data-color-mode='dark'] #header { background: #2d333b !important; border-color: #444c56 !important; }
+[data-color-mode='dark'] #content, [data-color-mode='dark'] .main, [data-color-mode='dark'] #footer { background: #22272e !important; border-color: #444c56 !important; }
+
+/* 7. 隐藏冗余元素 */
+.subTitle, .SideNav-icon { display: none !important; }
