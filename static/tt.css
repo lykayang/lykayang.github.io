@@ -1,12 +1,5 @@
 /* --- Gmeek 全局大屏适配与 UI 修正 --- */
 
-/* 1. 解除 body 宽度限制，适配大屏并恢复顶部间距 */
-body {
-    width: 95% !important;
-    max-width: none !important; /* 核心：拆除 900px 限制墙 */
-    margin: 45px auto 0 auto !important; /* 恢复顶部 45px 间距，解决靠顶问题 */
-    padding: 0 !important;
-}
 
 /* 2. 标题栏：填满 body 宽度并实现垂直居中 */
 #header {
@@ -34,17 +27,6 @@ body {
     min-height: 70vh !important;
 }
 
-/* 4. 底部栏：同步圆角与阴影 */
-#footer {
-    background: #fff !important;
-    border: 1px solid #c1c1c1 !important;
-    border-top: none !important;
-    border-radius: 0 0 8px 8px !important;
-    width: 100% !important;
-    margin: 0 auto 30px auto !important;
-    padding: 20px 0 !important;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1) !important;
-}
 
 /* 5. 标题与图标组细节优化 */
 .blogTitle, .postTitle {
@@ -63,10 +45,6 @@ body {
     margin-left: 15px !important;
     flex-shrink: 0 !important; /* 确保图标组不会被压缩 */
 }
-
-/* 6. 暗色模式适配 */
-[data-color-mode='dark'] #header { background: #2d333b !important; border-color: #444c56 !important; }
-[data-color-mode='dark'] #content, [data-color-mode='dark'] .main, [data-color-mode='dark'] #footer { background: #22272e !important; border-color: #444c56 !important; }
 
 /* 7. 隐藏冗余元素 */
 .subTitle, .SideNav-icon { display: none !important; }
