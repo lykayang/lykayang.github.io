@@ -1,3 +1,17 @@
-.LabelTime {                    /* 不在主页显示文章发表日期 */
+/* 不在主页显示文章发表日期 */
+.LabelTime {                    
     display: none !important;
+}
+
+/* 完全禁止 avatar 的 hover 动画（变大 + 转圈） */
+#avatarImg,
+.avatar.circle {
+    transition: none !important;           /* 取消过渡动画 */
+    transform: none !important;            /* 强制不应用任何 transform */
+}
+
+#avatarImg:hover,
+.avatar.circle:hover {
+    transform: none !important;            /* hover 时也不变大、不转圈 */
+    scale: 1 !important;                   /* 额外保险，防止 scale 效果 */
 }
