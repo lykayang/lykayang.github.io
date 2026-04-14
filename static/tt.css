@@ -1,1 +1,3 @@
-
+.LabelTime {                    /* 不在主页显示文章发表日期 */
+    display: none !important;
+}
