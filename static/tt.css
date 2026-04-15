@@ -15,3 +15,34 @@
     transform: none !important;            /* hover 时也不变大、不转圈 */
     scale: 1 !important;                   /* 额外保险，防止 scale 效果 */
 }
+
+/* 彻底移除 SideNav 的左边框和右边框 */
+.SideNav.border {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* 同时移除所有 SideNav-item 的左边框和右边框 */
+.SideNav-item {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* 防止选中状态或 hover 时又出现边框 */
+.SideNav-item:hover,
+.SideNav-item[aria-current="page"],
+.SideNav-item.is-selected,
+.SideNav-item[aria-current] {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+a.blogTitle {
+    display: none !important;
+}
+
+/* 如果它在特定容器里，可以更精确 */
+.article-header a.blogTitle,
+nav a.blogTitle {
+    display: none !important;
+}
