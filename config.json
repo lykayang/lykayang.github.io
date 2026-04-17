@@ -9,6 +9,6 @@
     "nightTheme":"github-light",
     "urlMode":"issue",
     "allHead":"<link rel=\"stylesheet\" href='https://tiantian.cn/tt.css'>",
-    "script":"<script src='https://tiantian.cn/t1.js'></script><script src='https://tiantian.cn/t2.js'></script>",
+    "script":"<script src='https://tiantian.cn/t1.js'></script>",
     "GMEEK_VERSION":"last"
 }
