@@ -1,6 +1,6 @@
 // ================== Gmeek 专用分页增强 ==================
-var itemsPerPage = 30;        // 改成和 Gmeek 配置一致（onePageListNum）
-var custompages = 2;          // 建议把「关于」「友链」等独立页面减掉，防止算错总页数
+var itemsPerPage = 15;        // 改成和 Gmeek 配置一致（onePageListNum）
+var custompages = 0;          // 建议把「关于」「友链」等独立页面减掉，防止算错总页数
 
 var xmlUrl = `${window.location.origin}/rss.xml`;
 
