@@ -1,119 +1,113 @@
-// 填入每页显示的文章数
-var itemsPerPage = 15;
+// ================== Gmeek 专用分页增强 ==================
+var itemsPerPage = 15;        // 改成和 Gmeek 配置一致（onePageListNum）
+var custompages = 0;          // 建议把「关于」「友链」等独立页面减掉，防止算错总页数
 
-//填入自定义页面的数量
-var custompages = 0;
-
-//---------------------------------------------------------------------
-
-// XML文件路径
 var xmlUrl = `${window.location.origin}/rss.xml`;
 
-// 获取当前页数
 function getCurrentPage() {
     const currentUrl = window.location.href;
     const match = currentUrl.match(/page(\d+)\.html/);
-    // console.log(match ? parseInt(match[1]) : 1);
     return match ? parseInt(match[1]) : 1;
 }
 
-// 插入页码元素，链接
+// 查找分页容器（Gmeek 常用这几个 class，自动适配）
+function getPaginationContainer() {
+    return document.querySelector('.pagination') || 
+           document.querySelector('.page-nav') || 
+           document.querySelector('.pager') ||
+           document.querySelector('nav[aria-label="分页"]');
+}
+
 function appendPageLink(pagination, pageNumber, currentPage) {
     var pageLink = document.createElement('a');
-    pageLink.href = pageNumber === 1 ? `${window.location.origin}` : `${window.location.origin}/page${pageNumber}.html`;
+    pageLink.href = pageNumber === 1 
+        ? `${window.location.origin}/` 
+        : `${window.location.origin}/page${pageNumber}.html`;
     pageLink.textContent = pageNumber;
     if (pageNumber === currentPage) {
         pageLink.classList.add('current-page');
     }
-    pagination.insertBefore(pageLink, pagination.children[pagination.children.length - 1]);
+    pagination.appendChild(pageLink);   // 改用 appendChild，避免破坏原有上一页/下一页
 }
 
-// 插入省略号
 function appendDots(pagination) {
     var dots = document.createElement('span');
     dots.textContent = '...';
-    pagination.insertBefore(dots, pagination.children[pagination.children.length - 1]);
+    dots.className = 'dots';
+    pagination.appendChild(dots);
 }
 
-// 插入分页条
 function updatePagination(totalPages, currentPage) {
-    var pagination = document.querySelector('.pagination');
-
-    // 清除现有页码
-    while (pagination.children.length > 2) {
-        pagination.removeChild(pagination.children[1]);
+    let pagination = getPaginationContainer();
+    if (!pagination) {
+        console.warn('Gmeek 分页容器未找到，无法插入页码');
+        return;
     }
 
-    if (totalPages <= 10) {
-        for (var i = 1; i <= totalPages; i++) {
+    // 清空原有页码（保留上一页和下一页）
+    while (pagination.children.length > 0) {
+        const child = pagination.children[0];
+        if (child.textContent.includes('上一') || child.textContent.includes('下一') || 
+            child.getAttribute('rel') === 'prev' || child.getAttribute('rel') === 'next') {
+            // 保留上一页/下一页
+        } else {
+            child.remove();
+        }
+    }
+
+    // 生成页码
+    if (totalPages <= 8) {
+        for (let i = 1; i <= totalPages; i++) {
             appendPageLink(pagination, i, currentPage);
         }
     } else {
         appendPageLink(pagination, 1, currentPage);
-        appendPageLink(pagination, 2, currentPage);
-        appendPageLink(pagination, 3, currentPage);
+        if (currentPage > 4) appendDots(pagination);
 
-        if (currentPage > 5) {
-            appendDots(pagination);
-        }
-
-        var startPage = Math.max(4, currentPage - 2);
-        var endPage = Math.min(totalPages - 3, currentPage + 2);
-
-        for (var i = startPage; i <= endPage; i++) {
+        let start = Math.max(2, currentPage - 2);
+        let end = Math.min(totalPages - 1, currentPage + 2);
+        for (let i = start; i <= end; i++) {
             appendPageLink(pagination, i, currentPage);
         }
 
-        if (currentPage < totalPages - 4) {
-            appendDots(pagination);
-        }
-
-        appendPageLink(pagination, totalPages - 2, currentPage);
-        appendPageLink(pagination, totalPages - 1, currentPage);
+        if (currentPage < totalPages - 3) appendDots(pagination);
         appendPageLink(pagination, totalPages, currentPage);
     }
 
-    // 添加样式
-    var style = document.createElement('style');
+    // 当前页样式
+    const style = document.createElement('style');
     style.textContent = `
-        .pagination a.current-page {
-            font-weight: bold;
-            color: red;
-            text-decoration: underline;
-            font-size: 18px;
-            border-color: #56539d;
-        }
+        .current-page { font-weight: bold; color: #e74c3c; text-decoration: underline; }
+        .dots { margin: 0 8px; color: #999; }
     `;
     document.head.appendChild(style);
 }
 
-// 主
-fetch(xmlUrl)
-    .then(response => response.text())
-    .then(data => {
-        var parser = new DOMParser();
+// 主逻辑
+document.addEventListener('DOMContentLoaded', () => {
+    fetch(xmlUrl)
+        .then(response => {
+            if (!response.ok) throw new Error('RSS fetch failed');
+            return response.text();
+        })
+        .then(data => {
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "text/xml");
+            const items = xmlDoc.getElementsByTagName("item");
+            const itemslength = Math.max(0, items.length - custompages);
 
-        var xmlDoc = parser.parseFromString(data, "text/xml");
+            if (itemslength <= itemsPerPage) {
+                console.log('文章太少，不需要生成页码');
+                return;
+            }
 
-        // 查找所有item标签
-        var items = xmlDoc.getElementsByTagName("item");
+            const totalPages = Math.ceil(itemslength / itemsPerPage);
+            const currentPage = getCurrentPage();
 
-        // console.log(items.length);
-
-        var itemslength = items.length - custompages;
-
-        // 如果总条数小于等于每页显示的文章数，停止
-        if (itemslength <= itemsPerPage) {
-            return;
-        }
-
-        // 计算总页数
-        var totalPages = Math.ceil(itemslength / itemsPerPage);
-
-        // 获取当前页
-        var currentPage = getCurrentPage();
-
-        // 插入分页条
-        updatePagination(totalPages, currentPage);
-    })
-    .catch(error => console.error('Error fetching XML:', error));
+            updatePagination(totalPages, currentPage);
+            console.log(`Gmeek 分页增强完成：共 ${itemslength} 篇文章，${totalPages} 页，当前第 ${currentPage} 页`);
+        })
+        .catch(error => {
+            console.error('Gmeek 分页 JS 错误:', error);
+        });
+});
